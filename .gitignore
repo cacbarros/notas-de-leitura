@@ -1,0 +1,39 @@
+# Ficheiros renderizados
+*.pdf
+*.html
+*.epub
+*.docx
+
+# Saídas de Quarto ou scripts
+output/
+*.rds
+*.csv
+
+# Ficheiros auxiliares de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Python/Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editor local
+.Rproj.user/
+*.Rproj
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Ficheiros temporários de sistema
+.DS_Store
+Thumbs.db

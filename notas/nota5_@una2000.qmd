@@ -17,9 +17,10 @@ $$
 
 ## Exemplo com código
 
-```{.python}
+```{python}
 from sympy import symbols, limit
 
 x = symbols('x')
 f = (x**2 - 1)/(x - 1)
 limit(f, x, 1)
+```

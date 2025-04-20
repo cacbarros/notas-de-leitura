@@ -1,0 +1,9 @@
+project:
+  type: default
+
+format:
+  pdf:
+    documentclass: article
+  html:
+    toc: true
+    number-sections: true
