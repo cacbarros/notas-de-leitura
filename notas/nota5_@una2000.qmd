@@ -1,0 +1,25 @@
+---
+title: "Nota 5 – Continuidade"
+author: "C. A. C. Barros"
+format: pdf
+bibliography: ../rc_calculo_analise.bib
+---
+
+## Definição
+
+Uma função $f(x)$ é contínua em $x_0$ se:
+
+$$
+\lim_{x \to x_0} f(x) = f(x_0)
+$$
+
+---
+
+## Exemplo com código
+
+```{.python}
+from sympy import symbols, limit
+
+x = symbols('x')
+f = (x**2 - 1)/(x - 1)
+limit(f, x, 1)
