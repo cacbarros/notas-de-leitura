@@ -241,6 +241,7 @@ div.csl-indent {
   <ul>
   <li><a href="#panorama-geral" id="toc-panorama-geral" class="nav-link active" data-scroll-target="#panorama-geral">Panorama Geral</a>
   <ul class="collapse">
+  <li><a href="#evolução-dos-preços-exemplo-interativo" id="toc-evolução-dos-preços-exemplo-interativo" class="nav-link" data-scroll-target="#evolução-dos-preços-exemplo-interativo">Evolução dos Preços (exemplo interativo)</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   </ul></li>
   </ul>
@@ -286,6 +287,39 @@ div.csl-indent {
 <section id="panorama-geral" class="level1">
 <h1>Panorama Geral</h1>
 <p>Conteúdo introdutório sobre o mercado imobiliário.</p>
+<section id="evolução-dos-preços-exemplo-interativo" class="level2">
+<h2 class="anchored" data-anchor-id="evolução-dos-preços-exemplo-interativo">Evolução dos Preços (exemplo interativo)</h2>
+<canvas id="graficoPrecos" width="600" height="400">
+</canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('graficoPrecos').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+      datasets: [{
+        label: 'Preço médio por m² (R$)',
+        data: [4500, 4800, 5000, 5300, 5600, 6000],
+        borderWidth: 2,
+        fill: false
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top'
+        },
+        title: {
+          display: true,
+          text: 'Evolução do preço médio do m² (2018–2023)'
+        }
+      }
+    }
+  });
+</script>
+</section>
 <section id="referências" class="level2">
 
 
