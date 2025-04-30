@@ -39,3 +39,19 @@ footer {
   background-color: #eaeaea !important;
   color: #000000 !important;
 }
+.footer-custom {
+  background-color: #002B45;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-custom a {
+  color: #FFBB33;
+  text-decoration: none;
+}
+
+.footer-custom a:hover {
+  text-decoration: underline;
+}

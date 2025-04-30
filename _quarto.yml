@@ -3,6 +3,17 @@ project:
 
 website:
   title: "Ciência e Engenharia"
+  page-footer:
+    border: false
+    background: none
+    center: |
+      <div class="footer-custom">
+        <img src="/quarto-logo.png" alt="Logotipo Quarto" height="24" style="vertical-align:middle; margin-right:8px;" />
+        © <span id="anoAtual"></span> C. A. C. Barros · 
+        <a href="https://quarto.org" target="_blank">Quarto</a> · 
+        <a href="https://github.com/cacbarros/notas-de-leitura" target="_blank">GitHub</a><br>
+        <small>Atualizado em: <span id="dataModificacao"></span></small>
+      </div>
   navbar:
     left:
       - text: "Imobiliário"
@@ -56,5 +67,8 @@ website:
 format:
   html:
     theme: cosmo  # ou outro leve
+    html:
     css: styles.css
+    include-before-body:
+      - text: '<script src="/footer.js"></script>'
     toc: true

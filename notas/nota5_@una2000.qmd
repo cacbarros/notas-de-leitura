@@ -2,12 +2,12 @@
 title: "Nota 5 – Continuidade"
 author: "C. A. C. Barros"
 format: pdf
-bibliography: ../rc_calculo_analise.bib
+bibliography: ../artigo1.bib
 ---
 
 ## Definição
 
-Uma função $f(x)$ é contínua em $x_0$ se:
+Uma funçãoo $f(x)$ é contínua em $x_0$ se:
 
 $$
 \lim_{x \to x_0} f(x) = f(x_0)

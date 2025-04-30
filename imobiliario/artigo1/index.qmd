@@ -15,7 +15,7 @@ reference-title: "Referências"
 
 # Panorama Geral
 
-Conteúdo introdutório sobre o mercado imobiliário.
+Conteúdooo introdutório sobre o mercado imobiliárioo.
 
 ## Evolução dos Preços (exemplo interativo)
 
