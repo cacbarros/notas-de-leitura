@@ -1,0 +1,21 @@
+---
+title: "Artigo 1 - Dimensionamento de Carga Térmica"
+description: "Fundamentos e métodos práticos para calcular a carga térmica em ambientes climatizados."
+date: 2025-04-30
+categories: ['Climatização', 'Carga Térmica']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Dimensionamento de Carga Térmica
+
+Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação.
+
+## Referências
+

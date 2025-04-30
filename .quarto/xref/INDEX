@@ -1,5 +1,99 @@
 {
   "notas/nota5_@una2000.qmd": {
     "nota5_@una2000.tex": "f7016ec5"
+  },
+  "dados.qmd": {
+    "dados.html": "b23c0a7b"
+  },
+  "index.qmd": {
+    "index.html": "f64327d0"
+  },
+  "moodlecesar/funcoes_quadraticas.ipynb": {
+    "funcoes_quadraticas.html": "08a1ff32"
+  },
+  "sobre.qmd": {
+    "sobre.html": "afb24cd3"
+  },
+  "texto/artigo1.qmd": {
+    "artigo1.html": "f9e31dac"
+  },
+  "texto/artigo2.qmd": {
+    "artigo2.html": "f560b107"
+  },
+  "texto/artigo3.qmd": {
+    "artigo3.html": "1980c590"
+  },
+  "texto/economicos.qmd": {
+    "economicos.html": "05edab4f"
+  },
+  "texto/juridicos.qmd": {
+    "juridicos.html": "c20810d2"
+  },
+  "texto/tecnologicos.qmd": {
+    "tecnologicos.html": "8690723f"
+  },
+  "artigo1/index.qmd": {
+    "index.html": "d294eb4c"
+  },
+  "artigo2/index.qmd": {
+    "index.html": "73242b73"
+  },
+  "artigo3/index.qmd": {
+    "index.html": "9669f77f"
+  },
+  "imobiliario/artigo1/index.qmd": {
+    "index.html": "e57b0bb7",
+    "index.tex": "0e3d3f8a"
+  },
+  "imobiliario/artigo2/index.qmd": {
+    "index.html": "4cba2d63"
+  },
+  "imobiliario/artigo3/index.qmd": {
+    "index.html": "f6c5e768"
+  },
+  "fisica/artigo1/index.qmd": {
+    "index.html": "b03b55a0"
+  },
+  "fisica/artigo2/index.qmd": {
+    "index.html": "cd56f89d"
+  },
+  "fisica/artigo3/index.qmd": {
+    "index.html": "74fdf435"
+  },
+  "quimica/artigo1/index.qmd": {
+    "index.html": "329f8a77"
+  },
+  "quimica/artigo2/index.qmd": {
+    "index.html": "8108c1e9"
+  },
+  "quimica/artigo3/index.qmd": {
+    "index.html": "db780df5"
+  },
+  "matematica/artigo1/index.qmd": {
+    "index.html": "8d5f6247"
+  },
+  "matematica/artigo2/index.qmd": {
+    "index.html": "d5bd56d2"
+  },
+  "matematica/artigo3/index.qmd": {
+    "index.html": "2e3f6f7c"
+  },
+  "termodinamica/artigo1/index.qmd": {
+    "index.html": "e3e39038"
+  },
+  "termodinamica/artigo2/index.qmd": {
+    "index.html": "3fac1731"
+  },
+  "termodinamica/artigo3/index.qmd": {
+    "index.html": "79607b04"
+  },
+  "climatizacao/artigo1/index.qmd": {
+    "index.html": "351d4c8e"
+  },
+  "climatizacao/artigo2/index.qmd": {
+    "index.html": "d83fa6a7"
+  },
+  "climatizacao/artigo3/index.qmd": {
+    "index.html": "ad868116"
   }
 }

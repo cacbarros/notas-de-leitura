@@ -1,0 +1,21 @@
+---
+title: "Artigo 3 - Entropia e Irreversibilidade"
+description: "Exploração dos conceitos de entropia, processos reversíveis e irreversíveis na prática técnica."
+date: 2025-04-30
+categories: ['Termodinâmica', 'Entropia']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Entropia e Irreversibilidade
+
+Discussão da segunda lei da termodinâmica, geração de entropia e impacto nos sistemas energéticos.
+
+## Referências
+

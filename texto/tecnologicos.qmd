@@ -1,0 +1,14 @@
+---
+title: "Temas Tecnológicos"
+description: "Aplicações tecnológicas no setor imobiliário e construção civil."
+date: 2025-04-30
+categories: ['Tecnologia']
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+# Temas Tecnológicos
+
+Uso de tecnologias no setor da construção e imóveis.

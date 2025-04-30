@@ -1,0 +1,14 @@
+---
+title: "Artigo 3 - Smart Cities"
+description: "O impacto das cidades inteligentes no setor imobiliário."
+date: 2025-04-30
+categories: ['Tecnologia', 'Urbanismo']
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+# Smart Cities
+
+Como as cidades inteligentes influenciam o mercado imobiliário.

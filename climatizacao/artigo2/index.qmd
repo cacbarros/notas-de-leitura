@@ -1,0 +1,21 @@
+---
+title: "Artigo 2 - Ventilação Natural e Forçada"
+description: "Estudo da ventilação natural e mecânica em edifícios, com exemplos de aplicação e simulações."
+date: 2025-04-30
+categories: ['Climatização', 'Ventilação']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Ventilação Natural e Forçada
+
+Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar.
+
+## Referências
+

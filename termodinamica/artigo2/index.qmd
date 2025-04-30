@@ -1,0 +1,21 @@
+---
+title: "Artigo 2 - Eficiência de Ciclos Termodinâmicos"
+description: "Estudo comparativo da eficiência de ciclos de Carnot, Rankine e Otto com simulações computacionais."
+date: 2025-04-30
+categories: ['Termodinâmica', 'Ciclos']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Eficiência de Ciclos Termodinâmicos
+
+Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas.
+
+## Referências
+

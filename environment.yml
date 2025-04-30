@@ -1,0 +1,16 @@
+name: notas-leitura-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - jupyter
+  - notebook
+  - ipykernel
+  - nbconvert
+  - pandas
+  - matplotlib
+  - numpy
+  - quarto
+  - pip
+  - pip:
+      - jupyterlab

@@ -1,0 +1,14 @@
+---
+title: "Dados"
+description: "Fontes de dados utilizados nas análises do setor imobiliário."
+date: 2025-04-30
+categories: ['Dados', 'Estatística']
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+# Fontes de Dados
+
+Lista de bases de dados utilizadas nas análises.

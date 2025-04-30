@@ -1,0 +1,14 @@
+---
+title: "Temas Jurídicos e Urbanísticos"
+description: "Análise de normas jurídicas, planos diretores e regulação urbanística."
+date: 2025-04-30
+categories: ['Direito', 'Urbanismo']
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+# Temas Jurídicos e Urbanísticos
+
+Regulação e legislação aplicáveis ao setor.

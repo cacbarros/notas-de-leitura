@@ -1,0 +1,74 @@
+---
+title: "Artigo 1 - Panorama Geral"
+description: "Uma visão introdutória sobre o mercado imobiliário e seus determinantes."
+date: 2025-04-30
+categories: ['Imobiliário', 'Economia']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Panorama Geral
+
+Conteúdo introdutório sobre o mercado imobiliário.
+
+## Evolução dos Preços (exemplo interativo)
+
+::: {.content-visible when-format="html"}
+
+<canvas id="graficoPrecos" width="600" height="400"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('graficoPrecos').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+      datasets: [{
+        label: 'Preço médio por m² (R$)',
+        data: [4500, 4800, 5000, 5300, 5600, 6000],
+        borderWidth: 2,
+        fill: false
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top'
+        },
+        title: {
+          display: true,
+          text: 'Evolução do preço médio do m² (2018–2023)'
+        }
+      }
+    }
+  });
+</script>
+
+:::
+
+```{python}
+import matplotlib.pyplot as plt
+
+anos = ['2018', '2019', '2020', '2021', '2022', '2023']
+precos = [4500, 4800, 5000, 5300, 5600, 6000]
+
+plt.figure(figsize=(6, 4))
+plt.plot(anos, precos, marker='o')
+plt.title('Evolução do preço médio do m² (2018–2023)')
+plt.xlabel('Ano')
+plt.ylabel('Preço (R$)')
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+```
+
+## Referências
+

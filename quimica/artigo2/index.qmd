@@ -1,0 +1,20 @@
+---
+title: "Artigo 2 - Cinética Química com Python"
+description: "Estudo da velocidade das reações e fatores que a influenciam, com simulações computacionais."
+date: 2025-04-30
+categories: ['Química', 'Cinética']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Cinética Química com Python
+
+Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação.
+
+## Referências

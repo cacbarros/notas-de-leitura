@@ -1,0 +1,14 @@
+---
+title: "Temas Econômicos"
+description: "Questões macroeconómicas e microeconómicas relevantes para o setor."
+date: 2025-04-30
+categories: ['Economia']
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+# Temas Econômicos
+
+Discussões econômicas relevantes para o setor imobiliário.

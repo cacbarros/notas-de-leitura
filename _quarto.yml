@@ -1,9 +1,60 @@
 project:
-  type: default
+  type: website
 
+website:
+  title: "Ciência e Engenharia"
+  navbar:
+    left:
+      - text: "Imobiliário"
+        menu:
+          - text: "Artigo 1 - Panorama Geral"
+            href: imobiliario/artigo1/
+          - text: "Artigo 2 - Viabilidade com Python"
+            href: imobiliario/artigo2/
+          - text: "Artigo 3 - Rendimento Energético"
+            href: imobiliario/artigo3/
+      - text: "Física"
+        menu:
+          - text: "Artigo 1 - Cinemática"
+            href: fisica/artigo1/
+          - text: "Artigo 2 - Leis de Newton"
+            href: fisica/artigo2/
+          - text: "Artigo 3 - Oscilações"
+            href: fisica/artigo3/
+      - text: "Química"
+        menu:
+          - text: "Artigo 1 - Reações Ácido-Base"
+            href: quimica/artigo1/
+          - text: "Artigo 2 - Cinética Química"
+            href: quimica/artigo2/
+          - text: "Artigo 3 - Estequiometria Industrial"
+            href: quimica/artigo3/
+      - text: "Matemática"
+        menu:
+          - text: "Artigo 1 - Séries e Somatórios"
+            href: matematica/artigo1/
+          - text: "Artigo 2 - Funções Quadráticas"
+            href: matematica/artigo2/
+          - text: "Artigo 3 - Probabilidades"
+            href: matematica/artigo3/
+      - text: "Termodinâmica"
+        menu:
+          - text: "Artigo 1 - Primeira Lei"
+            href: termodinamica/artigo1/
+          - text: "Artigo 2 - Eficiência de Ciclos"
+            href: termodinamica/artigo2/
+          - text: "Artigo 3 - Entropia e Processos"
+            href: termodinamica/artigo3/
+      - text: "Climatização"
+        menu:
+          - text: "Artigo 1 - Carga Térmica"
+            href: climatizacao/artigo1/
+          - text: "Artigo 2 - Ventilação Natural"
+            href: climatizacao/artigo2/
+          - text: "Artigo 3 - Chillers e Torres"
+            href: climatizacao/artigo3/
 format:
-  pdf:
-    documentclass: article
   html:
+    theme: cosmo  # ou outro leve
+    css: styles.css
     toc: true
-    number-sections: true

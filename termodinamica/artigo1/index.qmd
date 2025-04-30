@@ -1,0 +1,20 @@
+---
+title: "Artigo 1 - Primeira Lei da Termodinâmica"
+description: "Análise da conservação de energia em sistemas fechados e abertos, com aplicações técnicas."
+date: 2025-04-30
+categories: ['Termodinâmica', 'Energia']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Primeira Lei da Termodinâmica
+
+Discussão da conservação de energia e do balanço de energia em sistemas mecânicos e térmicos.
+
+## Referências

@@ -1,0 +1,14 @@
+---
+title: "Início"
+description: "Página inicial do site Considerações sobre o Imobiliário."
+date: 2025-04-30
+categories: ['Imobiliário']
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+# Bem-vindo ao site
+
+Este é um espaço para reflexões sobre o setor imobiliário.

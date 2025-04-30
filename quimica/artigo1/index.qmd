@@ -1,0 +1,21 @@
+---
+title: "Artigo 1 - Reações Ácido-Base"
+description: "Fundamentos das reações ácido-base, conceitos de pH e neutralização com aplicações didáticas."
+date: 2025-04-30
+categories: ['Química', 'Ácido-Base']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Reações Ácido-Base
+
+Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais.
+
+## Referências
+

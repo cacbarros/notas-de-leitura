@@ -1,0 +1,20 @@
+---
+title: "Artigo 1 - Panorama Geral"
+description: "Uma visão introdutória sobre o mercado imobiliário e seus determinantes."
+date: 2025-04-30
+categories: ['Imobiliário', 'Economia']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Panorama Geral
+
+Conteúdo introdutório sobre o mercado imobiliário.
+
+## Referências

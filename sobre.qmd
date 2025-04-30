@@ -1,0 +1,14 @@
+---
+title: "Sobre"
+description: "Informações sobre o autor e objetivos do site."
+date: 2025-04-30
+categories: ['Institucional']
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+# Sobre o site
+
+Este site foi criado para partilhar análises e ideias sobre o setor imobiliário.

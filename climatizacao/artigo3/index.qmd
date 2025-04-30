@@ -1,0 +1,21 @@
+---
+title: "Artigo 3 - Chillers e Torres de Resfriamento"
+description: "Funcionamento e dimensionamento básico de chillers e torres de resfriamento em sistemas HVAC."
+date: 2025-04-30
+categories: ['Climatização', 'HVAC']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Chillers e Torres de Resfriamento
+
+Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte.
+
+## Referências
+
