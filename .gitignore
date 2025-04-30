@@ -39,3 +39,7 @@ __pycache__/
 Thumbs.db
 
 /.quarto/
+# Site gerado por Quarto
+_site/
+index_files/
+
