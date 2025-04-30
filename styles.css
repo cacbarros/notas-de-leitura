@@ -1,0 +1,41 @@
+/* Fundo geral */
+body {
+  background-color: #f7f9fa;
+  color: #1a1a1a;
+}
+
+/* Barra de navegação */
+.navbar {
+  background-color: #002B45 !important;
+}
+
+.navbar a, .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Links e destaques */
+a {
+  color: #FF6F00;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé, se usado */
+footer {
+  background-color: #002B45;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+/* Menu suspenso (dropdown) — cor de texto visível */
+.dropdown-menu a.dropdown-item {
+  color: #000000 !important;  /* preto visível sobre fundo claro */
+  background-color: #ffffff !important;
+}
+
+/* Realce ao passar o cursor no menu */
+.dropdown-menu a.dropdown-item:hover {
+  background-color: #eaeaea !important;
+  color: #000000 !important;
+}
