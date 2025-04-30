@@ -144,7 +144,7 @@
     "href": "imobiliario/artigo1/index.html",
     "title": "Artigo 1 - Panorama Geral",
     "section": "",
-    "text": "Conteúdo introdutório sobre o mercado imobiliário.\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\nanos = ['2018', '2019', '2020', '2021', '2022', '2023']\nprecos = [4500, 4800, 5000, 5300, 5600, 6000]\n\nplt.figure(figsize=(6, 4))\nplt.plot(anos, precos, marker='o')\nplt.title('Evolução do preço médio do m² (2018–2023)')\nplt.xlabel('Ano')\nplt.ylabel('Preço (R$)')\nplt.grid(True)\nplt.tight_layout()\nplt.show()"
+    "text": "Conteúdooo introdutório sobre o mercado imobiliárioo.\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\nanos = ['2018', '2019', '2020', '2021', '2022', '2023']\nprecos = [4500, 4800, 5000, 5300, 5600, 6000]\n\nplt.figure(figsize=(6, 4))\nplt.plot(anos, precos, marker='o')\nplt.title('Evolução do preço médio do m² (2018–2023)')\nplt.xlabel('Ano')\nplt.ylabel('Preço (R$)')\nplt.grid(True)\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "imobiliario/artigo1/index.html#evolução-dos-preços-exemplo-interativo",
