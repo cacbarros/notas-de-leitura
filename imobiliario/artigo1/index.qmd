@@ -1,5 +1,13 @@
 ---
 title: "Artigo 1 - Panorama Geral"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
 description: "Uma visão introdutória sobre o mercado imobiliário e seus determinantes."
 date: 2025-04-30
 categories: ['Imobiliário', 'Economia']

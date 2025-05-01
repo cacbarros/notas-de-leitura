@@ -72,3 +72,14 @@ format:
     include-before-body:
       - text: '<script src="/footer.js"></script>'
     toc: true
+
+filters:
+  - watermark
+
+watermark:
+  text: "{{< meta rascunho_text >}}"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+  enabled: "{{< meta rascunho >}}"

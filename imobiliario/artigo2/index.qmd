@@ -1,5 +1,12 @@
 ---
 title: "Artigo 2 - Preços e Juros"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
 description: "Discussão sobre a relação entre preços de imóveis e taxas de juro."
 date: 2025-04-30
 categories: ['Finanças', 'Economia']
