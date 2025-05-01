@@ -12,9 +12,10 @@ description: "Uma visão introdutória sobre o mercado imobiliário e seus deter
 date: 2025-04-30
 categories: ['Imobiliário', 'Economia']
 format:
-  html:
-    toc: true
-    code-fold: true
+  html: default
+  pdf: default
+toc: true
+code-fold: true
 bibliography: artigo1.bib
 csl: apa.csl
 nocite: "@*"
@@ -77,6 +78,8 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 ```
+
+📄 [Download em PDF](./index.pdf){target="_blank"}
 
 ## Referências
 
