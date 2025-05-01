@@ -1,14 +1,44 @@
 ---
 title: "Início"
-description: "Página inicial do site Considerações sobre o Imobiliário."
-date: 2025-04-30
-categories: ['Imobiliário']
+description: "Bem-vindo ao repositório de Notas de Leitura — resumos e comentários de obras científicas e técnicas."
 format:
   html:
     toc: true
     code-fold: true
 ---
 
-# Bem-vindo ao site
+# 📚 Notas de Leitura
 
-Este é um espaço para reflexões sobre o setor imobiliário.
+Este repositório reúne **resumos, comentários e destaques** de obras importantes nas áreas de:
+
+- Matemática, Física, Química
+- Educação e Tecnologia Educativa
+- Sustentabilidade e Engenharia
+- Pensamento Computacional e Programação
+
+---
+
+## 📌 Objetivos
+
+- Sistematizar o estudo de livros e artigos técnicos,
+- Promover a compreensão crítica e aplicada dos conteúdos,
+- Integrar anotações com recursos interativos como **Python**, **Quarto** e **Jupyter**.
+
+---
+
+## 🧰 Tecnologias utilizadas
+
+- [Quarto](https://quarto.org/){target="_blank"}
+- [Python](https://www.python.org/){target="_blank"}
+- [JupyterLab](https://jupyter.org/){target="_blank"}
+- [Google Colab](https://colab.research.google.com/){target="_blank"}
+- [GitHub Pages](https://pages.github.com/){target="_blank"}
+
+---
+
+## 👤 Autor
+
+C. A. C. Barros  
+Projetos de leitura técnica, ensino-aprendizagem e desenvolvimento de conteúdos digitais.
+
+[GitHub](https://github.com/cacbarros){target="_blank"} · [Blog Fortec](https://cacbarros.github.io/blog-fortec/){target="_blank"} · [Blog Imobiliário](https://cacbarros.github.io/imobiliario/){target="_blank"}
