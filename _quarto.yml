@@ -67,7 +67,6 @@ website:
 format:
   html:
     theme: cosmo  # ou outro leve
-    html:
     css: styles.css
     include-before-body:
       - text: '<script src="/footer.js"></script>'

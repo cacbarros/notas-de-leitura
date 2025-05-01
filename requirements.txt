@@ -2,7 +2,7 @@ numpy
 matplotlib
 sympy
 pandas
+scipy
 jupyter
 jupyterlab
-scipy
 ipykernel
