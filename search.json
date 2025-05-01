@@ -1,45 +1,17 @@
 [
   {
-    "objectID": "texto/tecnologicos.html",
-    "href": "texto/tecnologicos.html",
-    "title": "Temas Tecnológicos",
-    "section": "",
-    "text": "Temas Tecnológicos\nUso de tecnologias no setor da construção e imóveis."
-  },
-  {
-    "objectID": "texto/economicos.html",
-    "href": "texto/economicos.html",
-    "title": "Temas Econômicos",
-    "section": "",
-    "text": "Temas Econômicos\nDiscussões econômicas relevantes para o setor imobiliário."
-  },
-  {
-    "objectID": "texto/artigo2.html",
-    "href": "texto/artigo2.html",
+    "objectID": "imobiliario/artigo2/index.html",
+    "href": "imobiliario/artigo2/index.html",
     "title": "Artigo 2 - Preços e Juros",
     "section": "",
-    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros."
+    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros.\n\n\n\n\n\nReferences\n\nAutor, A. (2025). Exemplo de referência. Editora Exemplo."
   },
   {
-    "objectID": "termodinamica/artigo3/index.html",
-    "href": "termodinamica/artigo3/index.html",
-    "title": "Artigo 3 - Entropia e Irreversibilidade",
+    "objectID": "imobiliario/artigo3/index.html",
+    "href": "imobiliario/artigo3/index.html",
+    "title": "Artigo 3 - Smart Cities",
     "section": "",
-    "text": "Discussão da segunda lei da termodinâmica, geração de entropia e impacto nos sistemas energéticos."
-  },
-  {
-    "objectID": "termodinamica/artigo1/index.html",
-    "href": "termodinamica/artigo1/index.html",
-    "title": "Artigo 1 - Primeira Lei da Termodinâmica",
-    "section": "",
-    "text": "Discussão da conservação de energia e do balanço de energia em sistemas mecânicos e térmicos."
-  },
-  {
-    "objectID": "quimica/artigo3/index.html",
-    "href": "quimica/artigo3/index.html",
-    "title": "Artigo 3 - Estequiometria em Processos Industriais",
-    "section": "",
-    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
+    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário.\n\n\n\n\n\nReferences\n\nAutor, A. (2025). Exemplo de referência. Editora Exemplo."
   },
   {
     "objectID": "quimica/artigo1/index.html",
@@ -49,18 +21,18 @@
     "text": "Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais."
   },
   {
-    "objectID": "moodlecesar/funcoes_quadraticas.html",
-    "href": "moodlecesar/funcoes_quadraticas.html",
-    "title": "Função Quadrática",
-    "section": "",
-    "text": "Este notebook permite explorar o comportamento da função do segundo grau \\(f(x) = ax^2 + bx + c\\) ajustando os coeficientes.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Coeficientes da função quadrática\na = 1\nb = -3\nc = 2\n\n# Domínio\nx = np.linspace(-10, 10, 400)\ny = a * x**2 + b * x + c\n\n# Gráfico\nplt.figure(figsize=(8,5))\nplt.plot(x, y, label=f\"f(x) = {a}x² + {b}x + {c}\", color='blue')\nplt.axhline(0, color='black', lw=1)\nplt.axvline(0, color='black', lw=1)\nplt.title(\"Gráfico da função quadrática\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
-  },
-  {
     "objectID": "matematica/artigo2/index.html",
     "href": "matematica/artigo2/index.html",
     "title": "Artigo 2 - Funções Quadráticas em Contexto",
     "section": "",
     "text": "Análise do gráfico, vértice e raízes de funções do 2.º grau com exemplos aplicados."
+  },
+  {
+    "objectID": "matematica/artigo3/index.html",
+    "href": "matematica/artigo3/index.html",
+    "title": "Artigo 3 - Probabilidades e Distribuições",
+    "section": "",
+    "text": "Conceitos fundamentais da teoria das probabilidades e principais distribuições utilizadas em ciências aplicadas."
   },
   {
     "objectID": "index.html",
@@ -70,11 +42,88 @@
     "text": "Bem-vindo ao site\nEste é um espaço para reflexões sobre o setor imobiliário."
   },
   {
-    "objectID": "imobiliario/artigo2/index.html",
-    "href": "imobiliario/artigo2/index.html",
-    "title": "Artigo 2 - Preços e Juros",
+    "objectID": "moodlecesar/funcoes_quadraticas.html",
+    "href": "moodlecesar/funcoes_quadraticas.html",
+    "title": "Função Quadrática",
     "section": "",
-    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros.\n\n\n\n\n\nReferences\n\nAutor, A. (2025). Exemplo de referência. Editora Exemplo."
+    "text": "Este notebook permite explorar o comportamento da função do segundo grau \\(f(x) = ax^2 + bx + c\\) ajustando os coeficientes.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Coeficientes da função quadrática\na = 1\nb = -3\nc = 2\n\n# Domínio\nx = np.linspace(-10, 10, 400)\ny = a * x**2 + b * x + c\n\n# Gráfico\nplt.figure(figsize=(8,5))\nplt.plot(x, y, label=f\"f(x) = {a}x² + {b}x + {c}\", color='blue')\nplt.axhline(0, color='black', lw=1)\nplt.axvline(0, color='black', lw=1)\nplt.title(\"Gráfico da função quadrática\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "texto/economicos.html",
+    "href": "texto/economicos.html",
+    "title": "Temas Econômicos",
+    "section": "",
+    "text": "Temas Econômicos\nDiscussões econômicas relevantes para o setor imobiliário."
+  },
+  {
+    "objectID": "texto/tecnologicos.html",
+    "href": "texto/tecnologicos.html",
+    "title": "Temas Tecnológicos",
+    "section": "",
+    "text": "Temas Tecnológicos\nUso de tecnologias no setor da construção e imóveis."
+  },
+  {
+    "objectID": "texto/artigo3.html",
+    "href": "texto/artigo3.html",
+    "title": "Artigo 3 - Smart Cities",
+    "section": "",
+    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário."
+  },
+  {
+    "objectID": "fisica/artigo1/index.html",
+    "href": "fisica/artigo1/index.html",
+    "title": "Artigo 1 - Fundamentos da Cinemática",
+    "section": "",
+    "text": "Conteúdo introdutório sobre posição, velocidade e aceleração."
+  },
+  {
+    "objectID": "climatizacao/artigo2/index.html",
+    "href": "climatizacao/artigo2/index.html",
+    "title": "Artigo 2 - Ventilação Natural e Forçada",
+    "section": "",
+    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
+  },
+  {
+    "objectID": "climatizacao/artigo3/index.html",
+    "href": "climatizacao/artigo3/index.html",
+    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
+    "section": "",
+    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
+  },
+  {
+    "objectID": "termodinamica/artigo1/index.html",
+    "href": "termodinamica/artigo1/index.html",
+    "title": "Artigo 1 - Primeira Lei da Termodinâmica",
+    "section": "",
+    "text": "Discussão da conservação de energia e do balanço de energia em sistemas mecânicos e térmicos."
+  },
+  {
+    "objectID": "dados.html",
+    "href": "dados.html",
+    "title": "Dados",
+    "section": "",
+    "text": "Fontes de Dados\nLista de bases de dados utilizadas nas análises."
+  },
+  {
+    "objectID": "termodinamica/artigo3/index.html",
+    "href": "termodinamica/artigo3/index.html",
+    "title": "Artigo 3 - Entropia e Irreversibilidade",
+    "section": "",
+    "text": "Discussão da segunda lei da termodinâmica, geração de entropia e impacto nos sistemas energéticos."
+  },
+  {
+    "objectID": "termodinamica/artigo2/index.html",
+    "href": "termodinamica/artigo2/index.html",
+    "title": "Artigo 2 - Eficiência de Ciclos Termodinâmicos",
+    "section": "",
+    "text": "Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas."
+  },
+  {
+    "objectID": "climatizacao/artigo1/index.html",
+    "href": "climatizacao/artigo1/index.html",
+    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
+    "section": "",
+    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
   },
   {
     "objectID": "fisica/artigo3/index.html",
@@ -91,41 +140,6 @@
     "text": "as cidades inteligentes influenciam o mercado imobiliário."
   },
   {
-    "objectID": "fisica/artigo1/index.html",
-    "href": "fisica/artigo1/index.html",
-    "title": "Artigo 1 - Fundamentos da Cinemática",
-    "section": "",
-    "text": "Conteúdo introdutório sobre posição, velocidade e aceleração."
-  },
-  {
-    "objectID": "climatizacao/artigo3/index.html",
-    "href": "climatizacao/artigo3/index.html",
-    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
-    "section": "",
-    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
-  },
-  {
-    "objectID": "climatizacao/artigo1/index.html",
-    "href": "climatizacao/artigo1/index.html",
-    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
-    "section": "",
-    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
-  },
-  {
-    "objectID": "climatizacao/artigo2/index.html",
-    "href": "climatizacao/artigo2/index.html",
-    "title": "Artigo 2 - Ventilação Natural e Forçada",
-    "section": "",
-    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
-  },
-  {
-    "objectID": "dados.html",
-    "href": "dados.html",
-    "title": "Dados",
-    "section": "",
-    "text": "Fontes de Dados\nLista de bases de dados utilizadas nas análises."
-  },
-  {
     "objectID": "fisica/artigo2/index.html",
     "href": "fisica/artigo2/index.html",
     "title": "Artigo 2 - Leis de Newton em Ação",
@@ -140,60 +154,18 @@
     "text": "relação entre preços dos imóveis e juros."
   },
   {
-    "objectID": "imobiliario/artigo1/index.html",
-    "href": "imobiliario/artigo1/index.html",
-    "title": "Artigo 1 - Panorama Geral",
+    "objectID": "texto/juridicos.html",
+    "href": "texto/juridicos.html",
+    "title": "Temas Jurídicos e Urbanísticos",
     "section": "",
-    "text": "Conteúdooo introdutório sobre o mercado imobiliárioo.\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\nanos = ['2018', '2019', '2020', '2021', '2022', '2023']\nprecos = [4500, 4800, 5000, 5300, 5600, 6000]\n\nplt.figure(figsize=(6, 4))\nplt.plot(anos, precos, marker='o')\nplt.title('Evolução do preço médio do m² (2018–2023)')\nplt.xlabel('Ano')\nplt.ylabel('Preço (R$)')\nplt.grid(True)\nplt.tight_layout()\nplt.show()"
+    "text": "Temas Jurídicos e Urbanísticos\nRegulação e legislação aplicáveis ao setor."
   },
   {
-    "objectID": "imobiliario/artigo1/index.html#evolução-dos-preços-exemplo-interativo",
-    "href": "imobiliario/artigo1/index.html#evolução-dos-preços-exemplo-interativo",
-    "title": "Artigo 1 - Panorama Geral",
+    "objectID": "texto/artigo2.html",
+    "href": "texto/artigo2.html",
+    "title": "Artigo 2 - Preços e Juros",
     "section": "",
-    "text": "Code\nimport matplotlib.pyplot as plt\n\nanos = ['2018', '2019', '2020', '2021', '2022', '2023']\nprecos = [4500, 4800, 5000, 5300, 5600, 6000]\n\nplt.figure(figsize=(6, 4))\nplt.plot(anos, precos, marker='o')\nplt.title('Evolução do preço médio do m² (2018–2023)')\nplt.xlabel('Ano')\nplt.ylabel('Preço (R$)')\nplt.grid(True)\nplt.tight_layout()\nplt.show()"
-  },
-  {
-    "objectID": "imobiliario/artigo3/index.html",
-    "href": "imobiliario/artigo3/index.html",
-    "title": "Artigo 3 - Smart Cities",
-    "section": "",
-    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário.\n\n\n\n\n\nReferences\n\nAutor, A. (2025). Exemplo de referência. Editora Exemplo."
-  },
-  {
-    "objectID": "matematica/artigo1/index.html",
-    "href": "matematica/artigo1/index.html",
-    "title": "Artigo 1 - Séries e Somatórios",
-    "section": "",
-    "text": "Exploração das séries aritméticas, geométricas e uso da notação sigma em problemas aplicados."
-  },
-  {
-    "objectID": "matematica/artigo3/index.html",
-    "href": "matematica/artigo3/index.html",
-    "title": "Artigo 3 - Probabilidades e Distribuições",
-    "section": "",
-    "text": "Conceitos fundamentais da teoria das probabilidades e principais distribuições utilizadas em ciências aplicadas."
-  },
-  {
-    "objectID": "quimica/artigo2/index.html",
-    "href": "quimica/artigo2/index.html",
-    "title": "Artigo 2 - Cinética Química com Python",
-    "section": "",
-    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
-  },
-  {
-    "objectID": "sobre.html",
-    "href": "sobre.html",
-    "title": "Sobre",
-    "section": "",
-    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
-  },
-  {
-    "objectID": "termodinamica/artigo2/index.html",
-    "href": "termodinamica/artigo2/index.html",
-    "title": "Artigo 2 - Eficiência de Ciclos Termodinâmicos",
-    "section": "",
-    "text": "Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas."
+    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros."
   },
   {
     "objectID": "texto/artigo1.html",
@@ -203,17 +175,45 @@
     "text": "Conteúdo introdutório sobre o mercado imobiliário."
   },
   {
-    "objectID": "texto/artigo3.html",
-    "href": "texto/artigo3.html",
-    "title": "Artigo 3 - Smart Cities",
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre",
     "section": "",
-    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário."
+    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
   },
   {
-    "objectID": "texto/juridicos.html",
-    "href": "texto/juridicos.html",
-    "title": "Temas Jurídicos e Urbanísticos",
+    "objectID": "matematica/artigo1/index.html",
+    "href": "matematica/artigo1/index.html",
+    "title": "Artigo 1 - Séries e Somatórios",
     "section": "",
-    "text": "Temas Jurídicos e Urbanísticos\nRegulação e legislação aplicáveis ao setor."
+    "text": "Exploração das séries aritméticas, geométricas e uso da notação sigma em problemas aplicados."
+  },
+  {
+    "objectID": "quimica/artigo3/index.html",
+    "href": "quimica/artigo3/index.html",
+    "title": "Artigo 3 - Estequiometria em Processos Industriais",
+    "section": "",
+    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
+  },
+  {
+    "objectID": "quimica/artigo2/index.html",
+    "href": "quimica/artigo2/index.html",
+    "title": "Artigo 2 - Cinética Química com Python",
+    "section": "",
+    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
+  },
+  {
+    "objectID": "imobiliario/artigo1/index.html",
+    "href": "imobiliario/artigo1/index.html",
+    "title": "Artigo 1 - Panorama Geral",
+    "section": "",
+    "text": "Conteúdooo introdutório sobre o mercado imobiliárioo.\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\nanos = ['2018', '2019', '2020', '2021', '2022', '2023']\nprecos = [4500, 4800, 5000, 5300, 5600, 6000]\n\nplt.figure(figsize=(6, 4))\nplt.plot(anos, precos, marker='o')\nplt.title('Evolução do preço médio do m² (2018–2023)')\nplt.xlabel('Ano')\nplt.ylabel('Preço (R$)')\nplt.grid(True)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n📄 Download em PDF"
+  },
+  {
+    "objectID": "imobiliario/artigo1/index.html#evolução-dos-preços-exemplo-interativo",
+    "href": "imobiliario/artigo1/index.html#evolução-dos-preços-exemplo-interativo",
+    "title": "Artigo 1 - Panorama Geral",
+    "section": "",
+    "text": "Code\nimport matplotlib.pyplot as plt\n\nanos = ['2018', '2019', '2020', '2021', '2022', '2023']\nprecos = [4500, 4800, 5000, 5300, 5600, 6000]\n\nplt.figure(figsize=(6, 4))\nplt.plot(anos, precos, marker='o')\nplt.title('Evolução do preço médio do m² (2018–2023)')\nplt.xlabel('Ano')\nplt.ylabel('Preço (R$)')\nplt.grid(True)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n📄 Download em PDF"
   }
 ]
