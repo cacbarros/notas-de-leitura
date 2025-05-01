@@ -2,7 +2,7 @@
   "hash": "62b0f59c9e475c30b3715fe4dc32ea25",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: \"Nota 5 – Continuidade\"\nauthor: \"C. A. C. Barros\"\nformat: pdf\nbibliography: ../artigo1.bib\n---\n\n\n## Definição\n\nUma funçãoo $f(x)$ é contínua em $x_0$ se:\n\n$$\n\\lim_{x \\to x_0} f(x) = f(x_0)\n$$\n\n---\n\n## Exemplo com código\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nfrom sympy import symbols, limit\n\nx = symbols('x')\nf = (x**2 - 1)/(x - 1)\nlimit(f, x, 1)\n```\n\n::: {.cell-output .cell-output-display execution_count=1}\n```{=tex}\n$\\displaystyle 2$\n```\n:::\n:::\n\n\n",
+    "markdown": "---\ntitle: \"Nota 5 – Continuidade\"\nauthor: \"C. A. C. Barros\"\nformat: pdf\nbibliography: ../artigo1.bib\n---\n\n## Definição\n\nUma funçãoo $f(x)$ é contínua em $x_0$ se:\n\n$$\n\\lim_{x \\to x_0} f(x) = f(x_0)\n$$\n\n---\n\n## Exemplo com código\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nfrom sympy import symbols, limit\n\nx = symbols('x')\nf = (x**2 - 1)/(x - 1)\nlimit(f, x, 1)\n```\n\n::: {.cell-output .cell-output-display execution_count=1}\n```{=tex}\n$\\displaystyle 2$\n```\n:::\n:::\n\n\n",
     "supporting": [
       "nota5_@una2000_files"
     ],

@@ -7,7 +7,7 @@ format:
     code-fold: true
 ---
 
-# 📚 Notas de Leitura
+# Notas de Leitura
 
 Este repositório reúne **resumos, comentários e destaques** de obras importantes nas áreas de:
 
@@ -18,7 +18,7 @@ Este repositório reúne **resumos, comentários e destaques** de obras importan
 
 ---
 
-## 📌 Objetivos
+## Objetivos
 
 - Sistematizar o estudo de livros e artigos técnicos,
 - Promover a compreensão crítica e aplicada dos conteúdos,
@@ -26,7 +26,7 @@ Este repositório reúne **resumos, comentários e destaques** de obras importan
 
 ---
 
-## 🧰 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - [Quarto](https://quarto.org/){target="_blank"}
 - [Python](https://www.python.org/){target="_blank"}
@@ -36,7 +36,7 @@ Este repositório reúne **resumos, comentários e destaques** de obras importan
 
 ---
 
-## 👤 Autor
+## Autor
 
 C. A. C. Barros  
 Projetos de leitura técnica, ensino-aprendizagem e desenvolvimento de conteúdos digitais.
