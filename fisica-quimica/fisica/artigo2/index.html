@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-04-30">
-<meta name="description" content="Fundamentos das reações ácido-base, conceitos de pH e neutralização com aplicações didáticas.">
+<meta name="description" content="Fundamentos físicos da conversão da energia solar em elétrica e térmica.">
 
-<title>Artigo 1 - Reações Ácido-Base – Notas de leitura</title>
+<title>Energia Solar – Notas de leitura</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -45,24 +79,24 @@ div.csl-indent {
 }</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d96710eeadc5858c003a40463984c6a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/watermark-1.0.11/watermark.min.js"></script>
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-d96710eeadc5858c003a40463984c6a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/watermark-1.0.11/watermark.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,23 +111,23 @@ div.csl-indent {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -103,12 +137,12 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Notas de leitura</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -119,23 +153,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-microchipi-tecnologias">    
         <li>
-    <a class="dropdown-item" href="../../tecnologias/climatizacao/">
+    <a class="dropdown-item" href="../../../tecnologias/climatizacao/">
  <span class="dropdown-text"><i class="fas fa-wind"></i> Climatização</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/manutencao/">
+    <a class="dropdown-item" href="../../../tecnologias/manutencao/">
  <span class="dropdown-text"><i class="fas fa-tools"></i> Manutenção</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/eletrotecnia/">
+    <a class="dropdown-item" href="../../../tecnologias/eletrotecnia/">
  <span class="dropdown-text"><i class="fas fa-bolt"></i> Eletrotecnia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/tics/">
+    <a class="dropdown-item" href="../../../tecnologias/tics/">
  <span class="dropdown-text"><i class="fas fa-network-wired"></i> TICs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/diversos/">
+    <a class="dropdown-item" href="../../../tecnologias/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -146,23 +180,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-flaski-física-e-química">    
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/fisica/">
+    <a class="dropdown-item" href="../../../fisica-quimica/fisica/">
  <span class="dropdown-text"><i class="fas fa-atom"></i> Física</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/quimica/">
+    <a class="dropdown-item" href="../../../fisica-quimica/quimica/">
  <span class="dropdown-text"><i class="fas fa-vial"></i> Química</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/termodinamica/">
+    <a class="dropdown-item" href="../../../fisica-quimica/termodinamica/">
  <span class="dropdown-text"><i class="fas fa-temperature-high"></i> Termodinâmica</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/corrosao/">
+    <a class="dropdown-item" href="../../../fisica-quimica/corrosao/">
  <span class="dropdown-text"><i class="fas fa-eraser"></i> Corrosão</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/diversos/">
+    <a class="dropdown-item" href="../../../fisica-quimica/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -173,23 +207,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-square-root-alti-matemática">    
         <li>
-    <a class="dropdown-item" href="../../matematica/basico/">
+    <a class="dropdown-item" href="../../../matematica/basico/">
  <span class="dropdown-text"><i class="fas fa-calculator"></i> Matemáticas Básicas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/estatistica/">
+    <a class="dropdown-item" href="../../../matematica/estatistica/">
  <span class="dropdown-text"><i class="fas fa-chart-bar"></i> Estatística e Probabilidades</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/calculo/">
+    <a class="dropdown-item" href="../../../matematica/calculo/">
  <span class="dropdown-text"><i class="fas fa-infinity"></i> Cálculo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/algebra-linear/">
+    <a class="dropdown-item" href="../../../matematica/algebra-linear/">
  <span class="dropdown-text"><i class="fas fa-project-diagram"></i> Álgebra Linear</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/diversos/">
+    <a class="dropdown-item" href="../../../matematica/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -200,23 +234,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-globei-cultura-geral">    
         <li>
-    <a class="dropdown-item" href="../../cultura/literatura/">
+    <a class="dropdown-item" href="../../../cultura/literatura/">
  <span class="dropdown-text"><i class="fas fa-book"></i> Literatura</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/filosofia/">
+    <a class="dropdown-item" href="../../../cultura/filosofia/">
  <span class="dropdown-text"><i class="fas fa-brain"></i> Filosofia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/historia/">
+    <a class="dropdown-item" href="../../../cultura/historia/">
  <span class="dropdown-text"><i class="fas fa-landmark"></i> História</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/economia/">
+    <a class="dropdown-item" href="../../../cultura/economia/">
  <span class="dropdown-text"><i class="fas fa-coins"></i> Economia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/diversos/">
+    <a class="dropdown-item" href="../../../cultura/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -234,32 +268,38 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#reações-ácido-base" id="toc-reações-ácido-base" class="nav-link active" data-scroll-target="#reações-ácido-base">Reações Ácido-Base</a>
+  <li><a href="#energia-solar" id="toc-energia-solar" class="nav-link active" data-scroll-target="#energia-solar">Energia Solar</a>
   <ul class="collapse">
+  <li><a href="#introdução" id="toc-introdução" class="nav-link" data-scroll-target="#introdução">Introdução</a></li>
+  <li><a href="#tipos-de-energia-solar" id="toc-tipos-de-energia-solar" class="nav-link" data-scroll-target="#tipos-de-energia-solar">Tipos de Energia Solar</a></li>
+  <li><a href="#eficiência-e-irradiação" id="toc-eficiência-e-irradiação" class="nav-link" data-scroll-target="#eficiência-e-irradiação">Eficiência e Irradiação</a></li>
+  <li><a href="#exemplo-com-python-potência-gerada" id="toc-exemplo-com-python-potência-gerada" class="nav-link" data-scroll-target="#exemplo-com-python-potência-gerada">Exemplo com Python: Potência Gerada</a></li>
+  <li><a href="#gráfico-potência-ao-longo-do-dia" id="toc-gráfico-potência-ao-longo-do-dia" class="nav-link" data-scroll-target="#gráfico-potência-ao-longo-do-dia">Gráfico: Potência ao longo do dia</a></li>
+  <li><a href="#considerações-didáticas" id="toc-considerações-didáticas" class="nav-link" data-scroll-target="#considerações-didáticas">Considerações Didáticas</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<script src="../../footer.js"></script>
+<script src="../../../footer.js"></script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Artigo 1 - Reações Ácido-Base</h1>
+<h1 class="title">Energia Solar</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Química</div>
-    <div class="quarto-category">Ácido-Base</div>
+    <div class="quarto-category">Diversos</div>
+    <div class="quarto-category">Física</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Fundamentos das reações ácido-base, conceitos de pH e neutralização com aplicações didáticas.
+    Fundamentos físicos da conversão da energia solar em elétrica e térmica.
   </div>
 </div>
 
@@ -268,9 +308,9 @@ div.csl-indent {
 
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 30, 2025</p>
+      <p class="date">8 de maio de 2025</p>
     </div>
   </div>
   
@@ -282,9 +322,87 @@ div.csl-indent {
 </header>
 
 
-<section id="reações-ácido-base" class="level1">
-<h1>Reações Ácido-Base</h1>
-<p>Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais.</p>
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+<p><a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a> <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button></p>
+</div>
+<div style="margin-top: 2rem;">
+
+</div>
+<section id="energia-solar" class="level1">
+<h1>Energia Solar</h1>
+<blockquote class="blockquote">
+<p>“O sol é a fonte primária de toda a energia utilizada na Terra.”</p>
+</blockquote>
+<section id="introdução" class="level2">
+<h2 class="anchored" data-anchor-id="introdução">Introdução</h2>
+<p>A energia solar é uma fonte limpa e renovável, convertida em energia térmica ou elétrica por meio de tecnologias como painéis fotovoltaicos.</p>
+</section>
+<section id="tipos-de-energia-solar" class="level2">
+<h2 class="anchored" data-anchor-id="tipos-de-energia-solar">Tipos de Energia Solar</h2>
+<ul>
+<li><strong>Fotovoltaica</strong>: conversão direta da luz solar em eletricidade.</li>
+<li><strong>Térmica</strong>: aproveitamento do calor do sol.</li>
+</ul>
+</section>
+<section id="eficiência-e-irradiação" class="level2">
+<h2 class="anchored" data-anchor-id="eficiência-e-irradiação">Eficiência e Irradiação</h2>
+<ul>
+<li>Eficiência depende do material semicondutor e condições climáticas.</li>
+<li>A irradiação solar é medida em W/m².</li>
+</ul>
+</section>
+<section id="exemplo-com-python-potência-gerada" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-com-python-potência-gerada">Exemplo com Python: Potência Gerada</h2>
+<div id="eacd2d83" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> <span class="fl">1.6</span>  <span class="co"># m²</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>irradiancia <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># W/m²</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>eficiencia <span class="op">=</span> <span class="fl">0.18</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>potencia <span class="op">=</span> area <span class="op">*</span> irradiancia <span class="op">*</span> eficiencia</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Potência gerada: </span><span class="sc">{</span>potencia<span class="sc">:.1f}</span><span class="ss"> W"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Potência gerada: 288.0 W</code></pre>
+</div>
+</div>
+</section>
+<section id="gráfico-potência-ao-longo-do-dia" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-potência-ao-longo-do-dia">Gráfico: Potência ao longo do dia</h2>
+<div id="36446095" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>horas <span class="op">=</span> np.linspace(<span class="dv">6</span>, <span class="dv">18</span>, <span class="dv">100</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>pot <span class="op">=</span> <span class="fl">0.18</span> <span class="op">*</span> <span class="fl">1.6</span> <span class="op">*</span> <span class="dv">1000</span> <span class="op">*</span> np.sin((np.pi <span class="op">/</span> <span class="dv">12</span>) <span class="op">*</span> (horas <span class="op">-</span> <span class="dv">6</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>pot <span class="op">=</span> np.clip(pot, <span class="dv">0</span>, <span class="va">None</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>plt.plot(horas, pot)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Potência Solar ao Longo do Dia'</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Hora do dia'</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Potência (W)'</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="considerações-didáticas" class="level2">
+<h2 class="anchored" data-anchor-id="considerações-didáticas">Considerações Didáticas</h2>
+<ul>
+<li>Comparar com outras fontes de energia.</li>
+<li>Visitas técnicas e simulações são úteis.</li>
+</ul>
+</section>
 <section id="referências" class="level2">
 
 
@@ -294,8 +412,8 @@ div.csl-indent {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-exemplo2025" class="csl-entry" role="listitem">
-Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
+<div id="ref-duffie2013solar" class="csl-entry" role="listitem">
+Duffie, J. A., &amp; Beckman, W. A. (2013). <em>Solar Engineering of Thermal Processes</em>. Wiley.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -323,12 +441,12 @@ Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiada");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiada");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -705,7 +823,7 @@ Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
     </div>   
     <div class="nav-footer-center">
 <div class="footer-custom">
-<p><img src="../../quarto-logo.png" alt="Logotipo Quarto" height="24" style="vertical-align:middle; margin-right:8px;"> © <span id="anoAtual"></span> C. A. C. Barros · <a href="https://quarto.org" target="_blank">Quarto</a> · <a href="https://github.com/cacbarros/notas-de-leitura" target="_blank">GitHub</a><br> <small>Atualizado em: <span id="dataModificacao"></span></small></p>
+<p><img src="../../../quarto-logo.png" alt="Logotipo Quarto" height="24" style="vertical-align:middle; margin-right:8px;"> © <span id="anoAtual"></span> C. A. C. Barros · <a href="https://quarto.org" target="_blank">Quarto</a> · <a href="https://github.com/cacbarros/notas-de-leitura" target="_blank">GitHub</a><br> <small>Atualizado em: <span id="dataModificacao"></span></small></p>
 </div>
 </div>
     <div class="nav-footer-right">
@@ -716,7 +834,7 @@ Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
 <script>
     const baseFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
     const watermark = new XWatermark.XWatermark();
-    watermark.init("", {
+    watermark.init("RASCUNHO", {
       parentSelector: "body",
       prevent: true,
       observer: true,

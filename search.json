@@ -168,200 +168,11 @@
     "text": "Exemplo\n\n\nCódigo\nimport sympy as sp\n\nA = sp.Matrix([[1, 2], [3, 4]])\nB = sp.Matrix([[2, 0], [1, 2]])\n\nsoma = A + B\nproduto = A * B\ndet_A = A.det()\n\nsoma, produto, det_A\n\n\n(Matrix([\n [3, 2],\n [4, 6]]),\n Matrix([\n [ 4, 4],\n [10, 8]]),\n -2)\n\n\nGráfico: representação matricial de uma transformação linear\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nA = np.array([[2, 0], [0, 1]])\ngrid = np.array([[x, y] for x in np.linspace(-2, 2, 10) for y in np.linspace(-2, 2, 10)])\n\ntransformed = grid @ A.T\nplt.quiver(grid[:, 0], grid[:, 1], transformed[:, 0] - grid[:, 0], transformed[:, 1] - grid[:, 1],\n           angles='xy', scale_units='xy', scale=1, color='blue')\nplt.axhline(0, color='grey')\nplt.axvline(0, color='grey')\nplt.title(\"Transformação Linear com Matriz A\")\nplt.grid(True)\nplt.axis(\"equal\")\nplt.show()"
   },
   {
-    "objectID": "fisica/artigo3/index.html",
-    "href": "fisica/artigo3/index.html",
-    "title": "Artigo 3 - Oscilações e Ressonância",
+    "objectID": "texto/artigo1.html",
+    "href": "texto/artigo1.html",
+    "title": "Artigo 1 - Panorama Geral",
     "section": "",
-    "text": "Exploração dos sistemas oscilatórios e do fenômeno da ressonância.\n\n\nas cidades inteligentes influenciam o mercado imobiliário."
-  },
-  {
-    "objectID": "fisica/artigo3/index.html#referências",
-    "href": "fisica/artigo3/index.html#referências",
-    "title": "Artigo 3 - Oscilações e Ressonância",
-    "section": "",
-    "text": "as cidades inteligentes influenciam o mercado imobiliário."
-  },
-  {
-    "objectID": "fisica/artigo1/index.html",
-    "href": "fisica/artigo1/index.html",
-    "title": "Artigo 1 - Fundamentos da Cinemática",
-    "section": "",
-    "text": "Conteúdo introdutório sobre posição, velocidade e aceleração."
-  },
-  {
-    "objectID": "texto/artigo3.html",
-    "href": "texto/artigo3.html",
-    "title": "Artigo 3 - Smart Cities",
-    "section": "",
-    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário."
-  },
-  {
-    "objectID": "texto/tecnologicos.html",
-    "href": "texto/tecnologicos.html",
-    "title": "Temas Tecnológicos",
-    "section": "",
-    "text": "Temas Tecnológicos\nUso de tecnologias no setor da construção e imóveis."
-  },
-  {
-    "objectID": "texto/artigo2.html",
-    "href": "texto/artigo2.html",
-    "title": "Artigo 2 - Preços e Juros",
-    "section": "",
-    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros."
-  },
-  {
-    "objectID": "termodinamica/artigo3/index.html",
-    "href": "termodinamica/artigo3/index.html",
-    "title": "Artigo 3 - Entropia e Irreversibilidade",
-    "section": "",
-    "text": "Discussão da segunda lei da termodinâmica, geração de entropia e impacto nos sistemas energéticos."
-  },
-  {
-    "objectID": "termodinamica/artigo1/index.html",
-    "href": "termodinamica/artigo1/index.html",
-    "title": "Artigo 1 - Primeira Lei da Termodinâmica",
-    "section": "",
-    "text": "Discussão da conservação de energia e do balanço de energia em sistemas mecânicos e térmicos."
-  },
-  {
-    "objectID": "cultura/historia/index.html",
-    "href": "cultura/historia/index.html",
-    "title": "Historia",
-    "section": "",
-    "text": "Eventos e processos históricos relevantes.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cultura/economia/index.html",
-    "href": "cultura/economia/index.html",
-    "title": "Economia",
-    "section": "",
-    "text": "Fundamentos e teorias económicas aplicadas.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cultura/filosofia/index.html",
-    "href": "cultura/filosofia/index.html",
-    "title": "Filosofia",
-    "section": "",
-    "text": "Correntes filosóficas e pensamento crítico.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "fisica-quimica/corrosao/index.html",
-    "href": "fisica-quimica/corrosao/index.html",
-    "title": "Corrosao",
-    "section": "",
-    "text": "Estudo dos processos de corrosão e proteção de materiais.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "fisica-quimica/termodinamica/index.html",
-    "href": "fisica-quimica/termodinamica/index.html",
-    "title": "Termodinamica",
-    "section": "",
-    "text": "Fenómenos energéticos e processos termodinâmicos.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "climatizacao/artigo3/index.html",
-    "href": "climatizacao/artigo3/index.html",
-    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
-    "section": "",
-    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
-  },
-  {
-    "objectID": "climatizacao/artigo1/index.html",
-    "href": "climatizacao/artigo1/index.html",
-    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
-    "section": "",
-    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
-  },
-  {
-    "objectID": "quimica/artigo3/index.html",
-    "href": "quimica/artigo3/index.html",
-    "title": "Artigo 3 - Estequiometria em Processos Industriais",
-    "section": "",
-    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
-  },
-  {
-    "objectID": "quimica/artigo1/index.html",
-    "href": "quimica/artigo1/index.html",
-    "title": "Artigo 1 - Reações Ácido-Base",
-    "section": "",
-    "text": "Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais."
-  },
-  {
-    "objectID": "quimica/artigo2/index.html",
-    "href": "quimica/artigo2/index.html",
-    "title": "Artigo 2 - Cinética Química com Python",
-    "section": "",
-    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
-  },
-  {
-    "objectID": "sobre.html",
-    "href": "sobre.html",
-    "title": "Sobre",
-    "section": "",
-    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
-  },
-  {
-    "objectID": "climatizacao/artigo2/index.html",
-    "href": "climatizacao/artigo2/index.html",
-    "title": "Artigo 2 - Ventilação Natural e Forçada",
-    "section": "",
-    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/index.html",
-    "href": "fisica-quimica/quimica/index.html",
-    "title": "Quimica",
-    "section": "",
-    "text": "Estudos e experiências no âmbito da química.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "fisica-quimica/fisica/index.html",
-    "href": "fisica-quimica/fisica/index.html",
-    "title": "Fisica",
-    "section": "",
-    "text": "Conceitos e aplicações fundamentais da física.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "fisica-quimica/diversos/index.html",
-    "href": "fisica-quimica/diversos/index.html",
-    "title": "Diversos",
-    "section": "",
-    "text": "Outros temas no campo da física e química.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cultura/literatura/index.html",
-    "href": "cultura/literatura/index.html",
-    "title": "Literatura",
-    "section": "",
-    "text": "Estudos literários e análises de obras.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cultura/diversos/index.html",
-    "href": "cultura/diversos/index.html",
-    "title": "Diversos",
-    "section": "",
-    "text": "Outros temas de interesse cultural geral.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "termodinamica/artigo2/index.html",
-    "href": "termodinamica/artigo2/index.html",
-    "title": "Artigo 2 - Eficiência de Ciclos Termodinâmicos",
-    "section": "",
-    "text": "Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas."
-  },
-  {
-    "objectID": "moodlecesar/funcoes_quadraticas.html",
-    "href": "moodlecesar/funcoes_quadraticas.html",
-    "title": "Função Quadrática",
-    "section": "",
-    "text": "Este notebook permite explorar o comportamento da função do segundo grau \\(f(x) = ax^2 + bx + c\\) ajustando os coeficientes.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Coeficientes da função quadrática\na = 1\nb = -3\nc = 2\n\n# Domínio\nx = np.linspace(-10, 10, 400)\ny = a * x**2 + b * x + c\n\n# Gráfico\nplt.figure(figsize=(8,5))\nplt.plot(x, y, label=f\"f(x) = {a}x² + {b}x + {c}\", color='blue')\nplt.axhline(0, color='black', lw=1)\nplt.axvline(0, color='black', lw=1)\nplt.title(\"Gráfico da função quadrática\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
-  },
-  {
-    "objectID": "texto/economicos.html",
-    "href": "texto/economicos.html",
-    "title": "Temas Econômicos",
-    "section": "",
-    "text": "Temas Econômicos\nDiscussões econômicas relevantes para o setor imobiliário."
+    "text": "Conteúdo introdutório sobre o mercado imobiliário."
   },
   {
     "objectID": "texto/juridicos.html",
@@ -371,25 +182,550 @@
     "text": "Temas Jurídicos e Urbanísticos\nRegulação e legislação aplicáveis ao setor."
   },
   {
-    "objectID": "texto/artigo1.html",
-    "href": "texto/artigo1.html",
-    "title": "Artigo 1 - Panorama Geral",
+    "objectID": "texto/economicos.html",
+    "href": "texto/economicos.html",
+    "title": "Temas Econômicos",
     "section": "",
-    "text": "Conteúdo introdutório sobre o mercado imobiliário."
+    "text": "Temas Econômicos\nDiscussões econômicas relevantes para o setor imobiliário."
   },
   {
-    "objectID": "fisica/artigo2/index.html",
-    "href": "fisica/artigo2/index.html",
-    "title": "Artigo 2 - Leis de Newton em Ação",
+    "objectID": "moodlecesar/funcoes_quadraticas.html",
+    "href": "moodlecesar/funcoes_quadraticas.html",
+    "title": "Função Quadrática",
     "section": "",
-    "text": "Discussão das leis do movimento e aplicações práticas.\n\n\nrelação entre preços dos imóveis e juros."
+    "text": "Este notebook permite explorar o comportamento da função do segundo grau \\(f(x) = ax^2 + bx + c\\) ajustando os coeficientes.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Coeficientes da função quadrática\na = 1\nb = -3\nc = 2\n\n# Domínio\nx = np.linspace(-10, 10, 400)\ny = a * x**2 + b * x + c\n\n# Gráfico\nplt.figure(figsize=(8,5))\nplt.plot(x, y, label=f\"f(x) = {a}x² + {b}x + {c}\", color='blue')\nplt.axhline(0, color='black', lw=1)\nplt.axvline(0, color='black', lw=1)\nplt.title(\"Gráfico da função quadrática\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
   },
   {
-    "objectID": "fisica/artigo2/index.html#referências",
-    "href": "fisica/artigo2/index.html#referências",
-    "title": "Artigo 2 - Leis de Newton em Ação",
+    "objectID": "termodinamica/artigo2/index.html",
+    "href": "termodinamica/artigo2/index.html",
+    "title": "Artigo 2 - Eficiência de Ciclos Termodinâmicos",
     "section": "",
-    "text": "relação entre preços dos imóveis e juros."
+    "text": "Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas."
+  },
+  {
+    "objectID": "cultura/diversos/index.html",
+    "href": "cultura/diversos/index.html",
+    "title": "Diversos",
+    "section": "",
+    "text": "Outros temas de interesse cultural geral.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/literatura/index.html",
+    "href": "cultura/literatura/index.html",
+    "title": "Literatura",
+    "section": "",
+    "text": "Estudos literários e análises de obras.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/diversos/index.html",
+    "href": "fisica-quimica/diversos/index.html",
+    "title": "Diversos",
+    "section": "",
+    "text": "Outros temas no campo da física e química.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html",
+    "href": "fisica-quimica/fisica/artigo3/index.html",
+    "title": "Circuitos Elétricos",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo3/index.html#introdução",
+    "title": "Circuitos Elétricos",
+    "section": "Introdução",
+    "text": "Introdução\nCircuitos elétricos são interconexões de componentes que permitem o fluxo controlado de corrente elétrica."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
+    "href": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
+    "title": "Circuitos Elétricos",
+    "section": "Conceitos Básicos",
+    "text": "Conceitos Básicos\n\nCorrente (I): fluxo de carga elétrica.\nTensão (V): diferença de potencial elétrico.\nResistência (R): oposição ao fluxo de corrente."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
+    "href": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
+    "title": "Circuitos Elétricos",
+    "section": "Leis Fundamentais",
+    "text": "Leis Fundamentais\n\nLei de Ohm: \\(V = R \\cdot I\\)\nLeis de Kirchhoff: conservações de corrente e tensão."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
+    "href": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
+    "title": "Circuitos Elétricos",
+    "section": "Exemplo com Python: Lei de Ohm",
+    "text": "Exemplo com Python: Lei de Ohm\n\n\nCódigo\nR = 100  # ohms\nV = 5  # volts\nI = V / R\n\nprint(f\"Corrente: {I:.2f} A\")\n\n\nCorrente: 0.05 A"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
+    "href": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
+    "title": "Circuitos Elétricos",
+    "section": "Gráfico: Corrente vs Tensão",
+    "text": "Gráfico: Corrente vs Tensão\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nR = 100\nV = np.linspace(0, 10, 100)\nI = V / R\n\nplt.plot(V, I)\nplt.title('Corrente vs Tensão para R = 100Ω')\nplt.xlabel('Tensão (V)')\nplt.ylabel('Corrente (A)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
+    "title": "Circuitos Elétricos",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUso de simuladores como Tinkercad ou Phet.\nProjetos práticos com multímetros e protoboards."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html",
+    "href": "fisica-quimica/fisica/artigo2/index.html",
+    "title": "Energia Solar",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo2/index.html#introdução",
+    "title": "Energia Solar",
+    "section": "Introdução",
+    "text": "Introdução\nA energia solar é uma fonte limpa e renovável, convertida em energia térmica ou elétrica por meio de tecnologias como painéis fotovoltaicos."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
+    "href": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
+    "title": "Energia Solar",
+    "section": "Tipos de Energia Solar",
+    "text": "Tipos de Energia Solar\n\nFotovoltaica: conversão direta da luz solar em eletricidade.\nTérmica: aproveitamento do calor do sol."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
+    "href": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
+    "title": "Energia Solar",
+    "section": "Eficiência e Irradiação",
+    "text": "Eficiência e Irradiação\n\nEficiência depende do material semicondutor e condições climáticas.\nA irradiação solar é medida em W/m²."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
+    "href": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
+    "title": "Energia Solar",
+    "section": "Exemplo com Python: Potência Gerada",
+    "text": "Exemplo com Python: Potência Gerada\n\n\nCódigo\narea = 1.6  # m²\nirradiancia = 1000  # W/m²\neficiencia = 0.18\n\npotencia = area * irradiancia * eficiencia\nprint(f\"Potência gerada: {potencia:.1f} W\")\n\n\nPotência gerada: 288.0 W"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
+    "href": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
+    "title": "Energia Solar",
+    "section": "Gráfico: Potência ao longo do dia",
+    "text": "Gráfico: Potência ao longo do dia\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nhoras = np.linspace(6, 18, 100)\npot = 0.18 * 1.6 * 1000 * np.sin((np.pi / 12) * (horas - 6))\npot = np.clip(pot, 0, None)\n\nplt.plot(horas, pot)\nplt.title('Potência Solar ao Longo do Dia')\nplt.xlabel('Hora do dia')\nplt.ylabel('Potência (W)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
+    "title": "Energia Solar",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nComparar com outras fontes de energia.\nVisitas técnicas e simulações são úteis."
+  },
+  {
+    "objectID": "fisica-quimica/termodinamica/index.html",
+    "href": "fisica-quimica/termodinamica/index.html",
+    "title": "Termodinamica",
+    "section": "",
+    "text": "Fenómenos energéticos e processos termodinâmicos.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/index.html",
+    "href": "fisica-quimica/quimica/index.html",
+    "title": "Química",
+    "section": "",
+    "text": "Conceitos elementares e práticas de química.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotas de Leitura em Química\n\n\nNotas integradas sobre estrutura do átomo, estequiometria e a lei de Dalton.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nReações Redox\n\n\nTransferência de elétrons e aplicações das reações de oxidação-redução.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEstequiometria\n\n\nRelações quantitativas entre reagentes e produtos em reações químicas.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html",
+    "href": "fisica-quimica/quimica/artigo1/index.html",
+    "title": "Notas de Leitura em Química",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#introdução",
+    "href": "fisica-quimica/quimica/artigo1/index.html#introdução",
+    "title": "Notas de Leitura em Química",
+    "section": "Introdução",
+    "text": "Introdução\nA compreensão da estrutura atômica é essencial para o estudo da matéria. Esta nota de leitura resume os principais modelos atômicos propostos ao longo da história da ciência."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#modelos-históricos-do-átomo",
+    "href": "fisica-quimica/quimica/artigo1/index.html#modelos-históricos-do-átomo",
+    "title": "Notas de Leitura em Química",
+    "section": "Modelos Históricos do Átomo",
+    "text": "Modelos Históricos do Átomo\n\nModelo de Dalton (1803)\n\nO átomo seria uma esfera maciça, indivisível e indestrutível.\nCada elemento químico possui átomos com massa e propriedades únicas.\n\n\n\nModelo de Thomson (1897)\n\nDescoberta do elétron.\nModelo conhecido como “pudim de passas”: uma esfera positiva com elétrons incrustados.\n\n\n\nModelo de Rutherford (1911)\n\nExperimento da lâmina de ouro.\nDescoberta do núcleo atômico: pequeno, denso e positivo.\nÁtomos compostos majoritariamente por espaço vazio.\n\n\n\nModelo de Bohr (1913)\n\nElétrons em órbitas circulares com energia quantizada.\nExplica linhas espectrais do hidrogénio.\n\n\n\nModelo Quântico (1926 – …)\n\nElétrons descritos por funções de onda (Schrödinger).\nPrincípio da Incerteza (Heisenberg): impossível conhecer simultaneamente a posição e a velocidade do elétron.\nOrbitais: regiões com maior probabilidade de encontrar um elétron."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#ilustração-com-python-níveis-de-energia-no-modelo-de-bohr",
+    "href": "fisica-quimica/quimica/artigo1/index.html#ilustração-com-python-níveis-de-energia-no-modelo-de-bohr",
+    "title": "Notas de Leitura em Química",
+    "section": "Ilustração com Python: Níveis de Energia no Modelo de Bohr",
+    "text": "Ilustração com Python: Níveis de Energia no Modelo de Bohr\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nn = np.arange(1, 6)\nenergia = -13.6 / n**2\n\nplt.figure()\nplt.plot(n, energia, marker='o')\nplt.xlabel('n (nível quântico)')\nplt.ylabel('Energia (eV)')\nplt.title('Níveis de Energia do Átomo de Hidrogênio (Modelo de Bohr)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#estrutura-atual-do-átomo",
+    "href": "fisica-quimica/quimica/artigo1/index.html#estrutura-atual-do-átomo",
+    "title": "Notas de Leitura em Química",
+    "section": "Estrutura Atual do Átomo",
+    "text": "Estrutura Atual do Átomo\n\nNúcleo: prótons e nêutrons.\nEletrosfera: nuvem de elétrons distribuídos em níveis de energia.\nNúmero atômico (Z) determina o elemento.\nMassa atômica (A) corresponde à soma de prótons e nêutrons."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#considerações-didáticas",
+    "href": "fisica-quimica/quimica/artigo1/index.html#considerações-didáticas",
+    "title": "Notas de Leitura em Química",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nImportância de usar analogias para explicar os modelos.\nInterligação com conteúdos de química e física moderna."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#introdução-1",
+    "href": "fisica-quimica/quimica/artigo1/index.html#introdução-1",
+    "title": "Notas de Leitura em Química",
+    "section": "Introdução",
+    "text": "Introdução\nA estequiometria é a parte da química que estuda as relações quantitativas em reações químicas, baseando-se na Lei de Conservação da Massa."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#leis-fundamentais",
+    "href": "fisica-quimica/quimica/artigo1/index.html#leis-fundamentais",
+    "title": "Notas de Leitura em Química",
+    "section": "Leis Fundamentais",
+    "text": "Leis Fundamentais\n\nLei de Lavoisier: “Na natureza nada se cria, nada se perde, tudo se transforma.”\nLei de Proust: proporções constantes na composição de compostos."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#equações-químicas-e-balanceamento",
+    "href": "fisica-quimica/quimica/artigo1/index.html#equações-químicas-e-balanceamento",
+    "title": "Notas de Leitura em Química",
+    "section": "Equações Químicas e Balanceamento",
+    "text": "Equações Químicas e Balanceamento\n\nO balanceamento assegura que o número de átomos de cada elemento seja o mesmo nos reagentes e produtos.\n\n\\[ \\mathrm{2H_2 + O_2 \\rightarrow 2H_2O} \\]"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#cálculos-estequiométricos",
+    "href": "fisica-quimica/quimica/artigo1/index.html#cálculos-estequiométricos",
+    "title": "Notas de Leitura em Química",
+    "section": "Cálculos Estequiométricos",
+    "text": "Cálculos Estequiométricos\n\nConversões mol ↔︎ massa ↔︎ volume (gases).\nRendimento da reação, reagente limitante e excesso."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#exemplo-com-python-massa-de-produto",
+    "href": "fisica-quimica/quimica/artigo1/index.html#exemplo-com-python-massa-de-produto",
+    "title": "Notas de Leitura em Química",
+    "section": "Exemplo com Python: Massa de Produto",
+    "text": "Exemplo com Python: Massa de Produto\n\n\nCódigo\nm_molar_H2 = 2.02\nm_molar_O2 = 32.00\nm_molar_H2O = 18.02\n\nmassa_H2 = 4.04  # g\nmol_H2 = massa_H2 / m_molar_H2\nmol_H2O = mol_H2  # proporção 1:1\nmassa_H2O = mol_H2O * m_molar_H2O\n\nprint(f\"Massa de água formada: {massa_H2O:.2f} g\")\n\n\nMassa de água formada: 36.04 g"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#aplicações",
+    "href": "fisica-quimica/quimica/artigo1/index.html#aplicações",
+    "title": "Notas de Leitura em Química",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nIndústria: controle de qualidade e formulações.\nMeio ambiente: quantificação de poluentes."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#considerações-didáticas-1",
+    "href": "fisica-quimica/quimica/artigo1/index.html#considerações-didáticas-1",
+    "title": "Notas de Leitura em Química",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUtilização de diagramas e analogias com receitas.\nImportância da prática com exercícios variados."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#introdução-2",
+    "href": "fisica-quimica/quimica/artigo1/index.html#introdução-2",
+    "title": "Notas de Leitura em Química",
+    "section": "Introdução",
+    "text": "Introdução\nA Lei de Dalton afirma que, numa mistura de gases ideais, a pressão total é igual à soma das pressões parciais de cada componente.\n\\[ P_{total} = P_1 + P_2 + \\dots + P_n \\]"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#fundamentos",
+    "href": "fisica-quimica/quimica/artigo1/index.html#fundamentos",
+    "title": "Notas de Leitura em Química",
+    "section": "Fundamentos",
+    "text": "Fundamentos\n\nA pressão parcial de um gás é proporcional ao número de mols:\n\n\\[ P_i = \\chi_i \\cdot P_{total} \\]\nonde \\(\\chi_i\\) é a fração molar do gás \\(i\\)."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#exemplo-com-python-pressão-parcial",
+    "href": "fisica-quimica/quimica/artigo1/index.html#exemplo-com-python-pressão-parcial",
+    "title": "Notas de Leitura em Química",
+    "section": "Exemplo com Python: Pressão Parcial",
+    "text": "Exemplo com Python: Pressão Parcial\n\n\nCódigo\nP_total = 1.00  # atm\nmol_O2 = 2\nmol_N2 = 3\nmol_total = mol_O2 + mol_N2\n\nchi_O2 = mol_O2 / mol_total\nP_O2 = chi_O2 * P_total\n\nprint(f\"Pressão parcial do O2: {P_O2:.2f} atm\")\n\n\nPressão parcial do O2: 0.40 atm"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#aplicações-1",
+    "href": "fisica-quimica/quimica/artigo1/index.html#aplicações-1",
+    "title": "Notas de Leitura em Química",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nMisturas respiratórias (mergulho, medicina).\nProcessos industriais e atmosferas controladas."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo1/index.html#considerações-didáticas-2",
+    "href": "fisica-quimica/quimica/artigo1/index.html#considerações-didáticas-2",
+    "title": "Notas de Leitura em Química",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUso de modelos com balões e frações.\nRelação com o comportamento de gases ideais."
+  },
+  {
+    "objectID": "climatizacao/artigo2/index.html",
+    "href": "climatizacao/artigo2/index.html",
+    "title": "Artigo 2 - Ventilação Natural e Forçada",
+    "section": "",
+    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
+  },
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre",
+    "section": "",
+    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
+  },
+  {
+    "objectID": "climatizacao/artigo1/index.html",
+    "href": "climatizacao/artigo1/index.html",
+    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
+    "section": "",
+    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
+  },
+  {
+    "objectID": "climatizacao/artigo3/index.html",
+    "href": "climatizacao/artigo3/index.html",
+    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
+    "section": "",
+    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html",
+    "href": "fisica-quimica/quimica/artigo2/index.html",
+    "title": "Reações Redox",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#introdução",
+    "href": "fisica-quimica/quimica/artigo2/index.html#introdução",
+    "title": "Reações Redox",
+    "section": "Introdução",
+    "text": "Introdução\nReações de oxidação-redução, ou redox, envolvem a transferência de elétrons entre espécies químicas. São fundamentais na eletroquímica, metabolismo celular e processos industriais."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
+    "href": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
+    "title": "Reações Redox",
+    "section": "Conceitos Fundamentais",
+    "text": "Conceitos Fundamentais\n\nOxidação: perda de elétrons.\nRedução: ganho de elétrons.\nO agente oxidante é a substância que reduz (recebe elétrons).\nO agente redutor é a substância que oxida (cede elétrons)."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
+    "href": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
+    "title": "Reações Redox",
+    "section": "Números de Oxidação",
+    "text": "Números de Oxidação\n\nRepresentam o estado aparente de carga de um átomo em uma molécula ou íon.\nÚteis para identificar quais elementos são oxidados e reduzidos."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
+    "title": "Reações Redox",
+    "section": "Identificação de Reações Redox",
+    "text": "Identificação de Reações Redox\nExemplo:\n\\[ \\mathrm{Zn + Cu^{2+}\n\\rightarrow Zn^{2+} + Cu} \\]\n\nZn sofre oxidação (0 → +2).\nCu²⁺ sofre redução (+2 → 0)."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
+    "title": "Reações Redox",
+    "section": "Balanceamento de Reações Redox",
+    "text": "Balanceamento de Reações Redox\nMétodo das semi-reações (meio aquoso ácido):\n\nSeparar as semi-reações.\nBalancear elementos, exceto H e O.\nBalancear O com \\(\\mathrm{H_2O}\\).\nBalancear H com \\(\\mathrm{H^+}\\).\nBalancear cargas com elétrons.\nSomar e simplificar."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
+    "title": "Reações Redox",
+    "section": "Exemplo com Python: Simulação de Redox",
+    "text": "Exemplo com Python: Simulação de Redox\n\n\nCódigo\nreacoes = {\n    \"Zn + Cu2+\": {\"oxidado\": \"Zn -&gt; Zn2+\", \"reduzido\": \"Cu2+ -&gt; Cu\"},\n    \"Fe + Cl2\": {\"oxidado\": \"Fe -&gt; Fe2+\", \"reduzido\": \"Cl2 -&gt; 2Cl-\"},\n}\n\nfor r, pares in reacoes.items():\n    print(f\"Reação: {r}\")\n    for tipo, eq in pares.items():\n        print(f\"  {tipo.title()}: {eq}\")\n\n\nReação: Zn + Cu2+\n  Oxidado: Zn -&gt; Zn2+\n  Reduzido: Cu2+ -&gt; Cu\nReação: Fe + Cl2\n  Oxidado: Fe -&gt; Fe2+\n  Reduzido: Cl2 -&gt; 2Cl-"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#aplicações",
+    "href": "fisica-quimica/quimica/artigo2/index.html#aplicações",
+    "title": "Reações Redox",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nPilhas e baterias.\nReações metabólicas (ex: respiração celular).\nTratamento de águas e processos industriais."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
+    "href": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
+    "title": "Reações Redox",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nImportância do conceito de elétron e analogias visuais.\nPrática com tabelas de potencial padrão e métodos de balanceamento."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html",
+    "href": "fisica-quimica/quimica/artigo3/index.html",
+    "title": "Estequiometria",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#introdução",
+    "href": "fisica-quimica/quimica/artigo3/index.html#introdução",
+    "title": "Estequiometria",
+    "section": "Introdução",
+    "text": "Introdução\nA estequiometria estuda as proporções quantitativas entre os reagentes e os produtos de uma reação química, com base na Lei de Conservação da Massa de Lavoisier."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
+    "href": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
+    "title": "Estequiometria",
+    "section": "Leis Pioneiras",
+    "text": "Leis Pioneiras\n\nLei de Lavoisier: A massa total dos reagentes é igual à dos produtos.\nLei de Proust: Um composto é sempre formado pelos mesmos elementos na mesma proporção em massa."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
+    "href": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
+    "title": "Estequiometria",
+    "section": "Equações Químicas e Balanceamento",
+    "text": "Equações Químicas e Balanceamento\n\nO balanceamento garante a conservação de átomos.\nExemplo:\n\n\\[ \\mathrm{2H_2 + O_2 \\rightarrow 2H_2O} \\]"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
+    "href": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
+    "title": "Estequiometria",
+    "section": "Relações de Mol e Massa",
+    "text": "Relações de Mol e Massa\n\nMassa molar: massa de 1 mol de substância.\nConversões: massa ↔︎ mol ↔︎ número de partículas (via constante de Avogadro)."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
+    "href": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
+    "title": "Estequiometria",
+    "section": "Cálculos Estequiométricos",
+    "text": "Cálculos Estequiométricos\n\nIdentificação de reagente limitante.\nCálculo de rendimento teórico e percentual."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
+    "href": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
+    "title": "Estequiometria",
+    "section": "Exemplo com Python: Cálculo de Massa de Produto",
+    "text": "Exemplo com Python: Cálculo de Massa de Produto\n\n\nCódigo\nmassa_H2 = 4.04  # g\nmassa_molar_H2 = 2.02\nmassa_molar_H2O = 18.02\n\nmol_H2 = massa_H2 / massa_molar_H2\nmol_H2O = mol_H2  # relação 1:1\nmassa_H2O = mol_H2O * massa_molar_H2O\n\nprint(f\"Massa de água produzida: {massa_H2O:.2f} g\")\n\n\nMassa de água produzida: 36.04 g"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#aplicações",
+    "href": "fisica-quimica/quimica/artigo3/index.html#aplicações",
+    "title": "Estequiometria",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nIndústria química: formulações precisas.\nAnálises laboratoriais e controle ambiental."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
+    "href": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
+    "title": "Estequiometria",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUtilizar analogias com receitas culinárias.\nExplorar problemas práticos e interdisciplinares."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html",
+    "href": "fisica-quimica/fisica/artigo1/index.html",
+    "title": "Velocidade e Aceleração",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo1/index.html#introdução",
+    "title": "Velocidade e Aceleração",
+    "section": "Introdução",
+    "text": "Introdução\nA cinemática estuda o movimento dos corpos sem considerar suas causas. Os conceitos de velocidade e aceleração são fundamentais para essa descrição."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#conceitos",
+    "href": "fisica-quimica/fisica/artigo1/index.html#conceitos",
+    "title": "Velocidade e Aceleração",
+    "section": "Conceitos",
+    "text": "Conceitos\n\nVelocidade média: razão entre o deslocamento e o intervalo de tempo.\nVelocidade instantânea: limite da velocidade média quando Δt → 0.\nAceleração média: variação da velocidade no tempo."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
+    "href": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
+    "title": "Velocidade e Aceleração",
+    "section": "Fórmulas",
+    "text": "Fórmulas\n\\[ v = \\frac{{\\Delta s}}{{\\Delta t}} \\] \\[ a = \\frac{{\\Delta v}}{{\\Delta t}} \\]"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
+    "href": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
+    "title": "Velocidade e Aceleração",
+    "section": "Exemplo com Python: Gráfico de Velocidade",
+    "text": "Exemplo com Python: Gráfico de Velocidade\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nt = np.linspace(0, 10, 100)\nv = 2 * t + 1  # movimento uniformemente acelerado (a = 2 m/s²)\n\nplt.plot(t, v)\nplt.title('Velocidade vs. Tempo')\nplt.xlabel('Tempo (s)')\nplt.ylabel('Velocidade (m/s)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
+    "title": "Velocidade e Aceleração",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUtilizar animações ou simulações.\nExplorar gráficos posição x tempo e velocidade x tempo."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/index.html",
+    "href": "fisica-quimica/fisica/index.html",
+    "title": "Fisica",
+    "section": "",
+    "text": "Conceitos e aplicações fundamentais da física.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVelocidade e Aceleração\n\n\nConceitos fundamentais de cinemática: velocidade média, instantânea e aceleração.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEnergia Solar\n\n\nFundamentos físicos da conversão da energia solar em elétrica e térmica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCircuitos Elétricos\n\n\nAnálise de circuitos elétricos simples com resistores e fontes de tensão.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/corrosao/index.html",
+    "href": "fisica-quimica/corrosao/index.html",
+    "title": "Corrosao",
+    "section": "",
+    "text": "Estudo dos processos de corrosão e proteção de materiais.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/filosofia/index.html",
+    "href": "cultura/filosofia/index.html",
+    "title": "Filosofia",
+    "section": "",
+    "text": "Correntes filosóficas e pensamento crítico.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/economia/index.html",
+    "href": "cultura/economia/index.html",
+    "title": "Economia",
+    "section": "",
+    "text": "Fundamentos e teorias económicas aplicadas.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/historia/index.html",
+    "href": "cultura/historia/index.html",
+    "title": "Historia",
+    "section": "",
+    "text": "Eventos e processos históricos relevantes.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "termodinamica/artigo1/index.html",
+    "href": "termodinamica/artigo1/index.html",
+    "title": "Artigo 1 - Primeira Lei da Termodinâmica",
+    "section": "",
+    "text": "Discussão da conservação de energia e do balanço de energia em sistemas mecânicos e térmicos."
+  },
+  {
+    "objectID": "termodinamica/artigo3/index.html",
+    "href": "termodinamica/artigo3/index.html",
+    "title": "Artigo 3 - Entropia e Irreversibilidade",
+    "section": "",
+    "text": "Discussão da segunda lei da termodinâmica, geração de entropia e impacto nos sistemas energéticos."
+  },
+  {
+    "objectID": "texto/artigo2.html",
+    "href": "texto/artigo2.html",
+    "title": "Artigo 2 - Preços e Juros",
+    "section": "",
+    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros."
+  },
+  {
+    "objectID": "texto/tecnologicos.html",
+    "href": "texto/tecnologicos.html",
+    "title": "Temas Tecnológicos",
+    "section": "",
+    "text": "Temas Tecnológicos\nUso de tecnologias no setor da construção e imóveis."
+  },
+  {
+    "objectID": "texto/artigo3.html",
+    "href": "texto/artigo3.html",
+    "title": "Artigo 3 - Smart Cities",
+    "section": "",
+    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário."
   },
   {
     "objectID": "matematica/algebra-linear/artigo1/index.html",

@@ -12,19 +12,15 @@
     "items": []
   },
   {
-    "listing": "/cultura/historia/index.html",
+    "listing": "/cultura/diversos/index.html",
     "items": []
   },
   {
-    "listing": "/cultura/economia/index.html",
+    "listing": "/cultura/literatura/index.html",
     "items": []
   },
   {
-    "listing": "/cultura/filosofia/index.html",
-    "items": []
-  },
-  {
-    "listing": "/fisica-quimica/corrosao/index.html",
+    "listing": "/fisica-quimica/diversos/index.html",
     "items": []
   },
   {
@@ -33,22 +29,34 @@
   },
   {
     "listing": "/fisica-quimica/quimica/index.html",
-    "items": []
+    "items": [
+      "/fisica-quimica/quimica/artigo1/index.html",
+      "/fisica-quimica/quimica/artigo2/index.html",
+      "/fisica-quimica/quimica/artigo3/index.html"
+    ]
   },
   {
     "listing": "/fisica-quimica/fisica/index.html",
+    "items": [
+      "/fisica-quimica/fisica/artigo1/index.html",
+      "/fisica-quimica/fisica/artigo2/index.html",
+      "/fisica-quimica/fisica/artigo3/index.html"
+    ]
+  },
+  {
+    "listing": "/fisica-quimica/corrosao/index.html",
     "items": []
   },
   {
-    "listing": "/fisica-quimica/diversos/index.html",
+    "listing": "/cultura/filosofia/index.html",
     "items": []
   },
   {
-    "listing": "/cultura/literatura/index.html",
+    "listing": "/cultura/economia/index.html",
     "items": []
   },
   {
-    "listing": "/cultura/diversos/index.html",
+    "listing": "/cultura/historia/index.html",
     "items": []
   },
   {

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-04-30">
-<meta name="description" content="Estudo introdutório dos conceitos de posição, velocidade e aceleração com exemplos práticos.">
+<meta name="description" content="Conceitos fundamentais de cinemática: velocidade média, instantânea e aceleração.">
 
-<title>Artigo 1 - Fundamentos da Cinemática – Notas de leitura</title>
+<title>Velocidade e Aceleração – Notas de leitura</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -45,24 +79,24 @@ div.csl-indent {
 }</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d96710eeadc5858c003a40463984c6a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/watermark-1.0.11/watermark.min.js"></script>
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-d96710eeadc5858c003a40463984c6a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/watermark-1.0.11/watermark.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,23 +111,52 @@ div.csl-indent {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -103,12 +166,12 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Notas de leitura</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -119,23 +182,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-microchipi-tecnologias">    
         <li>
-    <a class="dropdown-item" href="../../tecnologias/climatizacao/">
+    <a class="dropdown-item" href="../../../tecnologias/climatizacao/">
  <span class="dropdown-text"><i class="fas fa-wind"></i> Climatização</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/manutencao/">
+    <a class="dropdown-item" href="../../../tecnologias/manutencao/">
  <span class="dropdown-text"><i class="fas fa-tools"></i> Manutenção</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/eletrotecnia/">
+    <a class="dropdown-item" href="../../../tecnologias/eletrotecnia/">
  <span class="dropdown-text"><i class="fas fa-bolt"></i> Eletrotecnia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/tics/">
+    <a class="dropdown-item" href="../../../tecnologias/tics/">
  <span class="dropdown-text"><i class="fas fa-network-wired"></i> TICs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../tecnologias/diversos/">
+    <a class="dropdown-item" href="../../../tecnologias/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -146,23 +209,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-flaski-física-e-química">    
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/fisica/">
+    <a class="dropdown-item" href="../../../fisica-quimica/fisica/">
  <span class="dropdown-text"><i class="fas fa-atom"></i> Física</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/quimica/">
+    <a class="dropdown-item" href="../../../fisica-quimica/quimica/">
  <span class="dropdown-text"><i class="fas fa-vial"></i> Química</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/termodinamica/">
+    <a class="dropdown-item" href="../../../fisica-quimica/termodinamica/">
  <span class="dropdown-text"><i class="fas fa-temperature-high"></i> Termodinâmica</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/corrosao/">
+    <a class="dropdown-item" href="../../../fisica-quimica/corrosao/">
  <span class="dropdown-text"><i class="fas fa-eraser"></i> Corrosão</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../fisica-quimica/diversos/">
+    <a class="dropdown-item" href="../../../fisica-quimica/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -173,23 +236,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-square-root-alti-matemática">    
         <li>
-    <a class="dropdown-item" href="../../matematica/basico/">
+    <a class="dropdown-item" href="../../../matematica/basico/">
  <span class="dropdown-text"><i class="fas fa-calculator"></i> Matemáticas Básicas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/estatistica/">
+    <a class="dropdown-item" href="../../../matematica/estatistica/">
  <span class="dropdown-text"><i class="fas fa-chart-bar"></i> Estatística e Probabilidades</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/calculo/">
+    <a class="dropdown-item" href="../../../matematica/calculo/">
  <span class="dropdown-text"><i class="fas fa-infinity"></i> Cálculo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/algebra-linear/">
+    <a class="dropdown-item" href="../../../matematica/algebra-linear/">
  <span class="dropdown-text"><i class="fas fa-project-diagram"></i> Álgebra Linear</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../matematica/diversos/">
+    <a class="dropdown-item" href="../../../matematica/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -200,23 +263,23 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfas-fa-globei-cultura-geral">    
         <li>
-    <a class="dropdown-item" href="../../cultura/literatura/">
+    <a class="dropdown-item" href="../../../cultura/literatura/">
  <span class="dropdown-text"><i class="fas fa-book"></i> Literatura</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/filosofia/">
+    <a class="dropdown-item" href="../../../cultura/filosofia/">
  <span class="dropdown-text"><i class="fas fa-brain"></i> Filosofia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/historia/">
+    <a class="dropdown-item" href="../../../cultura/historia/">
  <span class="dropdown-text"><i class="fas fa-landmark"></i> História</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/economia/">
+    <a class="dropdown-item" href="../../../cultura/economia/">
  <span class="dropdown-text"><i class="fas fa-coins"></i> Economia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cultura/diversos/">
+    <a class="dropdown-item" href="../../../cultura/diversos/">
  <span class="dropdown-text"><i class="fas fa-ellipsis-h"></i> Diversos</span></a>
   </li>  
     </ul>
@@ -234,32 +297,36 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#fundamentos-da-cinemática" id="toc-fundamentos-da-cinemática" class="nav-link active" data-scroll-target="#fundamentos-da-cinemática">Fundamentos da Cinemática</a>
+  <li><a href="#velocidade-e-aceleração" id="toc-velocidade-e-aceleração" class="nav-link active" data-scroll-target="#velocidade-e-aceleração">Velocidade e Aceleração</a>
   <ul class="collapse">
-  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link" data-scroll-target="#introdução">Introdução</a></li>
+  <li><a href="#conceitos" id="toc-conceitos" class="nav-link" data-scroll-target="#conceitos">Conceitos</a></li>
+  <li><a href="#fórmulas" id="toc-fórmulas" class="nav-link" data-scroll-target="#fórmulas">Fórmulas</a></li>
+  <li><a href="#exemplo-com-python-gráfico-de-velocidade" id="toc-exemplo-com-python-gráfico-de-velocidade" class="nav-link" data-scroll-target="#exemplo-com-python-gráfico-de-velocidade">Exemplo com Python: Gráfico de Velocidade</a></li>
+  <li><a href="#considerações-didáticas" id="toc-considerações-didáticas" class="nav-link" data-scroll-target="#considerações-didáticas">Considerações Didáticas</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<script src="../../footer.js"></script>
+<script src="../../../footer.js"></script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Artigo 1 - Fundamentos da Cinemática</h1>
+<h1 class="title">Velocidade e Aceleração</h1>
   <div class="quarto-categories">
+    <div class="quarto-category">Diversos</div>
     <div class="quarto-category">Física</div>
-    <div class="quarto-category">Cinemática</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Estudo introdutório dos conceitos de posição, velocidade e aceleração com exemplos práticos.
+    Conceitos fundamentais de cinemática: velocidade média, instantânea e aceleração.
   </div>
 </div>
 
@@ -268,9 +335,9 @@ div.csl-indent {
 
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 30, 2025</p>
+      <p class="date">8 de maio de 2025</p>
     </div>
   </div>
   
@@ -282,11 +349,66 @@ div.csl-indent {
 </header>
 
 
-<section id="fundamentos-da-cinemática" class="level1">
-<h1>Fundamentos da Cinemática</h1>
-<p>Conteúdo introdutório sobre posição, velocidade e aceleração.</p>
-<section id="referências" class="level2">
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+<p><a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a> <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button></p>
+</div>
+<div style="margin-top: 2rem;">
 
+</div>
+<section id="velocidade-e-aceleração" class="level1">
+<h1>Velocidade e Aceleração</h1>
+<blockquote class="blockquote">
+<p>“O movimento é a linguagem da física.”</p>
+</blockquote>
+<section id="introdução" class="level2">
+<h2 class="anchored" data-anchor-id="introdução">Introdução</h2>
+<p>A cinemática estuda o movimento dos corpos sem considerar suas causas. Os conceitos de velocidade e aceleração são fundamentais para essa descrição.</p>
+</section>
+<section id="conceitos" class="level2">
+<h2 class="anchored" data-anchor-id="conceitos">Conceitos</h2>
+<ul>
+<li><strong>Velocidade média</strong>: razão entre o deslocamento e o intervalo de tempo.</li>
+<li><strong>Velocidade instantânea</strong>: limite da velocidade média quando Δt → 0.</li>
+<li><strong>Aceleração média</strong>: variação da velocidade no tempo.</li>
+</ul>
+</section>
+<section id="fórmulas" class="level2">
+<h2 class="anchored" data-anchor-id="fórmulas">Fórmulas</h2>
+<p><span class="math display">\[ v = \frac{{\Delta s}}{{\Delta t}} \]</span> <span class="math display">\[ a = \frac{{\Delta v}}{{\Delta t}} \]</span></p>
+</section>
+<section id="exemplo-com-python-gráfico-de-velocidade" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-com-python-gráfico-de-velocidade">Exemplo com Python: Gráfico de Velocidade</h2>
+<div id="f1a002a3" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">100</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>v <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> t <span class="op">+</span> <span class="dv">1</span>  <span class="co"># movimento uniformemente acelerado (a = 2 m/s²)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>plt.plot(t, v)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Velocidade vs. Tempo'</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Tempo (s)'</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Velocidade (m/s)'</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="considerações-didáticas" class="level2">
+<h2 class="anchored" data-anchor-id="considerações-didáticas">Considerações Didáticas</h2>
+<ul>
+<li>Utilizar animações ou simulações.</li>
+<li>Explorar gráficos posição x tempo e velocidade x tempo.</li>
+</ul>
 
 
 
@@ -294,8 +416,8 @@ div.csl-indent {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-exemplo2025" class="csl-entry" role="listitem">
-Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
+<div id="ref-halliday2011fisica" class="csl-entry" role="listitem">
+Halliday, D., Resnick, R., &amp; Walker, J. (2011). <em>Física 1</em>. LTC.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -323,12 +445,12 @@ Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiada");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiada");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -705,7 +827,7 @@ Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
     </div>   
     <div class="nav-footer-center">
 <div class="footer-custom">
-<p><img src="../../quarto-logo.png" alt="Logotipo Quarto" height="24" style="vertical-align:middle; margin-right:8px;"> © <span id="anoAtual"></span> C. A. C. Barros · <a href="https://quarto.org" target="_blank">Quarto</a> · <a href="https://github.com/cacbarros/notas-de-leitura" target="_blank">GitHub</a><br> <small>Atualizado em: <span id="dataModificacao"></span></small></p>
+<p><img src="../../../quarto-logo.png" alt="Logotipo Quarto" height="24" style="vertical-align:middle; margin-right:8px;"> © <span id="anoAtual"></span> C. A. C. Barros · <a href="https://quarto.org" target="_blank">Quarto</a> · <a href="https://github.com/cacbarros/notas-de-leitura" target="_blank">GitHub</a><br> <small>Atualizado em: <span id="dataModificacao"></span></small></p>
 </div>
 </div>
     <div class="nav-footer-right">
@@ -716,7 +838,7 @@ Autor, A. (2025). <em>Exemplo de referência</em>. Editora Exemplo.
 <script>
     const baseFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
     const watermark = new XWatermark.XWatermark();
-    watermark.init("", {
+    watermark.init("RASCUNHO", {
       parentSelector: "body",
       prevent: true,
       observer: true,
