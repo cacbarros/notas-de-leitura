@@ -55,3 +55,8 @@ footer {
 .footer-custom a:hover {
   text-decoration: underline;
 }
+@media print {
+  .only-html {
+    display: none !important;
+  }
+}

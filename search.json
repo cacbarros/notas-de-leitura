@@ -1,66 +1,31 @@
 [
   {
-    "objectID": "texto/tecnologicos.html",
-    "href": "texto/tecnologicos.html",
-    "title": "Temas Tecnológicos",
+    "objectID": "tecnologias/diversos/index.html",
+    "href": "tecnologias/diversos/index.html",
+    "title": "Diversos",
     "section": "",
-    "text": "Temas Tecnológicos\nUso de tecnologias no setor da construção e imóveis."
+    "text": "Outros temas relacionados com as tecnologias aplicadas.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "texto/economicos.html",
-    "href": "texto/economicos.html",
-    "title": "Temas Econômicos",
+    "objectID": "tecnologias/manutencao/index.html",
+    "href": "tecnologias/manutencao/index.html",
+    "title": "Manutencao",
     "section": "",
-    "text": "Temas Econômicos\nDiscussões econômicas relevantes para o setor imobiliário."
+    "text": "Gestão e inovação nos processos de manutenção técnica.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "texto/artigo2.html",
-    "href": "texto/artigo2.html",
+    "objectID": "tecnologias/climatizacao/index.html",
+    "href": "tecnologias/climatizacao/index.html",
+    "title": "Climatizacao",
+    "section": "",
+    "text": "Aplicações e estudos sobre climatização em ambientes construídos.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "imobiliario/artigo2/index.html",
+    "href": "imobiliario/artigo2/index.html",
     "title": "Artigo 2 - Preços e Juros",
     "section": "",
-    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros."
-  },
-  {
-    "objectID": "termodinamica/artigo3/index.html",
-    "href": "termodinamica/artigo3/index.html",
-    "title": "Artigo 3 - Entropia e Irreversibilidade",
-    "section": "",
-    "text": "Discussão da segunda lei da termodinâmica, geração de entropia e impacto nos sistemas energéticos."
-  },
-  {
-    "objectID": "termodinamica/artigo1/index.html",
-    "href": "termodinamica/artigo1/index.html",
-    "title": "Artigo 1 - Primeira Lei da Termodinâmica",
-    "section": "",
-    "text": "Discussão da conservação de energia e do balanço de energia em sistemas mecânicos e térmicos."
-  },
-  {
-    "objectID": "quimica/artigo3/index.html",
-    "href": "quimica/artigo3/index.html",
-    "title": "Artigo 3 - Estequiometria em Processos Industriais",
-    "section": "",
-    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
-  },
-  {
-    "objectID": "quimica/artigo1/index.html",
-    "href": "quimica/artigo1/index.html",
-    "title": "Artigo 1 - Reações Ácido-Base",
-    "section": "",
-    "text": "Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais."
-  },
-  {
-    "objectID": "moodlecesar/funcoes_quadraticas.html",
-    "href": "moodlecesar/funcoes_quadraticas.html",
-    "title": "Função Quadrática",
-    "section": "",
-    "text": "Este notebook permite explorar o comportamento da função do segundo grau \\(f(x) = ax^2 + bx + c\\) ajustando os coeficientes.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Coeficientes da função quadrática\na = 1\nb = -3\nc = 2\n\n# Domínio\nx = np.linspace(-10, 10, 400)\ny = a * x**2 + b * x + c\n\n# Gráfico\nplt.figure(figsize=(8,5))\nplt.plot(x, y, label=f\"f(x) = {a}x² + {b}x + {c}\", color='blue')\nplt.axhline(0, color='black', lw=1)\nplt.axvline(0, color='black', lw=1)\nplt.title(\"Gráfico da função quadrática\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
-  },
-  {
-    "objectID": "matematica/artigo2/index.html",
-    "href": "matematica/artigo2/index.html",
-    "title": "Artigo 2 - Funções Quadráticas em Contexto",
-    "section": "",
-    "text": "Análise do gráfico, vértice e raízes de funções do 2.º grau com exemplos aplicados."
+    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros.\n\n\n\n\n\nReferences\n\nAutor, A. (2025). Exemplo de referência. Editora Exemplo."
   },
   {
     "objectID": "index.html",
@@ -91,11 +56,116 @@
     "text": "C. A. C. Barros\nProjetos de leitura técnica, ensino-aprendizagem e desenvolvimento de conteúdos digitais.\nGitHub · Blog Fortec · Blog Imobiliário"
   },
   {
-    "objectID": "imobiliario/artigo2/index.html",
-    "href": "imobiliario/artigo2/index.html",
-    "title": "Artigo 2 - Preços e Juros",
+    "objectID": "matematica/diversos/artigo3/index.html",
+    "href": "matematica/diversos/artigo3/index.html",
+    "title": "Números Complexos",
     "section": "",
-    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros.\n\n\n\n\n\nReferences\n\nAutor, A. (2025). Exemplo de referência. Editora Exemplo."
+    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 3 - Números Complexos\nUm número complexo tem a forma \\(z = a + bi\\).\n\n\nCódigo\nimport matplotlib.pyplot as plt\n\n# Representar dois números complexos\nz1 = 2 + 3j\nz2 = 1 - 1j\n\nplt.axhline(0, color='grey')\nplt.axvline(0, color='grey')\nplt.scatter([z1.real, z2.real], [z1.imag, z2.imag], color=['red', 'blue'])\nplt.text(z1.real, z1.imag, '  z1', color='red')\nplt.text(z2.real, z2.imag, '  z2', color='blue')\nplt.xlabel(\"Parte Real\")\nplt.ylabel(\"Parte Imaginária\")\nplt.title(\"Plano dos Números Complexos\")\nplt.grid(True)\nplt.axis('equal')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+  },
+  {
+    "objectID": "matematica/diversos/artigo2/index.html",
+    "href": "matematica/diversos/artigo2/index.html",
+    "title": "Funções Trigonométricas",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 2 - Funções Trigonométricas\nAs funções seno, cosseno e tangente modelam fenômenos periódicos.\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-2*np.pi, 2*np.pi, 400)\nseno = np.sin(x_vals)\ncosseno = np.cos(x_vals)\ntangente = np.tan(x_vals)\n\nplt.plot(x_vals, seno, label='sen(x)')\nplt.plot(x_vals, cosseno, label='cos(x)', linestyle='--')\nplt.ylim(-2, 2)\nplt.title(\"Funções Seno e Cosseno\")\nplt.legend()\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+  },
+  {
+    "objectID": "matematica/estatistica/artigo3/index.html",
+    "href": "matematica/estatistica/artigo3/index.html",
+    "title": "Funções Geradoras de Momentos",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 3 - Funções Geradoras de Momentos\n\n\nCódigo\nimport sympy as sp\nt = sp.Symbol('t')\nvalores = [1, 2, 3]\nprobs = [0.2, 0.5, 0.3]\nmgf = sum(p * sp.exp(t * v) for v, p in zip(valores, probs))\nmgf_simplificada = sp.simplify(mgf)\nmgf_simplificada\n\n\n\\(\\displaystyle \\left(0.3 e^{2 t} + 0.5 e^{t} + 0.2\\right) e^{t}\\)\n\n\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\nt_vals = np.linspace(-1, 1, 200)\nmgf_vals = 0.2*np.exp(t_vals*1) + 0.5*np.exp(t_vals*2) + 0.3*np.exp(t_vals*3)\n\nplt.plot(t_vals, mgf_vals, label='MGF')\nplt.title(\"Função Geradora de Momentos\")\nplt.xlabel(\"t\")\nplt.ylabel(\"M_X(t)\")\nplt.grid(True)\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+  },
+  {
+    "objectID": "matematica/estatistica/artigo2/index.html",
+    "href": "matematica/estatistica/artigo2/index.html",
+    "title": "Permutações e Combinações",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 2 - Permutações e Combinações\n\n\nCódigo\nimport math\npermutacoes = math.perm(5)\ncombinacoes = math.comb(5, 3)\npermutacoes, combinacoes\n\n\n(120, 10)\n\n\n\n\nCódigo\nimport matplotlib.pyplot as plt\nn = range(1, 11)\nperm = [math.perm(x) for x in n]\ncomb = [math.comb(x, 2) for x in n]\n\nplt.plot(n, perm, label='Permutações P(n)', marker='o')\nplt.plot(n, comb, label='Combinações C(n,2)', marker='s')\nplt.title(\"Permutações e Combinações\")\nplt.xlabel(\"n\")\nplt.ylabel(\"Contagem\")\nplt.grid(True)\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+  },
+  {
+    "objectID": "matematica/basico/artigo3/index.html",
+    "href": "matematica/basico/artigo3/index.html",
+    "title": "Estatística Descritiva",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir\nA estatística descritiva permite resumir e descrever conjuntos de dados de forma eficiente."
+  },
+  {
+    "objectID": "matematica/basico/artigo3/index.html#exemplo",
+    "href": "matematica/basico/artigo3/index.html#exemplo",
+    "title": "Estatística Descritiva",
+    "section": "Exemplo",
+    "text": "Exemplo\n\n\nCódigo\nimport pandas as pd\n\ndados = [8, 6, 7, 5, 3, 9, 10, 6, 7]\nserie = pd.Series(dados)\n\nmedia = serie.mean()\nmediana = serie.median()\ndesvio = serie.std()\n\nmedia, mediana, desvio\n\n\n(np.float64(6.777777777777778),\n np.float64(7.0),\n np.float64(2.1081851067789197))\n\n\nHistograma:\n\n\nCódigo\nimport matplotlib.pyplot as plt\n\nplt.hist(dados, bins=5, color='skyblue', edgecolor='black')\nplt.title(\"Distribuição dos Dados\")\nplt.xlabel(\"Valor\")\nplt.ylabel(\"Frequência\")\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "matematica/basico/artigo2/index.html",
+    "href": "matematica/basico/artigo2/index.html",
+    "title": "Derivadas",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir\nA derivada representa a taxa de variação de uma função e é a base do cálculo diferencial."
+  },
+  {
+    "objectID": "matematica/basico/artigo2/index.html#exemplo",
+    "href": "matematica/basico/artigo2/index.html#exemplo",
+    "title": "Derivadas",
+    "section": "Exemplo",
+    "text": "Exemplo\n\\[\nf(x) = x^3 - 5x^2 + 2x\n\\]\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\n\nf = x**3 - 5*x**2 + 2*x\ndf = sp.diff(f, x)\ndf\n\n\n\\(\\displaystyle 3 x^{2} - 10 x + 2\\)\n\n\nGráficos da função e da derivada:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-1, 5, 200)\nf_vals = x_vals**3 - 5*x_vals**2 + 2*x_vals\ndf_vals = 3*x_vals**2 - 10*x_vals + 2\n\nplt.plot(x_vals, f_vals, label=\"f(x)\", linewidth=2)\nplt.plot(x_vals, df_vals, label=\"f'(x)\", linestyle='--')\nplt.title(\"Função e sua Derivada\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "matematica/calculo/artigo3/index.html",
+    "href": "matematica/calculo/artigo3/index.html",
+    "title": "Teorema de Cauchy",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/calculo/artigo3/index.html#exemplo-com-fx-lnx-e-gx-x",
+    "href": "matematica/calculo/artigo3/index.html#exemplo-com-fx-lnx-e-gx-x",
+    "title": "Teorema de Cauchy",
+    "section": "Exemplo com \\(f(x) = \\ln(x)\\) e \\(g(x) = x\\)",
+    "text": "Exemplo com \\(f(x) = \\ln(x)\\) e \\(g(x) = x\\)\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\nf = sp.ln(x)\ng = x\na, b = 1, sp.E\n\nlado_direito = (f.subs(x, b) - f.subs(x, a)) / (g.subs(x, b) - g.subs(x, a))\nlado_direito.evalf()\n\n\n\\(\\displaystyle 0.581976706869326\\)\n\n\nVisualização:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(1, np.e, 200)\nf_vals = np.log(x_vals)\ng_vals = x_vals\n\nplt.plot(x_vals, f_vals, label=\"f(x) = ln(x)\")\nplt.plot(x_vals, g_vals, label=\"g(x) = x\")\nplt.title(\"Funções f(x) e g(x) - Teorema de Cauchy\")\nplt.legend()\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "matematica/calculo/artigo2/index.html",
+    "href": "matematica/calculo/artigo2/index.html",
+    "title": "Definição de Derivada",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
+    "href": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
+    "title": "Definição de Derivada",
+    "section": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)",
+    "text": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)\n\n\nCódigo\nimport sympy as sp\nx, h = sp.symbols('x h')\nf = x**2\na = 2\n\nquociente = (f.subs(x, a + h) - f.subs(x, a)) / h\nderivada = sp.limit(quociente, h, 0)\n\nquociente.simplify(), derivada\n\n\n(h + 4, 4)\n\n\nVisualização da reta tangente:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 4, 200)\nf_vals = x_vals**2\ntangente = 4*x_vals - 4  # derivada 4, passa por (2,4)\n\nplt.plot(x_vals, f_vals, label='f(x) = x²')\nplt.plot(x_vals, tangente, '--', label='Tangente em x=2')\nplt.scatter([2], [4], color='red')\nplt.title(\"Derivada como reta tangente\")\nplt.legend()\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo3/index.html",
+    "href": "matematica/algebra-linear/artigo3/index.html",
+    "title": "Geometria no Espaço",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo3/index.html#vetores-e-produto-vetorial",
+    "href": "matematica/algebra-linear/artigo3/index.html#vetores-e-produto-vetorial",
+    "title": "Geometria no Espaço",
+    "section": "Vetores e Produto Vetorial",
+    "text": "Vetores e Produto Vetorial\n\n\nCódigo\nimport numpy as np\n\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\nproduto_vetorial = np.cross(a, b)\nproduto_vetorial\n\n\narray([-3,  6, -3])\n\n\nGráfico 3D dos vetores:\n\n\nCódigo\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\n\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n\norigem = [0, 0, 0]\nax.quiver(*origem, *a, color='r', label='a')\nax.quiver(*origem, *b, color='g', label='b')\nax.quiver(*origem, *produto_vetorial, color='b', label='a × b')\n\nax.set_xlim([0, 7])\nax.set_ylim([0, 7])\nax.set_zlim([0, 7])\nax.set_title(\"Produto Vetorial no Espaço\")\nax.legend()\nplt.show()"
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo2/index.html",
+    "href": "matematica/algebra-linear/artigo2/index.html",
+    "title": "Operações com Matrizes",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo2/index.html#exemplo",
+    "href": "matematica/algebra-linear/artigo2/index.html#exemplo",
+    "title": "Operações com Matrizes",
+    "section": "Exemplo",
+    "text": "Exemplo\n\n\nCódigo\nimport sympy as sp\n\nA = sp.Matrix([[1, 2], [3, 4]])\nB = sp.Matrix([[2, 0], [1, 2]])\n\nsoma = A + B\nproduto = A * B\ndet_A = A.det()\n\nsoma, produto, det_A\n\n\n(Matrix([\n [3, 2],\n [4, 6]]),\n Matrix([\n [ 4, 4],\n [10, 8]]),\n -2)\n\n\nGráfico: representação matricial de uma transformação linear\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nA = np.array([[2, 0], [0, 1]])\ngrid = np.array([[x, y] for x in np.linspace(-2, 2, 10) for y in np.linspace(-2, 2, 10)])\n\ntransformed = grid @ A.T\nplt.quiver(grid[:, 0], grid[:, 1], transformed[:, 0] - grid[:, 0], transformed[:, 1] - grid[:, 1],\n           angles='xy', scale_units='xy', scale=1, color='blue')\nplt.axhline(0, color='grey')\nplt.axvline(0, color='grey')\nplt.title(\"Transformação Linear com Matriz A\")\nplt.grid(True)\nplt.axis(\"equal\")\nplt.show()"
   },
   {
     "objectID": "fisica/artigo3/index.html",
@@ -119,6 +189,76 @@
     "text": "Conteúdo introdutório sobre posição, velocidade e aceleração."
   },
   {
+    "objectID": "texto/artigo3.html",
+    "href": "texto/artigo3.html",
+    "title": "Artigo 3 - Smart Cities",
+    "section": "",
+    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário."
+  },
+  {
+    "objectID": "texto/tecnologicos.html",
+    "href": "texto/tecnologicos.html",
+    "title": "Temas Tecnológicos",
+    "section": "",
+    "text": "Temas Tecnológicos\nUso de tecnologias no setor da construção e imóveis."
+  },
+  {
+    "objectID": "texto/artigo2.html",
+    "href": "texto/artigo2.html",
+    "title": "Artigo 2 - Preços e Juros",
+    "section": "",
+    "text": "Preços e Juros\nAnálise da correlação entre preços dos imóveis e juros."
+  },
+  {
+    "objectID": "termodinamica/artigo3/index.html",
+    "href": "termodinamica/artigo3/index.html",
+    "title": "Artigo 3 - Entropia e Irreversibilidade",
+    "section": "",
+    "text": "Discussão da segunda lei da termodinâmica, geração de entropia e impacto nos sistemas energéticos."
+  },
+  {
+    "objectID": "termodinamica/artigo1/index.html",
+    "href": "termodinamica/artigo1/index.html",
+    "title": "Artigo 1 - Primeira Lei da Termodinâmica",
+    "section": "",
+    "text": "Discussão da conservação de energia e do balanço de energia em sistemas mecânicos e térmicos."
+  },
+  {
+    "objectID": "cultura/historia/index.html",
+    "href": "cultura/historia/index.html",
+    "title": "Historia",
+    "section": "",
+    "text": "Eventos e processos históricos relevantes.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/economia/index.html",
+    "href": "cultura/economia/index.html",
+    "title": "Economia",
+    "section": "",
+    "text": "Fundamentos e teorias económicas aplicadas.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/filosofia/index.html",
+    "href": "cultura/filosofia/index.html",
+    "title": "Filosofia",
+    "section": "",
+    "text": "Correntes filosóficas e pensamento crítico.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/corrosao/index.html",
+    "href": "fisica-quimica/corrosao/index.html",
+    "title": "Corrosao",
+    "section": "",
+    "text": "Estudo dos processos de corrosão e proteção de materiais.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/termodinamica/index.html",
+    "href": "fisica-quimica/termodinamica/index.html",
+    "title": "Termodinamica",
+    "section": "",
+    "text": "Fenómenos energéticos e processos termodinâmicos.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "climatizacao/artigo3/index.html",
     "href": "climatizacao/artigo3/index.html",
     "title": "Artigo 3 - Chillers e Torres de Resfriamento",
@@ -133,6 +273,34 @@
     "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
   },
   {
+    "objectID": "quimica/artigo3/index.html",
+    "href": "quimica/artigo3/index.html",
+    "title": "Artigo 3 - Estequiometria em Processos Industriais",
+    "section": "",
+    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
+  },
+  {
+    "objectID": "quimica/artigo1/index.html",
+    "href": "quimica/artigo1/index.html",
+    "title": "Artigo 1 - Reações Ácido-Base",
+    "section": "",
+    "text": "Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais."
+  },
+  {
+    "objectID": "quimica/artigo2/index.html",
+    "href": "quimica/artigo2/index.html",
+    "title": "Artigo 2 - Cinética Química com Python",
+    "section": "",
+    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
+  },
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre",
+    "section": "",
+    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
+  },
+  {
     "objectID": "climatizacao/artigo2/index.html",
     "href": "climatizacao/artigo2/index.html",
     "title": "Artigo 2 - Ventilação Natural e Forçada",
@@ -140,11 +308,74 @@
     "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
   },
   {
-    "objectID": "dados.html",
-    "href": "dados.html",
-    "title": "Dados",
+    "objectID": "fisica-quimica/quimica/index.html",
+    "href": "fisica-quimica/quimica/index.html",
+    "title": "Quimica",
     "section": "",
-    "text": "Fontes de Dados\nLista de bases de dados utilizadas nas análises."
+    "text": "Estudos e experiências no âmbito da química.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/index.html",
+    "href": "fisica-quimica/fisica/index.html",
+    "title": "Fisica",
+    "section": "",
+    "text": "Conceitos e aplicações fundamentais da física.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/diversos/index.html",
+    "href": "fisica-quimica/diversos/index.html",
+    "title": "Diversos",
+    "section": "",
+    "text": "Outros temas no campo da física e química.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/literatura/index.html",
+    "href": "cultura/literatura/index.html",
+    "title": "Literatura",
+    "section": "",
+    "text": "Estudos literários e análises de obras.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/diversos/index.html",
+    "href": "cultura/diversos/index.html",
+    "title": "Diversos",
+    "section": "",
+    "text": "Outros temas de interesse cultural geral.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "termodinamica/artigo2/index.html",
+    "href": "termodinamica/artigo2/index.html",
+    "title": "Artigo 2 - Eficiência de Ciclos Termodinâmicos",
+    "section": "",
+    "text": "Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas."
+  },
+  {
+    "objectID": "moodlecesar/funcoes_quadraticas.html",
+    "href": "moodlecesar/funcoes_quadraticas.html",
+    "title": "Função Quadrática",
+    "section": "",
+    "text": "Este notebook permite explorar o comportamento da função do segundo grau \\(f(x) = ax^2 + bx + c\\) ajustando os coeficientes.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Coeficientes da função quadrática\na = 1\nb = -3\nc = 2\n\n# Domínio\nx = np.linspace(-10, 10, 400)\ny = a * x**2 + b * x + c\n\n# Gráfico\nplt.figure(figsize=(8,5))\nplt.plot(x, y, label=f\"f(x) = {a}x² + {b}x + {c}\", color='blue')\nplt.axhline(0, color='black', lw=1)\nplt.axvline(0, color='black', lw=1)\nplt.title(\"Gráfico da função quadrática\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "texto/economicos.html",
+    "href": "texto/economicos.html",
+    "title": "Temas Econômicos",
+    "section": "",
+    "text": "Temas Econômicos\nDiscussões econômicas relevantes para o setor imobiliário."
+  },
+  {
+    "objectID": "texto/juridicos.html",
+    "href": "texto/juridicos.html",
+    "title": "Temas Jurídicos e Urbanísticos",
+    "section": "",
+    "text": "Temas Jurídicos e Urbanísticos\nRegulação e legislação aplicáveis ao setor."
+  },
+  {
+    "objectID": "texto/artigo1.html",
+    "href": "texto/artigo1.html",
+    "title": "Artigo 1 - Panorama Geral",
+    "section": "",
+    "text": "Conteúdo introdutório sobre o mercado imobiliário."
   },
   {
     "objectID": "fisica/artigo2/index.html",
@@ -159,6 +390,111 @@
     "title": "Artigo 2 - Leis de Newton em Ação",
     "section": "",
     "text": "relação entre preços dos imóveis e juros."
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo1/index.html",
+    "href": "matematica/algebra-linear/artigo1/index.html",
+    "title": "Sistemas de Equações Lineares",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
+    "href": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Exemplo: sistema com 2 equações e 2 incógnitas",
+    "text": "Exemplo: sistema com 2 equações e 2 incógnitas\n\\[\n\\begin{cases}\nx + 2y = 5 \\\\\n3x - y = 4\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx, y = sp.symbols('x y')\n\neq1 = sp.Eq(x + 2*y, 5)\neq2 = sp.Eq(3*x - y, 4)\n\nsolucao = sp.solve((eq1, eq2), (x, y))\nsolucao\n\n\n{x: 13/7, y: 11/7}\n\n\nVisualização gráfica:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-1, 5, 100)\ny1 = (5 - x_vals) / 2\ny2 = (3 * x_vals - 4)\n\nplt.plot(x_vals, y1, label='x + 2y = 5')\nplt.plot(x_vals, y2, label='3x - y = 4')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Solução Gráfica de um Sistema Linear')\nplt.grid(True)\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "matematica/algebra-linear/index.html",
+    "href": "matematica/algebra-linear/index.html",
+    "title": "Algebra linear",
+    "section": "",
+    "text": "Álgebra linear e suas aplicações práticas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSistemas de Equações Lineares\n\n\nResolução de sistemas lineares utilizando o método de substituição, escalonamento e matrizes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOperações com Matrizes\n\n\nIntrodução às operações básicas com matrizes: soma, multiplicação e determinantes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGeometria no Espaço\n\n\nRepresentações vetoriais e operações geométricas no espaço tridimensional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "matematica/calculo/artigo1/index.html",
+    "href": "matematica/calculo/artigo1/index.html",
+    "title": "Continuidade de Funções por Ramos",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/calculo/artigo1/index.html#exemplo",
+    "href": "matematica/calculo/artigo1/index.html#exemplo",
+    "title": "Continuidade de Funções por Ramos",
+    "section": "Exemplo:",
+    "text": "Exemplo:\n\\[\nf(x) =\n\\begin{cases}\nx^2 - 1, & x &lt; 1 \\\\\n2x - 1, & x \\geq 1\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\nf1 = x**2 - 1\nf2 = 2*x - 1\n\nlim_esq = sp.limit(f1, x, 1)\nlim_dir = sp.limit(f2, x, 1)\nvalor = f2.subs(x, 1)\n\nlim_esq, lim_dir, valor\n\n\n(0, 1, 1)\n\n\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 2, 400)\ny_vals = np.piecewise(x_vals, [x_vals &lt; 1, x_vals &gt;= 1], [lambda x: x**2 - 1, lambda x: 2*x - 1])\n\nplt.plot(x_vals, y_vals, label='f(x)', color='blue')\nplt.axvline(1, color='red', linestyle='--')\nplt.title(\"Função por Ramos e Continuidade em x = 1\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "matematica/calculo/index.html",
+    "href": "matematica/calculo/index.html",
+    "title": "Calculo",
+    "section": "",
+    "text": "Cálculo diferencial, integral e suas aplicações.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nContinuidade de Funções por Ramos\n\n\nEstudo da continuidade em funções definidas por partes, com análise gráfica e computacional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDefinição de Derivada\n\n\nDerivada como limite do quociente incremental. Cálculo e interpretação gráfica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTeorema de Cauchy\n\n\nVersão generalizada do Teorema de Lagrange e sua aplicação prática em funções contínuas e deriváveis.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "matematica/basico/artigo1/index.html",
+    "href": "matematica/basico/artigo1/index.html",
+    "title": "Cálculo de Limites",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir\nO cálculo de limites é uma ferramenta central no estudo do comportamento de funções."
+  },
+  {
+    "objectID": "matematica/basico/artigo1/index.html#exemplo",
+    "href": "matematica/basico/artigo1/index.html#exemplo",
+    "title": "Cálculo de Limites",
+    "section": "Exemplo",
+    "text": "Exemplo\n\\[\n\\lim_{x \\to 2} (x^2 + 3x - 4)\n\\]\n\n\nCódigo\nimport sympy as sp\n\nx = sp.symbols('x')\nf = x**2 + 3*x - 4\nlimite = sp.limit(f, x, 2)\nlimite\n\n\n\\(\\displaystyle 6\\)\n\n\nGráfico da função:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 4, 100)\ny_vals = x_vals**2 + 3*x_vals - 4\n\nplt.plot(x_vals, y_vals, label=\"f(x)\")\nplt.axvline(2, color='r', linestyle='--', label=\"x = 2\")\nplt.axhline(limite.evalf(), color='g', linestyle=':', label=\"lim f(x) = \" + str(limite))\nplt.title(\"Função f(x) = x² + 3x - 4\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "matematica/basico/index.html",
+    "href": "matematica/basico/index.html",
+    "title": "Basico",
+    "section": "",
+    "text": "Conceitos elementares e práticas de matemática básica.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCálculo de Limites\n\n\nConceitos fundamentais e exemplos práticos de cálculo de limites de funções.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDerivadas\n\n\nIntrodução ao conceito de derivada, interpretação geométrica e aplicações iniciais.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEstatística Descritiva\n\n\nCálculo de média, mediana e desvio padrão com exemplo prático.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "matematica/estatistica/artigo1/index.html",
+    "href": "matematica/estatistica/artigo1/index.html",
+    "title": "Medidas de Localização e Dispersão",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 1 - Medidas de Localização e Dispersão\n\n\nCódigo\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndados = [12, 15, 14, 10, 18, 20, 12, 14, 16, 17]\nserie = pd.Series(dados)\nmedia = serie.mean()\nmediana = serie.median()\nmoda = serie.mode().tolist()\ndesvio = serie.std()\nmedia, mediana, moda, desvio\n\n\n(np.float64(14.8), np.float64(14.5), [12, 14], np.float64(3.0477678535099892))\n\n\n\n\nCódigo\nimport sympy as sp\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\nimport math\n\nplt.hist(dados, bins=5, color='lightblue', edgecolor='black')\nplt.axvline(media, color='red', linestyle='--', label='Média')\nplt.axvline(mediana, color='green', linestyle=':', label='Mediana')\nplt.title(\"Distribuição dos Dados\")\nplt.xlabel(\"Valor\")\nplt.ylabel(\"Frequência\")\nplt.legend()\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+  },
+  {
+    "objectID": "matematica/estatistica/index.html",
+    "href": "matematica/estatistica/index.html",
+    "title": "Estatistica",
+    "section": "",
+    "text": "Análise de dados, estatística e probabilidades.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMedidas de Localização e Dispersão\n\n\nCálculo e interpretação de média, mediana, moda e desvio padrão com dados numéricos.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPermutações e Combinações\n\n\nEstudo das fórmulas e aplicações de permutações e combinações com exemplos numéricos.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFunções Geradoras de Momentos\n\n\nIntrodução às funções geradoras de momentos (MGF) e sua utilidade na estatística teórica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "matematica/diversos/artigo1/index.html",
+    "href": "matematica/diversos/artigo1/index.html",
+    "title": "Funções Logarítmicas",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/diversos/artigo1/index.html#exemplo-com-base-10-e-base-e",
+    "href": "matematica/diversos/artigo1/index.html#exemplo-com-base-10-e-base-e",
+    "title": "Funções Logarítmicas",
+    "section": "Exemplo com base 10 e base e",
+    "text": "Exemplo com base 10 e base e\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0.1, 10, 200)\nlog10_vals = np.log10(x_vals)\nloge_vals = np.log(x_vals)\n\nplt.plot(x_vals, log10_vals, label='log₁₀(x)')\nplt.plot(x_vals, loge_vals, label='ln(x)', linestyle='--')\nplt.title(\"Funções Logarítmicas\")\nplt.xlabel(\"x\")\nplt.ylabel(\"f(x)\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "matematica/diversos/index.html",
+    "href": "matematica/diversos/index.html",
+    "title": "Diversos",
+    "section": "",
+    "text": "Temas diversos no estudo da matemática.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFunções Logarítmicas\n\n\nEstudo das propriedades e gráficos de funções logarítmicas reais.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFunções Trigonométricas\n\n\nGráficos e propriedades fundamentais das funções seno, cosseno e tangente.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNúmeros Complexos\n\n\nRepresentação, operações e interpretação geométrica dos números complexos.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "dados.html",
+    "href": "dados.html",
+    "title": "Dados",
+    "section": "",
+    "text": "Fontes de Dados\nLista de bases de dados utilizadas nas análises."
   },
   {
     "objectID": "imobiliario/artigo1/index.html",
@@ -182,59 +518,17 @@
     "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário.\n\n\n\n\n\nReferences\n\nAutor, A. (2025). Exemplo de referência. Editora Exemplo."
   },
   {
-    "objectID": "matematica/artigo1/index.html",
-    "href": "matematica/artigo1/index.html",
-    "title": "Artigo 1 - Séries e Somatórios",
+    "objectID": "tecnologias/eletrotecnia/index.html",
+    "href": "tecnologias/eletrotecnia/index.html",
+    "title": "Eletrotecnia",
     "section": "",
-    "text": "Exploração das séries aritméticas, geométricas e uso da notação sigma em problemas aplicados."
+    "text": "Fundamentos e aplicações da eletrotecnia nos edifícios.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "matematica/artigo3/index.html",
-    "href": "matematica/artigo3/index.html",
-    "title": "Artigo 3 - Probabilidades e Distribuições",
+    "objectID": "tecnologias/tics/index.html",
+    "href": "tecnologias/tics/index.html",
+    "title": "Tics",
     "section": "",
-    "text": "Conceitos fundamentais da teoria das probabilidades e principais distribuições utilizadas em ciências aplicadas."
-  },
-  {
-    "objectID": "quimica/artigo2/index.html",
-    "href": "quimica/artigo2/index.html",
-    "title": "Artigo 2 - Cinética Química com Python",
-    "section": "",
-    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
-  },
-  {
-    "objectID": "sobre.html",
-    "href": "sobre.html",
-    "title": "Sobre",
-    "section": "",
-    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
-  },
-  {
-    "objectID": "termodinamica/artigo2/index.html",
-    "href": "termodinamica/artigo2/index.html",
-    "title": "Artigo 2 - Eficiência de Ciclos Termodinâmicos",
-    "section": "",
-    "text": "Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas."
-  },
-  {
-    "objectID": "texto/artigo1.html",
-    "href": "texto/artigo1.html",
-    "title": "Artigo 1 - Panorama Geral",
-    "section": "",
-    "text": "Conteúdo introdutório sobre o mercado imobiliário."
-  },
-  {
-    "objectID": "texto/artigo3.html",
-    "href": "texto/artigo3.html",
-    "title": "Artigo 3 - Smart Cities",
-    "section": "",
-    "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário."
-  },
-  {
-    "objectID": "texto/juridicos.html",
-    "href": "texto/juridicos.html",
-    "title": "Temas Jurídicos e Urbanísticos",
-    "section": "",
-    "text": "Temas Jurídicos e Urbanísticos\nRegulação e legislação aplicáveis ao setor."
+    "text": "Tecnologias da informação e comunicação aplicadas ao setor técnico.\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
