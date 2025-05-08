@@ -1,5 +1,13 @@
 ---
 title: "Início"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
 description: "Bem-vindo ao repositório de Notas de Leitura — resumos e comentários de obras científicas e técnicas."
 format:
   html:
