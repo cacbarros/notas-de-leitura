@@ -1,0 +1,64 @@
+---
+title: "Funções Logarítmicas"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Estudo das propriedades e gráficos de funções logarítmicas reais."
+date: 2025-05-08
+categories: ['Diversos', 'Matemática']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+
+# Artigo 1 - Funções Logarítmicas
+
+As funções logarítmicas têm a forma geral:
+
+$$
+f(x) = \log_b(x)
+$$
+
+## Exemplo com base 10 e base e
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x_vals = np.linspace(0.1, 10, 200)
+log10_vals = np.log10(x_vals)
+loge_vals = np.log(x_vals)
+
+plt.plot(x_vals, log10_vals, label='log₁₀(x)')
+plt.plot(x_vals, loge_vals, label='ln(x)', linestyle='--')
+plt.title("Funções Logarítmicas")
+plt.xlabel("x")
+plt.ylabel("f(x)")
+plt.grid(True)
+plt.legend()
+plt.show()
+```

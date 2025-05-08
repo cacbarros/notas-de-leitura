@@ -1,0 +1,60 @@
+---
+title: "Números Complexos"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Representação, operações e interpretação geométrica dos números complexos."
+date: 2025-05-08
+categories: ['Diversos', 'Matemática']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+
+# Artigo 3 - Números Complexos
+
+Um número complexo tem a forma $z = a + bi$.
+
+```{python}
+import matplotlib.pyplot as plt
+
+# Representar dois números complexos
+z1 = 2 + 3j
+z2 = 1 - 1j
+
+plt.axhline(0, color='grey')
+plt.axvline(0, color='grey')
+plt.scatter([z1.real, z2.real], [z1.imag, z2.imag], color=['red', 'blue'])
+plt.text(z1.real, z1.imag, '  z1', color='red')
+plt.text(z2.real, z2.imag, '  z2', color='blue')
+plt.xlabel("Parte Real")
+plt.ylabel("Parte Imaginária")
+plt.title("Plano dos Números Complexos")
+plt.grid(True)
+plt.axis('equal')
+plt.show()
+```

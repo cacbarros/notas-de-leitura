@@ -1,0 +1,61 @@
+---
+title: "Permutações e Combinações"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Estudo das fórmulas e aplicações de permutações e combinações com exemplos numéricos."
+date: 2025-05-08
+categories: ['Estatística', 'Matemática']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+
+# Artigo 2 - Permutações e Combinações
+
+```{python}
+import math
+permutacoes = math.perm(5)
+combinacoes = math.comb(5, 3)
+permutacoes, combinacoes
+```
+
+```{python}
+import matplotlib.pyplot as plt
+n = range(1, 11)
+perm = [math.perm(x) for x in n]
+comb = [math.comb(x, 2) for x in n]
+
+plt.plot(n, perm, label='Permutações P(n)', marker='o')
+plt.plot(n, comb, label='Combinações C(n,2)', marker='s')
+plt.title("Permutações e Combinações")
+plt.xlabel("n")
+plt.ylabel("Contagem")
+plt.grid(True)
+plt.legend()
+plt.show()
+```

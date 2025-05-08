@@ -1,0 +1,72 @@
+---
+title: "Derivadas"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Introdução ao conceito de derivada, interpretação geométrica e aplicações iniciais."
+date: 2025-05-08
+categories: ['Matemática', 'Secundário']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+
+
+A **derivada** representa a taxa de variação de uma função e é a base do cálculo diferencial.
+
+## Exemplo
+
+$$
+f(x) = x^3 - 5x^2 + 2x
+$$
+
+```{python}
+import sympy as sp
+x = sp.symbols('x')
+
+f = x**3 - 5*x**2 + 2*x
+df = sp.diff(f, x)
+df
+```
+
+Gráficos da função e da derivada:
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x_vals = np.linspace(-1, 5, 200)
+f_vals = x_vals**3 - 5*x_vals**2 + 2*x_vals
+df_vals = 3*x_vals**2 - 10*x_vals + 2
+
+plt.plot(x_vals, f_vals, label="f(x)", linewidth=2)
+plt.plot(x_vals, df_vals, label="f'(x)", linestyle='--')
+plt.title("Função e sua Derivada")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid(True)
+plt.legend()
+plt.show()
+```

@@ -1,0 +1,71 @@
+---
+title: "Medidas de Localização e Dispersão"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Cálculo e interpretação de média, mediana, moda e desvio padrão com dados numéricos."
+date: 2025-05-08
+categories: ['Estatística', 'Matemática']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+
+
+# Artigo 1 - Medidas de Localização e Dispersão
+
+```{python}
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+dados = [12, 15, 14, 10, 18, 20, 12, 14, 16, 17]
+serie = pd.Series(dados)
+media = serie.mean()
+mediana = serie.median()
+moda = serie.mode().tolist()
+desvio = serie.std()
+media, mediana, moda, desvio
+```
+
+```{python}
+import sympy as sp
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import math
+
+plt.hist(dados, bins=5, color='lightblue', edgecolor='black')
+plt.axvline(media, color='red', linestyle='--', label='Média')
+plt.axvline(mediana, color='green', linestyle=':', label='Mediana')
+plt.title("Distribuição dos Dados")
+plt.xlabel("Valor")
+plt.ylabel("Frequência")
+plt.legend()
+plt.grid(True)
+plt.show()
+```

@@ -1,16 +1,13 @@
-name: notas-leitura-env
+name: blog-env
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
-  - jupyter
-  - notebook
-  - ipykernel
-  - nbconvert
-  - pandas
-  - matplotlib
+  - python=3.11
   - numpy
-  - quarto
-  - pip
-  - pip:
-      - jupyterlab
+  - matplotlib
+  - sympy
+  - pandas
+  - scipy
+  - jupyter
+  - jupyterlab
+  - ipykernel

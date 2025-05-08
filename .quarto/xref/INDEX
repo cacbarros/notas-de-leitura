@@ -96,5 +96,125 @@
   },
   "climatizacao/artigo3/index.qmd": {
     "index.html": "ad868116"
+  },
+  "cultura/diversos/index.qmd": {
+    "index.html": "c60f6492"
+  },
+  "cultura/economia/index.qmd": {
+    "index.html": "c3ab406d"
+  },
+  "cultura/filosofia/index.qmd": {
+    "index.html": "ad69b55e"
+  },
+  "cultura/historia/index.qmd": {
+    "index.html": "2e5b098d"
+  },
+  "cultura/literatura/index.qmd": {
+    "index.html": "b350a088"
+  },
+  "fisica-quimica/corrosao/index.qmd": {
+    "index.html": "85b3b476"
+  },
+  "fisica-quimica/diversos/index.qmd": {
+    "index.html": "fa64637d"
+  },
+  "fisica-quimica/fisica/index.qmd": {
+    "index.html": "14cc313c"
+  },
+  "fisica-quimica/quimica/index.qmd": {
+    "index.html": "cc872452"
+  },
+  "fisica-quimica/termodinamica/index.qmd": {
+    "index.html": "1891f206"
+  },
+  "matematica/algebra-linear/index.qmd": {
+    "index.html": "69764ef4"
+  },
+  "matematica/basico/artigo1/index.qmd": {
+    "index.html": "54e5ba37",
+    "index.tex": "be36cc0e"
+  },
+  "matematica/basico/artigo2/index.qmd": {
+    "index.html": "7ff6f09e",
+    "index.tex": "7efe4242"
+  },
+  "matematica/basico/artigo3/index.qmd": {
+    "index.html": "045d2b22",
+    "index.tex": "db7db360"
+  },
+  "matematica/basico/index.qmd": {
+    "index.html": "b987feb4"
+  },
+  "matematica/calculo/index.qmd": {
+    "index.html": "97b0e790"
+  },
+  "matematica/diversos/index.qmd": {
+    "index.html": "da5ddb10"
+  },
+  "matematica/estatistica/index.qmd": {
+    "index.html": "221733f5"
+  },
+  "tecnologias/climatizacao/index.qmd": {
+    "index.html": "dea4daf1"
+  },
+  "tecnologias/diversos/index.qmd": {
+    "index.html": "fcd79e6d"
+  },
+  "tecnologias/eletrotecnia/index.qmd": {
+    "index.html": "89e16533"
+  },
+  "tecnologias/manutencao/index.qmd": {
+    "index.html": "48c25423"
+  },
+  "tecnologias/tics/index.qmd": {
+    "index.html": "e925767e"
+  },
+  "matematica/algebra-linear/artigo1/index.qmd": {
+    "index.html": "0c0c20fa",
+    "index.tex": "1c156779"
+  },
+  "matematica/algebra-linear/artigo2/index.qmd": {
+    "index.html": "a12f17fb",
+    "index.tex": "dbd7cae0"
+  },
+  "matematica/algebra-linear/artigo3/index.qmd": {
+    "index.html": "af9c418f",
+    "index.tex": "41e9b40a"
+  },
+  "matematica/calculo/artigo1/index.qmd": {
+    "index.html": "8f741363",
+    "index.tex": "617d19de"
+  },
+  "matematica/calculo/artigo2/index.qmd": {
+    "index.html": "1305c4e8",
+    "index.tex": "0cc46059"
+  },
+  "matematica/calculo/artigo3/index.qmd": {
+    "index.html": "33bdac98",
+    "index.tex": "f615bcd2"
+  },
+  "matematica/estatistica/artigo1/index.qmd": {
+    "index.html": "0f85952b",
+    "index.tex": "dd09fdf1"
+  },
+  "matematica/estatistica/artigo2/index.qmd": {
+    "index.html": "294c258b",
+    "index.tex": "3e02ca27"
+  },
+  "matematica/estatistica/artigo3/index.qmd": {
+    "index.html": "c807ec0f",
+    "index.tex": "09b6374c"
+  },
+  "matematica/diversos/artigo1/index.qmd": {
+    "index.html": "44ed38ba",
+    "index.tex": "28820881"
+  },
+  "matematica/diversos/artigo2/index.qmd": {
+    "index.html": "78303e41",
+    "index.tex": "2b234eeb"
+  },
+  "matematica/diversos/artigo3/index.qmd": {
+    "index.html": "04aec3c4",
+    "index.tex": "17861674"
   }
 }

@@ -1,0 +1,65 @@
+---
+title: "Estatística Descritiva"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Cálculo de média, mediana e desvio padrão com exemplo prático."
+date: 2025-05-08
+categories: ['Matemática', 'Secundário']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+
+
+A estatística descritiva permite resumir e descrever conjuntos de dados de forma eficiente.
+
+## Exemplo
+
+```{python}
+import pandas as pd
+
+dados = [8, 6, 7, 5, 3, 9, 10, 6, 7]
+serie = pd.Series(dados)
+
+media = serie.mean()
+mediana = serie.median()
+desvio = serie.std()
+
+media, mediana, desvio
+```
+
+Histograma:
+
+```{python}
+import matplotlib.pyplot as plt
+
+plt.hist(dados, bins=5, color='skyblue', edgecolor='black')
+plt.title("Distribuição dos Dados")
+plt.xlabel("Valor")
+plt.ylabel("Frequência")
+plt.grid(True)
+plt.show()
+```

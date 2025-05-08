@@ -1,0 +1,17 @@
+---
+title: "Estatistica"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+listing:
+  type: default
+  sort: "date desc"
+  contents: ./
+---
+
+Análise de dados, estatística e probabilidades.
