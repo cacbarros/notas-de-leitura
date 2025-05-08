@@ -1,0 +1,197 @@
+---
+title: "Notas de Leitura em Química"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Notas integradas sobre estrutura do átomo, estequiometria e a lei de Dalton."
+date: 2025-05-08
+categories: ['Diversos', 'Química']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Estrutura do Átomo
+
+> "A estrutura do átomo é um dos pilares da ciência moderna."  
+> — Niels Bohr
+
+## Introdução
+
+A compreensão da estrutura atômica é essencial para o estudo da matéria. Esta nota de leitura resume os principais modelos atômicos propostos ao longo da história da ciência.
+
+## Modelos Históricos do Átomo
+
+### Modelo de Dalton (1803)
+
+- O átomo seria uma esfera maciça, indivisível e indestrutível.
+- Cada elemento químico possui átomos com massa e propriedades únicas.
+
+### Modelo de Thomson (1897)
+
+- Descoberta do elétron.
+- Modelo conhecido como "pudim de passas": uma esfera positiva com elétrons incrustados.
+
+### Modelo de Rutherford (1911)
+
+- Experimento da lâmina de ouro.
+- Descoberta do núcleo atômico: pequeno, denso e positivo.
+- Átomos compostos majoritariamente por espaço vazio.
+
+### Modelo de Bohr (1913)
+
+- Elétrons em órbitas circulares com energia quantizada.
+- Explica linhas espectrais do hidrogénio.
+
+### Modelo Quântico (1926 – ...)
+
+- Elétrons descritos por funções de onda (Schrödinger).
+- Princípio da Incerteza (Heisenberg): impossível conhecer simultaneamente a posição e a velocidade do elétron.
+- Orbitais: regiões com maior probabilidade de encontrar um elétron.
+
+## Ilustração com Python: Níveis de Energia no Modelo de Bohr
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+n = np.arange(1, 6)
+energia = -13.6 / n**2
+
+plt.figure()
+plt.plot(n, energia, marker='o')
+plt.xlabel('n (nível quântico)')
+plt.ylabel('Energia (eV)')
+plt.title('Níveis de Energia do Átomo de Hidrogênio (Modelo de Bohr)')
+plt.grid(True)
+plt.show()
+```
+
+## Estrutura Atual do Átomo
+
+- Núcleo: prótons e nêutrons.
+- Eletrosfera: nuvem de elétrons distribuídos em níveis de energia.
+- Número atômico (Z) determina o elemento.
+- Massa atômica (A) corresponde à soma de prótons e nêutrons.
+
+## Considerações Didáticas
+
+- Importância de usar analogias para explicar os modelos.
+- Interligação com conteúdos de química e física moderna.
+
+# Estequiometria
+
+## Introdução
+
+A estequiometria é a parte da química que estuda as relações quantitativas em reações químicas, baseando-se na Lei de Conservação da Massa.
+
+## Leis Fundamentais
+
+- **Lei de Lavoisier**: "Na natureza nada se cria, nada se perde, tudo se transforma."
+- **Lei de Proust**: proporções constantes na composição de compostos.
+
+## Equações Químicas e Balanceamento
+
+- O balanceamento assegura que o número de átomos de cada elemento seja o mesmo nos reagentes e produtos.
+
+$$ \mathrm{2H_2 + O_2 \rightarrow 2H_2O} $$
+
+## Cálculos Estequiométricos
+
+- Conversões mol ↔ massa ↔ volume (gases).
+- Rendimento da reação, reagente limitante e excesso.
+
+## Exemplo com Python: Massa de Produto
+
+```{python}
+m_molar_H2 = 2.02
+m_molar_O2 = 32.00
+m_molar_H2O = 18.02
+
+massa_H2 = 4.04  # g
+mol_H2 = massa_H2 / m_molar_H2
+mol_H2O = mol_H2  # proporção 1:1
+massa_H2O = mol_H2O * m_molar_H2O
+
+print(f"Massa de água formada: {massa_H2O:.2f} g")
+```
+
+## Aplicações
+
+- Indústria: controle de qualidade e formulações.
+- Meio ambiente: quantificação de poluentes.
+
+## Considerações Didáticas
+
+- Utilização de diagramas e analogias com receitas.
+- Importância da prática com exercícios variados.
+
+# Lei de Dalton da Pressão Parcial
+
+## Introdução
+
+A Lei de Dalton afirma que, numa mistura de gases ideais, a pressão total é igual à soma das pressões parciais de cada componente.
+
+$$ P_{total} = P_1 + P_2 + \dots + P_n $$
+
+## Fundamentos
+
+- A pressão parcial de um gás é proporcional ao número de mols:
+
+$$ P_i = \chi_i \cdot P_{total} $$
+
+onde $\chi_i$ é a fração molar do gás $i$.
+
+## Exemplo com Python: Pressão Parcial
+
+```{python}
+P_total = 1.00  # atm
+mol_O2 = 2
+mol_N2 = 3
+mol_total = mol_O2 + mol_N2
+
+chi_O2 = mol_O2 / mol_total
+P_O2 = chi_O2 * P_total
+
+print(f"Pressão parcial do O2: {P_O2:.2f} atm")
+```
+
+## Aplicações
+
+- Misturas respiratórias (mergulho, medicina).
+- Processos industriais e atmosferas controladas.
+
+## Considerações Didáticas
+
+- Uso de modelos com balões e frações.
+- Relação com o comportamento de gases ideais.
+
+

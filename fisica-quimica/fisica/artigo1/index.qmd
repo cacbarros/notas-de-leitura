@@ -1,0 +1,83 @@
+---
+title: "Velocidade e Aceleração"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Conceitos fundamentais de cinemática: velocidade média, instantânea e aceleração."
+date: 2025-05-08
+categories: ['Diversos', 'Física']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+
+# Velocidade e Aceleração
+
+> "O movimento é a linguagem da física."
+
+## Introdução
+
+A cinemática estuda o movimento dos corpos sem considerar suas causas. Os conceitos de velocidade e aceleração são fundamentais para essa descrição.
+
+## Conceitos
+
+- **Velocidade média**: razão entre o deslocamento e o intervalo de tempo.
+- **Velocidade instantânea**: limite da velocidade média quando Δt → 0.
+- **Aceleração média**: variação da velocidade no tempo.
+
+## Fórmulas
+
+$$ v = \frac{{\Delta s}}{{\Delta t}} $$
+$$ a = \frac{{\Delta v}}{{\Delta t}} $$
+
+## Exemplo com Python: Gráfico de Velocidade
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+t = np.linspace(0, 10, 100)
+v = 2 * t + 1  # movimento uniformemente acelerado (a = 2 m/s²)
+
+plt.plot(t, v)
+plt.title('Velocidade vs. Tempo')
+plt.xlabel('Tempo (s)')
+plt.ylabel('Velocidade (m/s)')
+plt.grid(True)
+plt.show()
+```
+
+## Considerações Didáticas
+
+- Utilizar animações ou simulações.
+- Explorar gráficos posição x tempo e velocidade x tempo.
+

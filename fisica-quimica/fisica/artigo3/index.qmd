@@ -1,0 +1,94 @@
+---
+title: "Circuitos Elétricos"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise de circuitos elétricos simples com resistores e fontes de tensão."
+date: 2025-05-08
+categories: ['Diversos', 'Física']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+
+# Circuitos Elétricos
+
+> "Entender circuitos é entender como a energia flui nas tecnologias modernas."
+
+## Introdução
+
+Circuitos elétricos são interconexões de componentes que permitem o fluxo controlado de corrente elétrica.
+
+## Conceitos Básicos
+
+- **Corrente (I)**: fluxo de carga elétrica.
+- **Tensão (V)**: diferença de potencial elétrico.
+- **Resistência (R)**: oposição ao fluxo de corrente.
+
+## Leis Fundamentais
+
+- Lei de Ohm: $V = R \cdot I$
+- Leis de Kirchhoff: conservações de corrente e tensão.
+
+## Exemplo com Python: Lei de Ohm
+
+```{python}
+R = 100  # ohms
+V = 5  # volts
+I = V / R
+
+print(f"Corrente: {I:.2f} A")
+```
+
+## Gráfico: Corrente vs Tensão
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+R = 100
+V = np.linspace(0, 10, 100)
+I = V / R
+
+plt.plot(V, I)
+plt.title('Corrente vs Tensão para R = 100Ω')
+plt.xlabel('Tensão (V)')
+plt.ylabel('Corrente (A)')
+plt.grid(True)
+plt.show()
+```
+
+## Considerações Didáticas
+
+- Uso de simuladores como Tinkercad ou Phet.
+- Projetos práticos com multímetros e protoboards.
+

@@ -1,0 +1,107 @@
+---
+title: "Reações Redox"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Transferência de elétrons e aplicações das reações de oxidação-redução."
+date: 2025-05-08
+categories: ['Diversos', 'Química']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Reações Redox
+
+> "A química das reações redox é a base do funcionamento de pilhas, baterias e muitos processos biológicos."
+
+## Introdução
+
+Reações de oxidação-redução, ou redox, envolvem a transferência de elétrons entre espécies químicas. São fundamentais na eletroquímica, metabolismo celular e processos industriais.
+
+## Conceitos Fundamentais
+
+- **Oxidação**: perda de elétrons.
+- **Redução**: ganho de elétrons.
+- O agente **oxidante** é a substância que **reduz** (recebe elétrons).
+- O agente **redutor** é a substância que **oxida** (cede elétrons).
+
+## Números de Oxidação
+
+- Representam o estado aparente de carga de um átomo em uma molécula ou íon.
+- Úteis para identificar quais elementos são oxidados e reduzidos.
+
+## Identificação de Reações Redox
+
+Exemplo:
+
+$$ \mathrm{Zn + Cu^{2+} 
+\rightarrow Zn^{2+} + Cu} $$
+
+- Zn sofre oxidação (0 → +2).
+- Cu²⁺ sofre redução (+2 → 0).
+
+## Balanceamento de Reações Redox
+
+Método das semi-reações (meio aquoso ácido):
+
+1. Separar as semi-reações.
+2. Balancear elementos, exceto H e O.
+3. Balancear O com $\mathrm{H_2O}$.
+4. Balancear H com $\mathrm{H^+}$.
+5. Balancear cargas com elétrons.
+6. Somar e simplificar.
+
+## Exemplo com Python: Simulação de Redox
+
+```{python}
+reacoes = {
+    "Zn + Cu2+": {"oxidado": "Zn -> Zn2+", "reduzido": "Cu2+ -> Cu"},
+    "Fe + Cl2": {"oxidado": "Fe -> Fe2+", "reduzido": "Cl2 -> 2Cl-"},
+}
+
+for r, pares in reacoes.items():
+    print(f"Reação: {r}")
+    for tipo, eq in pares.items():
+        print(f"  {tipo.title()}: {eq}")
+```
+
+## Aplicações
+
+- Pilhas e baterias.
+- Reações metabólicas (ex: respiração celular).
+- Tratamento de águas e processos industriais.
+
+## Considerações Didáticas
+
+- Importância do conceito de elétron e analogias visuais.
+- Prática com tabelas de potencial padrão e métodos de balanceamento.
+

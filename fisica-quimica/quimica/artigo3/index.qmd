@@ -1,0 +1,95 @@
+---
+title: "Estequiometria"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Relações quantitativas entre reagentes e produtos em reações químicas."
+date: 2025-05-08
+categories: ['Diversos', 'Química']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Estequiometria
+
+> "A estequiometria é a linguagem matemática das reações químicas."
+
+## Introdução
+
+A estequiometria estuda as proporções quantitativas entre os reagentes e os produtos de uma reação química, com base na Lei de Conservação da Massa de Lavoisier.
+
+## Leis Pioneiras
+
+- **Lei de Lavoisier**: A massa total dos reagentes é igual à dos produtos.
+- **Lei de Proust**: Um composto é sempre formado pelos mesmos elementos na mesma proporção em massa.
+
+## Equações Químicas e Balanceamento
+
+- O balanceamento garante a conservação de átomos.
+- Exemplo:
+
+$$ \mathrm{2H_2 + O_2 \rightarrow 2H_2O} $$
+
+## Relações de Mol e Massa
+
+- **Massa molar**: massa de 1 mol de substância.
+- **Conversões**: massa ↔ mol ↔ número de partículas (via constante de Avogadro).
+
+## Cálculos Estequiométricos
+
+- Identificação de reagente limitante.
+- Cálculo de rendimento teórico e percentual.
+
+## Exemplo com Python: Cálculo de Massa de Produto
+
+```{python}
+massa_H2 = 4.04  # g
+massa_molar_H2 = 2.02
+massa_molar_H2O = 18.02
+
+mol_H2 = massa_H2 / massa_molar_H2
+mol_H2O = mol_H2  # relação 1:1
+massa_H2O = mol_H2O * massa_molar_H2O
+
+print(f"Massa de água produzida: {massa_H2O:.2f} g")
+```
+
+## Aplicações
+
+- Indústria química: formulações precisas.
+- Análises laboratoriais e controle ambiental.
+
+## Considerações Didáticas
+
+- Utilizar analogias com receitas culinárias.
+- Explorar problemas práticos e interdisciplinares.
+

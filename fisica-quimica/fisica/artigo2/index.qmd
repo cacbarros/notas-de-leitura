@@ -1,0 +1,95 @@
+---
+title: "Energia Solar"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Fundamentos físicos da conversão da energia solar em elétrica e térmica."
+date: 2025-05-08
+categories: ['Diversos', 'Física']
+format:
+  html: default
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+
+# Energia Solar
+
+> "O sol é a fonte primária de toda a energia utilizada na Terra."
+
+## Introdução
+
+A energia solar é uma fonte limpa e renovável, convertida em energia térmica ou elétrica por meio de tecnologias como painéis fotovoltaicos.
+
+## Tipos de Energia Solar
+
+- **Fotovoltaica**: conversão direta da luz solar em eletricidade.
+- **Térmica**: aproveitamento do calor do sol.
+
+## Eficiência e Irradiação
+
+- Eficiência depende do material semicondutor e condições climáticas.
+- A irradiação solar é medida em W/m².
+
+## Exemplo com Python: Potência Gerada
+
+```{python}
+area = 1.6  # m²
+irradiancia = 1000  # W/m²
+eficiencia = 0.18
+
+potencia = area * irradiancia * eficiencia
+print(f"Potência gerada: {potencia:.1f} W")
+```
+
+## Gráfico: Potência ao longo do dia
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+horas = np.linspace(6, 18, 100)
+pot = 0.18 * 1.6 * 1000 * np.sin((np.pi / 12) * (horas - 6))
+pot = np.clip(pot, 0, None)
+
+plt.plot(horas, pot)
+plt.title('Potência Solar ao Longo do Dia')
+plt.xlabel('Hora do dia')
+plt.ylabel('Potência (W)')
+plt.grid(True)
+plt.show()
+```
+
+## Considerações Didáticas
+
+- Comparar com outras fontes de energia.
+- Visitas técnicas e simulações são úteis.
+
+## Referências

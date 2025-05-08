@@ -1,5 +1,6 @@
 ---
-title: "Quimica"
+title: "Química"
+
 filters:
   - watermark
 watermark:
@@ -14,4 +15,6 @@ listing:
   contents: ./
 ---
 
-Estudos e experiências no âmbito da química.
+Conceitos elementares e práticas de química.
+
+

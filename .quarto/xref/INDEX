@@ -65,7 +65,8 @@
     "index.html": "329f8a77"
   },
   "quimica/artigo2/index.qmd": {
-    "index.html": "8108c1e9"
+    "index.html": "8108c1e9",
+    "index.tex": "2beaceeb"
   },
   "quimica/artigo3/index.qmd": {
     "index.html": "db780df5"
@@ -216,5 +217,32 @@
   "matematica/diversos/artigo3/index.qmd": {
     "index.html": "04aec3c4",
     "index.tex": "17861674"
+  },
+  "quimica/index.qmd": {
+    "index.html": "c9279711"
+  },
+  "fisica-quimica/quimica/artigo1/index.qmd": {
+    "index.html": "a4fbcdc9",
+    "index.tex": "c3672983"
+  },
+  "fisica-quimica/quimica/artigo2/index.qmd": {
+    "index.html": "af9de205",
+    "index.tex": "fd43f1a1"
+  },
+  "fisica-quimica/quimica/artigo3/index.qmd": {
+    "index.html": "4c287370",
+    "index.tex": "6d3bfbc6"
+  },
+  "fisica-quimica/fisica/artigo1/index.qmd": {
+    "index.html": "4675e6fa",
+    "index.tex": "4e2f49de"
+  },
+  "fisica-quimica/fisica/artigo2/index.qmd": {
+    "index.html": "c57604e0",
+    "index.tex": "f71375e2"
+  },
+  "fisica-quimica/fisica/artigo3/index.qmd": {
+    "index.html": "f4642017",
+    "index.tex": "09d907a9"
   }
 }
