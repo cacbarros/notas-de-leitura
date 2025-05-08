@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Notas de leitura"
+  site-url: https://cacbarros.github.io/notas-de-leitura
   page-footer:
     border: false
     background: none
