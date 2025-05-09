@@ -1,0 +1,12 @@
+---
+title: "Incorporação de Diagrama Mermaid como Imagem"
+format:
+  html: default
+  pdf: default
+---
+
+# 🌿 Diagrama de Argumentação
+
+Este documento mostra como incluir um diagrama Mermaid convertido em imagem.
+
+![diagrama](diagrama2.png)

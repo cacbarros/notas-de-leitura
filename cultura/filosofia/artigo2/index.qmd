@@ -1,0 +1,103 @@
+---
+title: "Paradigmas segundo Kuhn"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Exploração da teoria dos paradigmas científicos conforme proposta por Thomas Kuhn em 'A Estrutura das Revoluções Científicas'."
+date: 2025-05-08
+categories: ['Diversos', 'Filosofia']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Paradigmas segundo Kuhn
+
+> "A ciência não evolui por acumulação de conhecimentos, mas por revoluções."  
+> — Thomas S. Kuhn
+
+## Introdução
+
+Thomas Kuhn, em *A Estrutura das Revoluções Científicas* (1962), desafiou a visão linear e acumulativa da ciência ao introduzir o conceito de **paradigma** como estrutura dominante em determinada fase da ciência.
+
+## Estrutura das Mudanças Científicas
+
+- **Ciência Normal**: atividade baseada em paradigmas aceitos.
+- **Crise**: surgimento de anomalias que desafiam o paradigma.
+- **Revolução Científica**: substituição de um paradigma por outro.
+- **Nova Ciência Normal**: estabilização do novo paradigma.
+
+## Características dos Paradigmas
+
+- Determinam o que deve ser observado.
+- Estabelecem métodos e perguntas legítimas.
+- Orientam a interpretação dos dados.
+
+## Críticas e Impactos
+
+- Kuhn influenciou a epistemologia contemporânea.
+- Foi criticado por relativismo e comparabilidade limitada entre paradigmas.
+- Inspirou debates sobre ciência como construção social.
+
+## Diagrama de Ideias (Mermaid)
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Paradigma Atual] --> B[Ciência Normal]
+  B --> C[Anomalias]
+  C --> D[Crescimento das anomalias]
+  D --> E[Crise]
+  E --> F[Revolução Científica]
+  F --> G[Novo Paradigma]
+  G --> H[Nova Ciência Normal]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.4\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Relacionar o modelo de Kuhn com casos históricos reais.
+- Discutir a natureza dinâmica e controversa da ciência.
+
+## Referências
+
+- Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
+- Bird, A. (2000). *Thomas Kuhn*. Princeton University Press.

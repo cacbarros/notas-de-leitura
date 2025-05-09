@@ -1,0 +1,8 @@
+graph TD
+  A[Problema] --> B[Conjectura]
+  B --> C[Testes e Tentativas de Refutação]
+  C --> D{Refutada?}
+  D -->|Sim| E[Nova Conjectura]
+  D -->|Não| F[Corroboração Temporária]
+  E --> A
+  F --> A

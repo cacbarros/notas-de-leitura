@@ -1,0 +1,105 @@
+---
+title: "A Evolução da Ciência segundo Popper"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise da proposta de Karl Popper sobre a evolução da ciência com base na falseabilidade e no método conjectura e refutação."
+date: 2025-05-08
+categories: ['Diversos', 'Filosofia']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# A Evolução da Ciência segundo Popper
+
+> "A ciência avança por tentativas e erros — conjecturas e refutações."  
+> — Karl Popper
+
+## Introdução
+
+Karl Popper propôs uma alternativa à visão indutivista da ciência. Para ele, o progresso científico ocorre por meio do **método das conjecturas e refutações**, em que hipóteses são constantemente testadas e refutadas.
+
+## Princípios da Falseabilidade
+
+- Uma teoria é científica se puder ser **falseada** (refutada por observação).
+- A ciência não prova, mas elimina erros.
+- O conhecimento avança eliminando hipóteses erradas.
+
+## Etapas do Método Científico Popperiano
+
+1. **Problema**: surge de uma observação ou falha em teoria existente.
+2. **Conjectura**: proposta de uma solução teórica.
+3. **Refutação**: tentativa de demonstrar que a conjectura é falsa.
+4. **Novo Problema**: o ciclo reinicia com base no conhecimento corrigido.
+
+## Comparações com Outras Visões
+
+- Difere do positivismo lógico (verificabilidade).
+- Aproxima-se de uma visão crítica e racionalista da ciência.
+- Influenciou a filosofia crítica, a metodologia científica e a epistemologia evolutiva.
+
+## Diagrama de Ideias (Mermaid)
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Problema] --> B[Conjectura]
+  B --> C[Testes e Tentativas de Refutação]
+  C --> D{Refutada?}
+  D -->|Sim| E[Nova Conjectura]
+  D -->|Não| F[Corroboração Temporária]
+  E --> A
+  F --> A
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Explorar exemplos reais de teorias refutadas.
+- Debater a diferença entre prova e falseabilidade.
+- Utilizar simulações de testes de hipóteses.
+
+## Referências
+
+- Popper, K. (1959). *The Logic of Scientific Discovery*. Hutchinson.
+- Magee, B. (1973). *Popper*. Fontana Press.
+- Thornton, S. (2022). *Karl Popper*. Stanford Encyclopedia of Philosophy.

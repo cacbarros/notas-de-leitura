@@ -1,0 +1,99 @@
+---
+title: "Verificabilidade das Hipóteses"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Discussão sobre a tese da verificabilidade lógica das hipóteses científicas, conforme o positivismo lógico."
+date: 2025-05-08
+categories: ['Diversos', 'Filosofia']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Verificabilidade das Hipóteses
+
+> "O significado de uma proposição é a sua forma de verificação."  
+> — A. J. Ayer
+
+## Introdução
+
+A tese da verificabilidade das hipóteses foi central ao movimento do **positivismo lógico**, especialmente no Círculo de Viena. Segundo ela, uma proposição só é **significativa** se puder ser verificada empiricamente ou for analiticamente verdadeira.
+
+## Tipos de Proposições
+
+- **Analíticas**: verdadeiras por definição (ex: "todos os solteiros são não casados").
+- **Sintéticas verificáveis**: exigem observação empírica (ex: "a água ferve a 100°C").
+- **Metafísicas ou não verificáveis**: consideradas sem significado científico pelo positivismo (ex: "Deus é eterno").
+
+## Objeções
+
+- Karl Popper criticou a verificabilidade, propondo a **falseabilidade** como critério.
+- Nem todas as teorias científicas são diretamente verificáveis, mas podem ser testadas indiretamente.
+
+## Diagrama de Ideias (Mermaid)
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Tese da Verificabilidade] --> B{Tipos de Proposições}
+  B --> C[Analíticas]
+  B --> D[Sintéticas Verificáveis]
+  B --> E[Metafísicas]
+  A --> F[Críticas]
+  F --> G[Popper: Falseabilidade]
+  F --> H[Testabilidade indireta]
+```
+
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Usar exemplos claros (ex: ciências, religião, matemática).
+- Explorar debates entre verificabilidade e falseabilidade.
+
+## Referências
+
+- Ayer, A. J. (1936). *Language, Truth and Logic*.
+- Popper, K. (1959). *The Logic of Scientific Discovery*.
+- Passmore, J. (1967). *A Hundred Years of Philosophy*.
+
+

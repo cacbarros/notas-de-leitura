@@ -244,5 +244,24 @@
   "fisica-quimica/fisica/artigo3/index.qmd": {
     "index.html": "f4642017",
     "index.tex": "09d907a9"
+  },
+  "quimica/artigo1/teste.qmd": {
+    "teste.html": "80269aec",
+    "teste.tex": "09fdfb5f"
+  },
+  "quimica/artigo1/diagrama.md": {
+    "diagrama.html": "8929d5ef"
+  },
+  "cultura/filosofia/artigo1/index.qmd": {
+    "index.html": "d9055348",
+    "index.tex": "7b48d239"
+  },
+  "cultura/filosofia/artigo2/index.qmd": {
+    "index.html": "3b4265db",
+    "index.tex": "126daa42"
+  },
+  "cultura/filosofia/artigo3/index.qmd": {
+    "index.html": "0670a754",
+    "index.tex": "811d3a89"
   }
 }

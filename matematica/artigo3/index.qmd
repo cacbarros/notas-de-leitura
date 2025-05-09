@@ -1,0 +1,20 @@
+---
+title: "Artigo 3 - Probabilidades e Distribuições"
+description: "Introdução às probabilidades, eventos independentes e distribuições clássicas como binomial e normal."
+date: 2025-04-30
+categories: ['Matemática', 'Estatística']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Probabilidades e Distribuições
+
+Conceitos fundamentais da teoria das probabilidades e principais distribuições utilizadas em ciências aplicadas.
+
+## Referências

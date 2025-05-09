@@ -1,0 +1,14 @@
+# Diagrama Mermaid de Exemplo
+
+```mermaid
+graph TD
+  A[Tese Principal]
+  B[Argumento 1]
+  C[Argumento 2]
+  D[Conclusão]
+
+  A --> B
+  A --> C
+  B --> D
+  C --> D
+```

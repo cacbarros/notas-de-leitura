@@ -1,0 +1,22 @@
+---
+title: "Artigo 1 - Séries e Somatórios"
+description: "Introdução às séries numéricas, progressões e notação de somatório com aplicações práticas."
+date: 2025-04-30
+categories: ['Matemática', 'Análise']
+format:
+  html:
+    toc: true
+    code-fold: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+# Séries e Somatórios
+
+Exploração das séries aritméticas, geométricas e uso da notação sigma em problemas aplicados.
+
+## Referências
+
+
