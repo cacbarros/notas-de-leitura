@@ -112,60 +112,74 @@
     "text": "Exemplo\n\\[\nf(x) = x^3 - 5x^2 + 2x\n\\]\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\n\nf = x**3 - 5*x**2 + 2*x\ndf = sp.diff(f, x)\ndf\n\n\n\\(\\displaystyle 3 x^{2} - 10 x + 2\\)\n\n\nGráficos da função e da derivada:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-1, 5, 200)\nf_vals = x_vals**3 - 5*x_vals**2 + 2*x_vals\ndf_vals = 3*x_vals**2 - 10*x_vals + 2\n\nplt.plot(x_vals, f_vals, label=\"f(x)\", linewidth=2)\nplt.plot(x_vals, df_vals, label=\"f'(x)\", linestyle='--')\nplt.title(\"Função e sua Derivada\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.grid(True)\nplt.legend()\nplt.show()"
   },
   {
-    "objectID": "matematica/calculo/artigo3/index.html",
-    "href": "matematica/calculo/artigo3/index.html",
-    "title": "Teorema de Cauchy",
+    "objectID": "matematica/artigo3/index.html",
+    "href": "matematica/artigo3/index.html",
+    "title": "Artigo 3 - Probabilidades e Distribuições",
+    "section": "",
+    "text": "Conceitos fundamentais da teoria das probabilidades e principais distribuições utilizadas em ciências aplicadas."
+  },
+  {
+    "objectID": "matematica/calculo/index.html",
+    "href": "matematica/calculo/index.html",
+    "title": "Calculo",
+    "section": "",
+    "text": "Cálculo diferencial, integral e suas aplicações.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nContinuidade de Funções por Ramos\n\n\nEstudo da continuidade em funções definidas por partes, com análise gráfica e computacional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDefinição de Derivada\n\n\nDerivada como limite do quociente incremental. Cálculo e interpretação gráfica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTeorema de Cauchy\n\n\nVersão generalizada do Teorema de Lagrange e sua aplicação prática em funções contínuas e deriváveis.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "matematica/calculo/artigo1/index.html",
+    "href": "matematica/calculo/artigo1/index.html",
+    "title": "Continuidade de Funções por Ramos",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "matematica/calculo/artigo3/index.html#exemplo-com-fx-lnx-e-gx-x",
-    "href": "matematica/calculo/artigo3/index.html#exemplo-com-fx-lnx-e-gx-x",
-    "title": "Teorema de Cauchy",
-    "section": "Exemplo com \\(f(x) = \\ln(x)\\) e \\(g(x) = x\\)",
-    "text": "Exemplo com \\(f(x) = \\ln(x)\\) e \\(g(x) = x\\)\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\nf = sp.ln(x)\ng = x\na, b = 1, sp.E\n\nlado_direito = (f.subs(x, b) - f.subs(x, a)) / (g.subs(x, b) - g.subs(x, a))\nlado_direito.evalf()\n\n\n\\(\\displaystyle 0.581976706869326\\)\n\n\nVisualização:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(1, np.e, 200)\nf_vals = np.log(x_vals)\ng_vals = x_vals\n\nplt.plot(x_vals, f_vals, label=\"f(x) = ln(x)\")\nplt.plot(x_vals, g_vals, label=\"g(x) = x\")\nplt.title(\"Funções f(x) e g(x) - Teorema de Cauchy\")\nplt.legend()\nplt.grid(True)\nplt.show()"
+    "objectID": "matematica/calculo/artigo1/index.html#exemplo",
+    "href": "matematica/calculo/artigo1/index.html#exemplo",
+    "title": "Continuidade de Funções por Ramos",
+    "section": "Exemplo:",
+    "text": "Exemplo:\n\\[\nf(x) =\n\\begin{cases}\nx^2 - 1, & x &lt; 1 \\\\\n2x - 1, & x \\geq 1\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\nf1 = x**2 - 1\nf2 = 2*x - 1\n\nlim_esq = sp.limit(f1, x, 1)\nlim_dir = sp.limit(f2, x, 1)\nvalor = f2.subs(x, 1)\n\nlim_esq, lim_dir, valor\n\n\n(0, 1, 1)\n\n\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 2, 400)\ny_vals = np.piecewise(x_vals, [x_vals &lt; 1, x_vals &gt;= 1], [lambda x: x**2 - 1, lambda x: 2*x - 1])\n\nplt.plot(x_vals, y_vals, label='f(x)', color='blue')\nplt.axvline(1, color='red', linestyle='--')\nplt.title(\"Função por Ramos e Continuidade em x = 1\")\nplt.grid(True)\nplt.legend()\nplt.show()"
   },
   {
-    "objectID": "matematica/calculo/artigo2/index.html",
-    "href": "matematica/calculo/artigo2/index.html",
-    "title": "Definição de Derivada",
+    "objectID": "matematica/algebra-linear/index.html",
+    "href": "matematica/algebra-linear/index.html",
+    "title": "Algebra linear",
+    "section": "",
+    "text": "Álgebra linear e suas aplicações práticas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSistemas de Equações Lineares\n\n\nResolução de sistemas lineares utilizando o método de substituição, escalonamento e matrizes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOperações com Matrizes\n\n\nIntrodução às operações básicas com matrizes: soma, multiplicação e determinantes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGeometria no Espaço\n\n\nRepresentações vetoriais e operações geométricas no espaço tridimensional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo1/index.html",
+    "href": "matematica/algebra-linear/artigo1/index.html",
+    "title": "Sistemas de Equações Lineares",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
-    "href": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
-    "title": "Definição de Derivada",
-    "section": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)",
-    "text": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)\n\n\nCódigo\nimport sympy as sp\nx, h = sp.symbols('x h')\nf = x**2\na = 2\n\nquociente = (f.subs(x, a + h) - f.subs(x, a)) / h\nderivada = sp.limit(quociente, h, 0)\n\nquociente.simplify(), derivada\n\n\n(h + 4, 4)\n\n\nVisualização da reta tangente:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 4, 200)\nf_vals = x_vals**2\ntangente = 4*x_vals - 4  # derivada 4, passa por (2,4)\n\nplt.plot(x_vals, f_vals, label='f(x) = x²')\nplt.plot(x_vals, tangente, '--', label='Tangente em x=2')\nplt.scatter([2], [4], color='red')\nplt.title(\"Derivada como reta tangente\")\nplt.legend()\nplt.grid(True)\nplt.show()"
+    "objectID": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
+    "href": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
+    "title": "Sistemas de Equações Lineares",
+    "section": "Exemplo: sistema com 2 equações e 2 incógnitas",
+    "text": "Exemplo: sistema com 2 equações e 2 incógnitas\n\\[\n\\begin{cases}\nx + 2y = 5 \\\\\n3x - y = 4\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx, y = sp.symbols('x y')\n\neq1 = sp.Eq(x + 2*y, 5)\neq2 = sp.Eq(3*x - y, 4)\n\nsolucao = sp.solve((eq1, eq2), (x, y))\nsolucao\n\n\n{x: 13/7, y: 11/7}\n\n\nVisualização gráfica:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-1, 5, 100)\ny1 = (5 - x_vals) / 2\ny2 = (3 * x_vals - 4)\n\nplt.plot(x_vals, y1, label='x + 2y = 5')\nplt.plot(x_vals, y2, label='3x - y = 4')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Solução Gráfica de um Sistema Linear')\nplt.grid(True)\nplt.legend()\nplt.show()"
   },
   {
-    "objectID": "matematica/algebra-linear/artigo3/index.html",
-    "href": "matematica/algebra-linear/artigo3/index.html",
-    "title": "Geometria no Espaço",
+    "objectID": "matematica/artigo1/index.html",
+    "href": "matematica/artigo1/index.html",
+    "title": "Artigo 1 - Séries e Somatórios",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir"
+    "text": "Exploração das séries aritméticas, geométricas e uso da notação sigma em problemas aplicados."
   },
   {
-    "objectID": "matematica/algebra-linear/artigo3/index.html#vetores-e-produto-vetorial",
-    "href": "matematica/algebra-linear/artigo3/index.html#vetores-e-produto-vetorial",
-    "title": "Geometria no Espaço",
-    "section": "Vetores e Produto Vetorial",
-    "text": "Vetores e Produto Vetorial\n\n\nCódigo\nimport numpy as np\n\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\nproduto_vetorial = np.cross(a, b)\nproduto_vetorial\n\n\narray([-3,  6, -3])\n\n\nGráfico 3D dos vetores:\n\n\nCódigo\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\n\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n\norigem = [0, 0, 0]\nax.quiver(*origem, *a, color='r', label='a')\nax.quiver(*origem, *b, color='g', label='b')\nax.quiver(*origem, *produto_vetorial, color='b', label='a × b')\n\nax.set_xlim([0, 7])\nax.set_ylim([0, 7])\nax.set_zlim([0, 7])\nax.set_title(\"Produto Vetorial no Espaço\")\nax.legend()\nplt.show()"
-  },
-  {
-    "objectID": "matematica/algebra-linear/artigo2/index.html",
-    "href": "matematica/algebra-linear/artigo2/index.html",
-    "title": "Operações com Matrizes",
+    "objectID": "fisica/artigo2/index.html",
+    "href": "fisica/artigo2/index.html",
+    "title": "Artigo 2 - Leis de Newton em Ação",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir"
+    "text": "Discussão das leis do movimento e aplicações práticas.\n\n\nrelação entre preços dos imóveis e juros."
   },
   {
-    "objectID": "matematica/algebra-linear/artigo2/index.html#exemplo",
-    "href": "matematica/algebra-linear/artigo2/index.html#exemplo",
-    "title": "Operações com Matrizes",
-    "section": "Exemplo",
-    "text": "Exemplo\n\n\nCódigo\nimport sympy as sp\n\nA = sp.Matrix([[1, 2], [3, 4]])\nB = sp.Matrix([[2, 0], [1, 2]])\n\nsoma = A + B\nproduto = A * B\ndet_A = A.det()\n\nsoma, produto, det_A\n\n\n(Matrix([\n [3, 2],\n [4, 6]]),\n Matrix([\n [ 4, 4],\n [10, 8]]),\n -2)\n\n\nGráfico: representação matricial de uma transformação linear\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nA = np.array([[2, 0], [0, 1]])\ngrid = np.array([[x, y] for x in np.linspace(-2, 2, 10) for y in np.linspace(-2, 2, 10)])\n\ntransformed = grid @ A.T\nplt.quiver(grid[:, 0], grid[:, 1], transformed[:, 0] - grid[:, 0], transformed[:, 1] - grid[:, 1],\n           angles='xy', scale_units='xy', scale=1, color='blue')\nplt.axhline(0, color='grey')\nplt.axvline(0, color='grey')\nplt.title(\"Transformação Linear com Matriz A\")\nplt.grid(True)\nplt.axis(\"equal\")\nplt.show()"
+    "objectID": "fisica/artigo2/index.html#referências",
+    "href": "fisica/artigo2/index.html#referências",
+    "title": "Artigo 2 - Leis de Newton em Ação",
+    "section": "",
+    "text": "relação entre preços dos imóveis e juros."
   },
   {
     "objectID": "texto/artigo1.html",
@@ -217,123 +231,305 @@
     "text": "Estudos literários e análises de obras.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "fisica-quimica/diversos/index.html",
-    "href": "fisica-quimica/diversos/index.html",
-    "title": "Diversos",
+    "objectID": "cultura/filosofia/index.html",
+    "href": "cultura/filosofia/index.html",
+    "title": "Filosofia",
     "section": "",
-    "text": "Outros temas no campo da física e química.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Correntes filosóficas e pensamento crítico.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVerificabilidade das Hipóteses\n\n\nDiscussão sobre a tese da verificabilidade lógica das hipóteses científicas, conforme o positivismo lógico.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nParadigmas segundo Kuhn\n\n\nExploração da teoria dos paradigmas científicos conforme proposta por Thomas Kuhn em ‘A Estrutura das Revoluções Científicas’.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA Evolução da Ciência segundo Popper\n\n\nAnálise da proposta de Karl Popper sobre a evolução da ciência com base na falseabilidade e no método conjectura e refutação.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html",
-    "href": "fisica-quimica/fisica/artigo3/index.html",
-    "title": "Circuitos Elétricos",
-    "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir"
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#introdução",
-    "href": "fisica-quimica/fisica/artigo3/index.html#introdução",
-    "title": "Circuitos Elétricos",
-    "section": "Introdução",
-    "text": "Introdução\nCircuitos elétricos são interconexões de componentes que permitem o fluxo controlado de corrente elétrica."
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
-    "href": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
-    "title": "Circuitos Elétricos",
-    "section": "Conceitos Básicos",
-    "text": "Conceitos Básicos\n\nCorrente (I): fluxo de carga elétrica.\nTensão (V): diferença de potencial elétrico.\nResistência (R): oposição ao fluxo de corrente."
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
-    "href": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
-    "title": "Circuitos Elétricos",
-    "section": "Leis Fundamentais",
-    "text": "Leis Fundamentais\n\nLei de Ohm: \\(V = R \\cdot I\\)\nLeis de Kirchhoff: conservações de corrente e tensão."
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
-    "href": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
-    "title": "Circuitos Elétricos",
-    "section": "Exemplo com Python: Lei de Ohm",
-    "text": "Exemplo com Python: Lei de Ohm\n\n\nCódigo\nR = 100  # ohms\nV = 5  # volts\nI = V / R\n\nprint(f\"Corrente: {I:.2f} A\")\n\n\nCorrente: 0.05 A"
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
-    "href": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
-    "title": "Circuitos Elétricos",
-    "section": "Gráfico: Corrente vs Tensão",
-    "text": "Gráfico: Corrente vs Tensão\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nR = 100\nV = np.linspace(0, 10, 100)\nI = V / R\n\nplt.plot(V, I)\nplt.title('Corrente vs Tensão para R = 100Ω')\nplt.xlabel('Tensão (V)')\nplt.ylabel('Corrente (A)')\nplt.grid(True)\nplt.show()"
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
-    "href": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
-    "title": "Circuitos Elétricos",
-    "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nUso de simuladores como Tinkercad ou Phet.\nProjetos práticos com multímetros e protoboards."
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html",
-    "href": "fisica-quimica/fisica/artigo2/index.html",
-    "title": "Energia Solar",
+    "objectID": "cultura/filosofia/artigo1/index.html",
+    "href": "cultura/filosofia/artigo1/index.html",
+    "title": "Verificabilidade das Hipóteses",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#introdução",
-    "href": "fisica-quimica/fisica/artigo2/index.html#introdução",
-    "title": "Energia Solar",
+    "objectID": "cultura/filosofia/artigo1/index.html#introdução",
+    "href": "cultura/filosofia/artigo1/index.html#introdução",
+    "title": "Verificabilidade das Hipóteses",
     "section": "Introdução",
-    "text": "Introdução\nA energia solar é uma fonte limpa e renovável, convertida em energia térmica ou elétrica por meio de tecnologias como painéis fotovoltaicos."
+    "text": "Introdução\nA tese da verificabilidade das hipóteses foi central ao movimento do positivismo lógico, especialmente no Círculo de Viena. Segundo ela, uma proposição só é significativa se puder ser verificada empiricamente ou for analiticamente verdadeira."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
-    "href": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
-    "title": "Energia Solar",
-    "section": "Tipos de Energia Solar",
-    "text": "Tipos de Energia Solar\n\nFotovoltaica: conversão direta da luz solar em eletricidade.\nTérmica: aproveitamento do calor do sol."
+    "objectID": "cultura/filosofia/artigo1/index.html#tipos-de-proposições",
+    "href": "cultura/filosofia/artigo1/index.html#tipos-de-proposições",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "Tipos de Proposições",
+    "text": "Tipos de Proposições\n\nAnalíticas: verdadeiras por definição (ex: “todos os solteiros são não casados”).\nSintéticas verificáveis: exigem observação empírica (ex: “a água ferve a 100°C”).\nMetafísicas ou não verificáveis: consideradas sem significado científico pelo positivismo (ex: “Deus é eterno”)."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
-    "href": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
-    "title": "Energia Solar",
-    "section": "Eficiência e Irradiação",
-    "text": "Eficiência e Irradiação\n\nEficiência depende do material semicondutor e condições climáticas.\nA irradiação solar é medida em W/m²."
+    "objectID": "cultura/filosofia/artigo1/index.html#objeções",
+    "href": "cultura/filosofia/artigo1/index.html#objeções",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "Objeções",
+    "text": "Objeções\n\nKarl Popper criticou a verificabilidade, propondo a falseabilidade como critério.\nNem todas as teorias científicas são diretamente verificáveis, mas podem ser testadas indiretamente."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
-    "href": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
-    "title": "Energia Solar",
-    "section": "Exemplo com Python: Potência Gerada",
-    "text": "Exemplo com Python: Potência Gerada\n\n\nCódigo\narea = 1.6  # m²\nirradiancia = 1000  # W/m²\neficiencia = 0.18\n\npotencia = area * irradiancia * eficiencia\nprint(f\"Potência gerada: {potencia:.1f} W\")\n\n\nPotência gerada: 288.0 W"
+    "objectID": "cultura/filosofia/artigo1/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/filosofia/artigo1/index.html#diagrama-de-ideias-mermaid",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Tese da Verificabilidade] --&gt; B{Tipos de Proposições}\n  B --&gt; C[Analíticas]\n  B --&gt; D[Sintéticas Verificáveis]\n  B --&gt; E[Metafísicas]\n  A --&gt; F[Críticas]\n  F --&gt; G[Popper: Falseabilidade]\n  F --&gt; H[Testabilidade indireta]\n\n\n\n\n\ngraph TD\n  A[Tese da Verificabilidade] --&gt; B{Tipos de Proposições}\n  B --&gt; C[Analíticas]\n  B --&gt; D[Sintéticas Verificáveis]\n  B --&gt; E[Metafísicas]\n  A --&gt; F[Críticas]\n  F --&gt; G[Popper: Falseabilidade]\n  F --&gt; H[Testabilidade indireta]"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
-    "href": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
-    "title": "Energia Solar",
-    "section": "Gráfico: Potência ao longo do dia",
-    "text": "Gráfico: Potência ao longo do dia\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nhoras = np.linspace(6, 18, 100)\npot = 0.18 * 1.6 * 1000 * np.sin((np.pi / 12) * (horas - 6))\npot = np.clip(pot, 0, None)\n\nplt.plot(horas, pot)\nplt.title('Potência Solar ao Longo do Dia')\nplt.xlabel('Hora do dia')\nplt.ylabel('Potência (W)')\nplt.grid(True)\nplt.show()"
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
-    "href": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
-    "title": "Energia Solar",
+    "objectID": "cultura/filosofia/artigo1/index.html#considerações-didáticas",
+    "href": "cultura/filosofia/artigo1/index.html#considerações-didáticas",
+    "title": "Verificabilidade das Hipóteses",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nComparar com outras fontes de energia.\nVisitas técnicas e simulações são úteis."
+    "text": "Considerações Didáticas\n\nUsar exemplos claros (ex: ciências, religião, matemática).\nExplorar debates entre verificabilidade e falseabilidade."
   },
   {
-    "objectID": "fisica-quimica/termodinamica/index.html",
-    "href": "fisica-quimica/termodinamica/index.html",
-    "title": "Termodinamica",
-    "section": "",
-    "text": "Fenómenos energéticos e processos termodinâmicos.\n\n\n\n\n\n\n\n\nNo matching items"
+    "objectID": "cultura/filosofia/artigo1/index.html#referências",
+    "href": "cultura/filosofia/artigo1/index.html#referências",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "Referências",
+    "text": "Referências\n\nAyer, A. J. (1936). Language, Truth and Logic.\nPopper, K. (1959). The Logic of Scientific Discovery.\nPassmore, J. (1967). A Hundred Years of Philosophy."
   },
   {
-    "objectID": "fisica-quimica/quimica/index.html",
-    "href": "fisica-quimica/quimica/index.html",
-    "title": "Química",
+    "objectID": "fisica-quimica/corrosao/index.html",
+    "href": "fisica-quimica/corrosao/index.html",
+    "title": "Corrosao",
     "section": "",
-    "text": "Conceitos elementares e práticas de química.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotas de Leitura em Química\n\n\nNotas integradas sobre estrutura do átomo, estequiometria e a lei de Dalton.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nReações Redox\n\n\nTransferência de elétrons e aplicações das reações de oxidação-redução.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEstequiometria\n\n\nRelações quantitativas entre reagentes e produtos em reações químicas.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Estudo dos processos de corrosão e proteção de materiais.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/index.html",
+    "href": "fisica-quimica/fisica/index.html",
+    "title": "Fisica",
+    "section": "",
+    "text": "Conceitos e aplicações fundamentais da física.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVelocidade e Aceleração\n\n\nConceitos fundamentais de cinemática: velocidade média, instantânea e aceleração.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEnergia Solar\n\n\nFundamentos físicos da conversão da energia solar em elétrica e térmica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCircuitos Elétricos\n\n\nAnálise de circuitos elétricos simples com resistores e fontes de tensão.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html",
+    "href": "fisica-quimica/fisica/artigo1/index.html",
+    "title": "Velocidade e Aceleração",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo1/index.html#introdução",
+    "title": "Velocidade e Aceleração",
+    "section": "Introdução",
+    "text": "Introdução\nA cinemática estuda o movimento dos corpos sem considerar suas causas. Os conceitos de velocidade e aceleração são fundamentais para essa descrição."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#conceitos",
+    "href": "fisica-quimica/fisica/artigo1/index.html#conceitos",
+    "title": "Velocidade e Aceleração",
+    "section": "Conceitos",
+    "text": "Conceitos\n\nVelocidade média: razão entre o deslocamento e o intervalo de tempo.\nVelocidade instantânea: limite da velocidade média quando Δt → 0.\nAceleração média: variação da velocidade no tempo."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
+    "href": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
+    "title": "Velocidade e Aceleração",
+    "section": "Fórmulas",
+    "text": "Fórmulas\n\\[ v = \\frac{{\\Delta s}}{{\\Delta t}} \\] \\[ a = \\frac{{\\Delta v}}{{\\Delta t}} \\]"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
+    "href": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
+    "title": "Velocidade e Aceleração",
+    "section": "Exemplo com Python: Gráfico de Velocidade",
+    "text": "Exemplo com Python: Gráfico de Velocidade\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nt = np.linspace(0, 10, 100)\nv = 2 * t + 1  # movimento uniformemente acelerado (a = 2 m/s²)\n\nplt.plot(t, v)\nplt.title('Velocidade vs. Tempo')\nplt.xlabel('Tempo (s)')\nplt.ylabel('Velocidade (m/s)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
+    "title": "Velocidade e Aceleração",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUtilizar animações ou simulações.\nExplorar gráficos posição x tempo e velocidade x tempo."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html",
+    "href": "fisica-quimica/quimica/artigo3/index.html",
+    "title": "Estequiometria",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#introdução",
+    "href": "fisica-quimica/quimica/artigo3/index.html#introdução",
+    "title": "Estequiometria",
+    "section": "Introdução",
+    "text": "Introdução\nA estequiometria estuda as proporções quantitativas entre os reagentes e os produtos de uma reação química, com base na Lei de Conservação da Massa de Lavoisier."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
+    "href": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
+    "title": "Estequiometria",
+    "section": "Leis Pioneiras",
+    "text": "Leis Pioneiras\n\nLei de Lavoisier: A massa total dos reagentes é igual à dos produtos.\nLei de Proust: Um composto é sempre formado pelos mesmos elementos na mesma proporção em massa."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
+    "href": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
+    "title": "Estequiometria",
+    "section": "Equações Químicas e Balanceamento",
+    "text": "Equações Químicas e Balanceamento\n\nO balanceamento garante a conservação de átomos.\nExemplo:\n\n\\[ \\mathrm{2H_2 + O_2 \\rightarrow 2H_2O} \\]"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
+    "href": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
+    "title": "Estequiometria",
+    "section": "Relações de Mol e Massa",
+    "text": "Relações de Mol e Massa\n\nMassa molar: massa de 1 mol de substância.\nConversões: massa ↔︎ mol ↔︎ número de partículas (via constante de Avogadro)."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
+    "href": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
+    "title": "Estequiometria",
+    "section": "Cálculos Estequiométricos",
+    "text": "Cálculos Estequiométricos\n\nIdentificação de reagente limitante.\nCálculo de rendimento teórico e percentual."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
+    "href": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
+    "title": "Estequiometria",
+    "section": "Exemplo com Python: Cálculo de Massa de Produto",
+    "text": "Exemplo com Python: Cálculo de Massa de Produto\n\n\nCódigo\nmassa_H2 = 4.04  # g\nmassa_molar_H2 = 2.02\nmassa_molar_H2O = 18.02\n\nmol_H2 = massa_H2 / massa_molar_H2\nmol_H2O = mol_H2  # relação 1:1\nmassa_H2O = mol_H2O * massa_molar_H2O\n\nprint(f\"Massa de água produzida: {massa_H2O:.2f} g\")\n\n\nMassa de água produzida: 36.04 g"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#aplicações",
+    "href": "fisica-quimica/quimica/artigo3/index.html#aplicações",
+    "title": "Estequiometria",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nIndústria química: formulações precisas.\nAnálises laboratoriais e controle ambiental."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
+    "href": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
+    "title": "Estequiometria",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUtilizar analogias com receitas culinárias.\nExplorar problemas práticos e interdisciplinares."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html",
+    "href": "fisica-quimica/quimica/artigo2/index.html",
+    "title": "Reações Redox",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#introdução",
+    "href": "fisica-quimica/quimica/artigo2/index.html#introdução",
+    "title": "Reações Redox",
+    "section": "Introdução",
+    "text": "Introdução\nReações de oxidação-redução, ou redox, envolvem a transferência de elétrons entre espécies químicas. São fundamentais na eletroquímica, metabolismo celular e processos industriais."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
+    "href": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
+    "title": "Reações Redox",
+    "section": "Conceitos Fundamentais",
+    "text": "Conceitos Fundamentais\n\nOxidação: perda de elétrons.\nRedução: ganho de elétrons.\nO agente oxidante é a substância que reduz (recebe elétrons).\nO agente redutor é a substância que oxida (cede elétrons)."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
+    "href": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
+    "title": "Reações Redox",
+    "section": "Números de Oxidação",
+    "text": "Números de Oxidação\n\nRepresentam o estado aparente de carga de um átomo em uma molécula ou íon.\nÚteis para identificar quais elementos são oxidados e reduzidos."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
+    "title": "Reações Redox",
+    "section": "Identificação de Reações Redox",
+    "text": "Identificação de Reações Redox\nExemplo:\n\\[ \\mathrm{Zn + Cu^{2+}\n\\rightarrow Zn^{2+} + Cu} \\]\n\nZn sofre oxidação (0 → +2).\nCu²⁺ sofre redução (+2 → 0)."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
+    "title": "Reações Redox",
+    "section": "Balanceamento de Reações Redox",
+    "text": "Balanceamento de Reações Redox\nMétodo das semi-reações (meio aquoso ácido):\n\nSeparar as semi-reações.\nBalancear elementos, exceto H e O.\nBalancear O com \\(\\mathrm{H_2O}\\).\nBalancear H com \\(\\mathrm{H^+}\\).\nBalancear cargas com elétrons.\nSomar e simplificar."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
+    "title": "Reações Redox",
+    "section": "Exemplo com Python: Simulação de Redox",
+    "text": "Exemplo com Python: Simulação de Redox\n\n\nCódigo\nreacoes = {\n    \"Zn + Cu2+\": {\"oxidado\": \"Zn -&gt; Zn2+\", \"reduzido\": \"Cu2+ -&gt; Cu\"},\n    \"Fe + Cl2\": {\"oxidado\": \"Fe -&gt; Fe2+\", \"reduzido\": \"Cl2 -&gt; 2Cl-\"},\n}\n\nfor r, pares in reacoes.items():\n    print(f\"Reação: {r}\")\n    for tipo, eq in pares.items():\n        print(f\"  {tipo.title()}: {eq}\")\n\n\nReação: Zn + Cu2+\n  Oxidado: Zn -&gt; Zn2+\n  Reduzido: Cu2+ -&gt; Cu\nReação: Fe + Cl2\n  Oxidado: Fe -&gt; Fe2+\n  Reduzido: Cl2 -&gt; 2Cl-"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#aplicações",
+    "href": "fisica-quimica/quimica/artigo2/index.html#aplicações",
+    "title": "Reações Redox",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nPilhas e baterias.\nReações metabólicas (ex: respiração celular).\nTratamento de águas e processos industriais."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
+    "href": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
+    "title": "Reações Redox",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nImportância do conceito de elétron e analogias visuais.\nPrática com tabelas de potencial padrão e métodos de balanceamento."
+  },
+  {
+    "objectID": "climatizacao/artigo3/index.html",
+    "href": "climatizacao/artigo3/index.html",
+    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
+    "section": "",
+    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
+  },
+  {
+    "objectID": "climatizacao/artigo1/index.html",
+    "href": "climatizacao/artigo1/index.html",
+    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
+    "section": "",
+    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
+  },
+  {
+    "objectID": "quimica/artigo3/index.html",
+    "href": "quimica/artigo3/index.html",
+    "title": "Artigo 3 - Estequiometria em Processos Industriais",
+    "section": "",
+    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
+  },
+  {
+    "objectID": "quimica/artigo1/index.html",
+    "href": "quimica/artigo1/index.html",
+    "title": "Artigo 1 - Reações Ácido-Base",
+    "section": "",
+    "text": "Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais."
+  },
+  {
+    "objectID": "quimica/artigo1/teste.html",
+    "href": "quimica/artigo1/teste.html",
+    "title": "Incorporação de Diagrama Mermaid como Imagem",
+    "section": "",
+    "text": "🌿 Diagrama de Argumentação\nEste documento mostra como incluir um diagrama Mermaid convertido em imagem.\n\n\n\ndiagrama"
+  },
+  {
+    "objectID": "quimica/artigo1/diagrama.html",
+    "href": "quimica/artigo1/diagrama.html",
+    "title": "Diagrama Mermaid de Exemplo",
+    "section": "",
+    "text": "Diagrama Mermaid de Exemplo\ngraph TD\n  A[Tese Principal]\n  B[Argumento 1]\n  C[Argumento 2]\n  D[Conclusão]\n\n  A --&gt; B\n  A --&gt; C\n  B --&gt; D\n  C --&gt; D"
+  },
+  {
+    "objectID": "quimica/artigo2/index.html",
+    "href": "quimica/artigo2/index.html",
+    "title": "Artigo 2 - Cinética Química com Python",
+    "section": "",
+    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
+  },
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre",
+    "section": "",
+    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
+  },
+  {
+    "objectID": "climatizacao/artigo2/index.html",
+    "href": "climatizacao/artigo2/index.html",
+    "title": "Artigo 2 - Ventilação Natural e Forçada",
+    "section": "",
+    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
   },
   {
     "objectID": "fisica-quimica/quimica/artigo1/index.html",
@@ -462,221 +658,235 @@
     "text": "Considerações Didáticas\n\nUso de modelos com balões e frações.\nRelação com o comportamento de gases ideais."
   },
   {
-    "objectID": "climatizacao/artigo2/index.html",
-    "href": "climatizacao/artigo2/index.html",
-    "title": "Artigo 2 - Ventilação Natural e Forçada",
+    "objectID": "fisica-quimica/quimica/index.html",
+    "href": "fisica-quimica/quimica/index.html",
+    "title": "Química",
     "section": "",
-    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
+    "text": "Conceitos elementares e práticas de química.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotas de Leitura em Química\n\n\nNotas integradas sobre estrutura do átomo, estequiometria e a lei de Dalton.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nReações Redox\n\n\nTransferência de elétrons e aplicações das reações de oxidação-redução.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEstequiometria\n\n\nRelações quantitativas entre reagentes e produtos em reações químicas.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "sobre.html",
-    "href": "sobre.html",
-    "title": "Sobre",
+    "objectID": "fisica-quimica/termodinamica/index.html",
+    "href": "fisica-quimica/termodinamica/index.html",
+    "title": "Termodinamica",
     "section": "",
-    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
+    "text": "Fenómenos energéticos e processos termodinâmicos.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "climatizacao/artigo1/index.html",
-    "href": "climatizacao/artigo1/index.html",
-    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
-    "section": "",
-    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
-  },
-  {
-    "objectID": "climatizacao/artigo3/index.html",
-    "href": "climatizacao/artigo3/index.html",
-    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
-    "section": "",
-    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html",
-    "href": "fisica-quimica/quimica/artigo2/index.html",
-    "title": "Reações Redox",
+    "objectID": "fisica-quimica/fisica/artigo2/index.html",
+    "href": "fisica-quimica/fisica/artigo2/index.html",
+    "title": "Energia Solar",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#introdução",
-    "href": "fisica-quimica/quimica/artigo2/index.html#introdução",
-    "title": "Reações Redox",
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo2/index.html#introdução",
+    "title": "Energia Solar",
     "section": "Introdução",
-    "text": "Introdução\nReações de oxidação-redução, ou redox, envolvem a transferência de elétrons entre espécies químicas. São fundamentais na eletroquímica, metabolismo celular e processos industriais."
+    "text": "Introdução\nA energia solar é uma fonte limpa e renovável, convertida em energia térmica ou elétrica por meio de tecnologias como painéis fotovoltaicos."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
-    "href": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
-    "title": "Reações Redox",
-    "section": "Conceitos Fundamentais",
-    "text": "Conceitos Fundamentais\n\nOxidação: perda de elétrons.\nRedução: ganho de elétrons.\nO agente oxidante é a substância que reduz (recebe elétrons).\nO agente redutor é a substância que oxida (cede elétrons)."
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
+    "href": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
+    "title": "Energia Solar",
+    "section": "Tipos de Energia Solar",
+    "text": "Tipos de Energia Solar\n\nFotovoltaica: conversão direta da luz solar em eletricidade.\nTérmica: aproveitamento do calor do sol."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
-    "href": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
-    "title": "Reações Redox",
-    "section": "Números de Oxidação",
-    "text": "Números de Oxidação\n\nRepresentam o estado aparente de carga de um átomo em uma molécula ou íon.\nÚteis para identificar quais elementos são oxidados e reduzidos."
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
+    "href": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
+    "title": "Energia Solar",
+    "section": "Eficiência e Irradiação",
+    "text": "Eficiência e Irradiação\n\nEficiência depende do material semicondutor e condições climáticas.\nA irradiação solar é medida em W/m²."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
-    "href": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
-    "title": "Reações Redox",
-    "section": "Identificação de Reações Redox",
-    "text": "Identificação de Reações Redox\nExemplo:\n\\[ \\mathrm{Zn + Cu^{2+}\n\\rightarrow Zn^{2+} + Cu} \\]\n\nZn sofre oxidação (0 → +2).\nCu²⁺ sofre redução (+2 → 0)."
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
+    "href": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
+    "title": "Energia Solar",
+    "section": "Exemplo com Python: Potência Gerada",
+    "text": "Exemplo com Python: Potência Gerada\n\n\nCódigo\narea = 1.6  # m²\nirradiancia = 1000  # W/m²\neficiencia = 0.18\n\npotencia = area * irradiancia * eficiencia\nprint(f\"Potência gerada: {potencia:.1f} W\")\n\n\nPotência gerada: 288.0 W"
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
-    "href": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
-    "title": "Reações Redox",
-    "section": "Balanceamento de Reações Redox",
-    "text": "Balanceamento de Reações Redox\nMétodo das semi-reações (meio aquoso ácido):\n\nSeparar as semi-reações.\nBalancear elementos, exceto H e O.\nBalancear O com \\(\\mathrm{H_2O}\\).\nBalancear H com \\(\\mathrm{H^+}\\).\nBalancear cargas com elétrons.\nSomar e simplificar."
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
+    "href": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
+    "title": "Energia Solar",
+    "section": "Gráfico: Potência ao longo do dia",
+    "text": "Gráfico: Potência ao longo do dia\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nhoras = np.linspace(6, 18, 100)\npot = 0.18 * 1.6 * 1000 * np.sin((np.pi / 12) * (horas - 6))\npot = np.clip(pot, 0, None)\n\nplt.plot(horas, pot)\nplt.title('Potência Solar ao Longo do Dia')\nplt.xlabel('Hora do dia')\nplt.ylabel('Potência (W)')\nplt.grid(True)\nplt.show()"
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
-    "href": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
-    "title": "Reações Redox",
-    "section": "Exemplo com Python: Simulação de Redox",
-    "text": "Exemplo com Python: Simulação de Redox\n\n\nCódigo\nreacoes = {\n    \"Zn + Cu2+\": {\"oxidado\": \"Zn -&gt; Zn2+\", \"reduzido\": \"Cu2+ -&gt; Cu\"},\n    \"Fe + Cl2\": {\"oxidado\": \"Fe -&gt; Fe2+\", \"reduzido\": \"Cl2 -&gt; 2Cl-\"},\n}\n\nfor r, pares in reacoes.items():\n    print(f\"Reação: {r}\")\n    for tipo, eq in pares.items():\n        print(f\"  {tipo.title()}: {eq}\")\n\n\nReação: Zn + Cu2+\n  Oxidado: Zn -&gt; Zn2+\n  Reduzido: Cu2+ -&gt; Cu\nReação: Fe + Cl2\n  Oxidado: Fe -&gt; Fe2+\n  Reduzido: Cl2 -&gt; 2Cl-"
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#aplicações",
-    "href": "fisica-quimica/quimica/artigo2/index.html#aplicações",
-    "title": "Reações Redox",
-    "section": "Aplicações",
-    "text": "Aplicações\n\nPilhas e baterias.\nReações metabólicas (ex: respiração celular).\nTratamento de águas e processos industriais."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
-    "href": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
-    "title": "Reações Redox",
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
+    "title": "Energia Solar",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nImportância do conceito de elétron e analogias visuais.\nPrática com tabelas de potencial padrão e métodos de balanceamento."
+    "text": "Considerações Didáticas\n\nComparar com outras fontes de energia.\nVisitas técnicas e simulações são úteis."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html",
-    "href": "fisica-quimica/quimica/artigo3/index.html",
-    "title": "Estequiometria",
+    "objectID": "fisica-quimica/fisica/artigo3/index.html",
+    "href": "fisica-quimica/fisica/artigo3/index.html",
+    "title": "Circuitos Elétricos",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#introdução",
-    "href": "fisica-quimica/quimica/artigo3/index.html#introdução",
-    "title": "Estequiometria",
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo3/index.html#introdução",
+    "title": "Circuitos Elétricos",
     "section": "Introdução",
-    "text": "Introdução\nA estequiometria estuda as proporções quantitativas entre os reagentes e os produtos de uma reação química, com base na Lei de Conservação da Massa de Lavoisier."
+    "text": "Introdução\nCircuitos elétricos são interconexões de componentes que permitem o fluxo controlado de corrente elétrica."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
-    "href": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
-    "title": "Estequiometria",
-    "section": "Leis Pioneiras",
-    "text": "Leis Pioneiras\n\nLei de Lavoisier: A massa total dos reagentes é igual à dos produtos.\nLei de Proust: Um composto é sempre formado pelos mesmos elementos na mesma proporção em massa."
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
+    "href": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
+    "title": "Circuitos Elétricos",
+    "section": "Conceitos Básicos",
+    "text": "Conceitos Básicos\n\nCorrente (I): fluxo de carga elétrica.\nTensão (V): diferença de potencial elétrico.\nResistência (R): oposição ao fluxo de corrente."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
-    "href": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
-    "title": "Estequiometria",
-    "section": "Equações Químicas e Balanceamento",
-    "text": "Equações Químicas e Balanceamento\n\nO balanceamento garante a conservação de átomos.\nExemplo:\n\n\\[ \\mathrm{2H_2 + O_2 \\rightarrow 2H_2O} \\]"
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
+    "href": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
+    "title": "Circuitos Elétricos",
+    "section": "Leis Fundamentais",
+    "text": "Leis Fundamentais\n\nLei de Ohm: \\(V = R \\cdot I\\)\nLeis de Kirchhoff: conservações de corrente e tensão."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
-    "href": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
-    "title": "Estequiometria",
-    "section": "Relações de Mol e Massa",
-    "text": "Relações de Mol e Massa\n\nMassa molar: massa de 1 mol de substância.\nConversões: massa ↔︎ mol ↔︎ número de partículas (via constante de Avogadro)."
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
+    "href": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
+    "title": "Circuitos Elétricos",
+    "section": "Exemplo com Python: Lei de Ohm",
+    "text": "Exemplo com Python: Lei de Ohm\n\n\nCódigo\nR = 100  # ohms\nV = 5  # volts\nI = V / R\n\nprint(f\"Corrente: {I:.2f} A\")\n\n\nCorrente: 0.05 A"
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
-    "href": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
-    "title": "Estequiometria",
-    "section": "Cálculos Estequiométricos",
-    "text": "Cálculos Estequiométricos\n\nIdentificação de reagente limitante.\nCálculo de rendimento teórico e percentual."
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
+    "href": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
+    "title": "Circuitos Elétricos",
+    "section": "Gráfico: Corrente vs Tensão",
+    "text": "Gráfico: Corrente vs Tensão\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nR = 100\nV = np.linspace(0, 10, 100)\nI = V / R\n\nplt.plot(V, I)\nplt.title('Corrente vs Tensão para R = 100Ω')\nplt.xlabel('Tensão (V)')\nplt.ylabel('Corrente (A)')\nplt.grid(True)\nplt.show()"
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
-    "href": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
-    "title": "Estequiometria",
-    "section": "Exemplo com Python: Cálculo de Massa de Produto",
-    "text": "Exemplo com Python: Cálculo de Massa de Produto\n\n\nCódigo\nmassa_H2 = 4.04  # g\nmassa_molar_H2 = 2.02\nmassa_molar_H2O = 18.02\n\nmol_H2 = massa_H2 / massa_molar_H2\nmol_H2O = mol_H2  # relação 1:1\nmassa_H2O = mol_H2O * massa_molar_H2O\n\nprint(f\"Massa de água produzida: {massa_H2O:.2f} g\")\n\n\nMassa de água produzida: 36.04 g"
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#aplicações",
-    "href": "fisica-quimica/quimica/artigo3/index.html#aplicações",
-    "title": "Estequiometria",
-    "section": "Aplicações",
-    "text": "Aplicações\n\nIndústria química: formulações precisas.\nAnálises laboratoriais e controle ambiental."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
-    "href": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
-    "title": "Estequiometria",
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
+    "title": "Circuitos Elétricos",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nUtilizar analogias com receitas culinárias.\nExplorar problemas práticos e interdisciplinares."
+    "text": "Considerações Didáticas\n\nUso de simuladores como Tinkercad ou Phet.\nProjetos práticos com multímetros e protoboards."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html",
-    "href": "fisica-quimica/fisica/artigo1/index.html",
-    "title": "Velocidade e Aceleração",
+    "objectID": "fisica-quimica/diversos/index.html",
+    "href": "fisica-quimica/diversos/index.html",
+    "title": "Diversos",
+    "section": "",
+    "text": "Outros temas no campo da física e química.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html",
+    "href": "cultura/filosofia/artigo2/index.html",
+    "title": "Paradigmas segundo Kuhn",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#introdução",
-    "href": "fisica-quimica/fisica/artigo1/index.html#introdução",
-    "title": "Velocidade e Aceleração",
+    "objectID": "cultura/filosofia/artigo2/index.html#introdução",
+    "href": "cultura/filosofia/artigo2/index.html#introdução",
+    "title": "Paradigmas segundo Kuhn",
     "section": "Introdução",
-    "text": "Introdução\nA cinemática estuda o movimento dos corpos sem considerar suas causas. Os conceitos de velocidade e aceleração são fundamentais para essa descrição."
+    "text": "Introdução\nThomas Kuhn, em A Estrutura das Revoluções Científicas (1962), desafiou a visão linear e acumulativa da ciência ao introduzir o conceito de paradigma como estrutura dominante em determinada fase da ciência."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#conceitos",
-    "href": "fisica-quimica/fisica/artigo1/index.html#conceitos",
-    "title": "Velocidade e Aceleração",
-    "section": "Conceitos",
-    "text": "Conceitos\n\nVelocidade média: razão entre o deslocamento e o intervalo de tempo.\nVelocidade instantânea: limite da velocidade média quando Δt → 0.\nAceleração média: variação da velocidade no tempo."
+    "objectID": "cultura/filosofia/artigo2/index.html#estrutura-das-mudanças-científicas",
+    "href": "cultura/filosofia/artigo2/index.html#estrutura-das-mudanças-científicas",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Estrutura das Mudanças Científicas",
+    "text": "Estrutura das Mudanças Científicas\n\nCiência Normal: atividade baseada em paradigmas aceitos.\nCrise: surgimento de anomalias que desafiam o paradigma.\nRevolução Científica: substituição de um paradigma por outro.\nNova Ciência Normal: estabilização do novo paradigma."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
-    "href": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
-    "title": "Velocidade e Aceleração",
-    "section": "Fórmulas",
-    "text": "Fórmulas\n\\[ v = \\frac{{\\Delta s}}{{\\Delta t}} \\] \\[ a = \\frac{{\\Delta v}}{{\\Delta t}} \\]"
+    "objectID": "cultura/filosofia/artigo2/index.html#características-dos-paradigmas",
+    "href": "cultura/filosofia/artigo2/index.html#características-dos-paradigmas",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Características dos Paradigmas",
+    "text": "Características dos Paradigmas\n\nDeterminam o que deve ser observado.\nEstabelecem métodos e perguntas legítimas.\nOrientam a interpretação dos dados."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
-    "href": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
-    "title": "Velocidade e Aceleração",
-    "section": "Exemplo com Python: Gráfico de Velocidade",
-    "text": "Exemplo com Python: Gráfico de Velocidade\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nt = np.linspace(0, 10, 100)\nv = 2 * t + 1  # movimento uniformemente acelerado (a = 2 m/s²)\n\nplt.plot(t, v)\nplt.title('Velocidade vs. Tempo')\nplt.xlabel('Tempo (s)')\nplt.ylabel('Velocidade (m/s)')\nplt.grid(True)\nplt.show()"
+    "objectID": "cultura/filosofia/artigo2/index.html#críticas-e-impactos",
+    "href": "cultura/filosofia/artigo2/index.html#críticas-e-impactos",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Críticas e Impactos",
+    "text": "Críticas e Impactos\n\nKuhn influenciou a epistemologia contemporânea.\nFoi criticado por relativismo e comparabilidade limitada entre paradigmas.\nInspirou debates sobre ciência como construção social."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
-    "href": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
-    "title": "Velocidade e Aceleração",
+    "objectID": "cultura/filosofia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/filosofia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Paradigma Atual] --&gt; B[Ciência Normal]\n  B --&gt; C[Anomalias]\n  C --&gt; D[Crescimento das anomalias]\n  D --&gt; E[Crise]\n  E --&gt; F[Revolução Científica]\n  F --&gt; G[Novo Paradigma]\n  G --&gt; H[Nova Ciência Normal]\n\n\n\n\n\ngraph TD\n  A[Paradigma Atual] --&gt; B[Ciência Normal]\n  B --&gt; C[Anomalias]\n  C --&gt; D[Crescimento das anomalias]\n  D --&gt; E[Crise]\n  E --&gt; F[Revolução Científica]\n  F --&gt; G[Novo Paradigma]\n  G --&gt; H[Nova Ciência Normal]"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html#considerações-didáticas",
+    "href": "cultura/filosofia/artigo2/index.html#considerações-didáticas",
+    "title": "Paradigmas segundo Kuhn",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nUtilizar animações ou simulações.\nExplorar gráficos posição x tempo e velocidade x tempo."
+    "text": "Considerações Didáticas\n\nRelacionar o modelo de Kuhn com casos históricos reais.\nDiscutir a natureza dinâmica e controversa da ciência."
   },
   {
-    "objectID": "fisica-quimica/fisica/index.html",
-    "href": "fisica-quimica/fisica/index.html",
-    "title": "Fisica",
-    "section": "",
-    "text": "Conceitos e aplicações fundamentais da física.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVelocidade e Aceleração\n\n\nConceitos fundamentais de cinemática: velocidade média, instantânea e aceleração.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEnergia Solar\n\n\nFundamentos físicos da conversão da energia solar em elétrica e térmica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCircuitos Elétricos\n\n\nAnálise de circuitos elétricos simples com resistores e fontes de tensão.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+    "objectID": "cultura/filosofia/artigo2/index.html#referências",
+    "href": "cultura/filosofia/artigo2/index.html#referências",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Referências",
+    "text": "Referências\n\nKuhn, T. S. (1962). The Structure of Scientific Revolutions. University of Chicago Press.\nBird, A. (2000). Thomas Kuhn. Princeton University Press."
   },
   {
-    "objectID": "fisica-quimica/corrosao/index.html",
-    "href": "fisica-quimica/corrosao/index.html",
-    "title": "Corrosao",
+    "objectID": "cultura/filosofia/artigo3/index.html",
+    "href": "cultura/filosofia/artigo3/index.html",
+    "title": "A Evolução da Ciência segundo Popper",
     "section": "",
-    "text": "Estudo dos processos de corrosão e proteção de materiais.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "cultura/filosofia/index.html",
-    "href": "cultura/filosofia/index.html",
-    "title": "Filosofia",
-    "section": "",
-    "text": "Correntes filosóficas e pensamento crítico.\n\n\n\n\n\n\n\n\nNo matching items"
+    "objectID": "cultura/filosofia/artigo3/index.html#introdução",
+    "href": "cultura/filosofia/artigo3/index.html#introdução",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Introdução",
+    "text": "Introdução\nKarl Popper propôs uma alternativa à visão indutivista da ciência. Para ele, o progresso científico ocorre por meio do método das conjecturas e refutações, em que hipóteses são constantemente testadas e refutadas."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#princípios-da-falseabilidade",
+    "href": "cultura/filosofia/artigo3/index.html#princípios-da-falseabilidade",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Princípios da Falseabilidade",
+    "text": "Princípios da Falseabilidade\n\nUma teoria é científica se puder ser falseada (refutada por observação).\nA ciência não prova, mas elimina erros.\nO conhecimento avança eliminando hipóteses erradas."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#etapas-do-método-científico-popperiano",
+    "href": "cultura/filosofia/artigo3/index.html#etapas-do-método-científico-popperiano",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Etapas do Método Científico Popperiano",
+    "text": "Etapas do Método Científico Popperiano\n\nProblema: surge de uma observação ou falha em teoria existente.\nConjectura: proposta de uma solução teórica.\nRefutação: tentativa de demonstrar que a conjectura é falsa.\nNovo Problema: o ciclo reinicia com base no conhecimento corrigido."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#comparações-com-outras-visões",
+    "href": "cultura/filosofia/artigo3/index.html#comparações-com-outras-visões",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Comparações com Outras Visões",
+    "text": "Comparações com Outras Visões\n\nDifere do positivismo lógico (verificabilidade).\nAproxima-se de uma visão crítica e racionalista da ciência.\nInfluenciou a filosofia crítica, a metodologia científica e a epistemologia evolutiva."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/filosofia/artigo3/index.html#diagrama-de-ideias-mermaid",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Problema] --&gt; B[Conjectura]\n  B --&gt; C[Testes e Tentativas de Refutação]\n  C --&gt; D{Refutada?}\n  D --&gt;|Sim| E[Nova Conjectura]\n  D --&gt;|Não| F[Corroboração Temporária]\n  E --&gt; A\n  F --&gt; A\n\n\n\n\n\ngraph TD\n  A[Problema] --&gt; B[Conjectura]\n  B --&gt; C[Testes e Tentativas de Refutação]\n  C --&gt; D{Refutada?}\n  D --&gt;|Sim| E[Nova Conjectura]\n  D --&gt;|Não| F[Corroboração Temporária]\n  E --&gt; A\n  F --&gt; A"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#considerações-didáticas",
+    "href": "cultura/filosofia/artigo3/index.html#considerações-didáticas",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nExplorar exemplos reais de teorias refutadas.\nDebater a diferença entre prova e falseabilidade.\nUtilizar simulações de testes de hipóteses."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#referências",
+    "href": "cultura/filosofia/artigo3/index.html#referências",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Referências",
+    "text": "Referências\n\nPopper, K. (1959). The Logic of Scientific Discovery. Hutchinson.\nMagee, B. (1973). Popper. Fontana Press.\nThornton, S. (2022). Karl Popper. Stanford Encyclopedia of Philosophy."
   },
   {
     "objectID": "cultura/economia/index.html",
@@ -728,46 +938,88 @@
     "text": "Smart Cities\nComo as cidades inteligentes influenciam o mercado imobiliário."
   },
   {
-    "objectID": "matematica/algebra-linear/artigo1/index.html",
-    "href": "matematica/algebra-linear/artigo1/index.html",
-    "title": "Sistemas de Equações Lineares",
+    "objectID": "fisica/artigo1/index.html",
+    "href": "fisica/artigo1/index.html",
+    "title": "Artigo 1 - Fundamentos da Cinemática",
+    "section": "",
+    "text": "Conteúdo introdutório sobre posição, velocidade e aceleração."
+  },
+  {
+    "objectID": "fisica/artigo3/index.html",
+    "href": "fisica/artigo3/index.html",
+    "title": "Artigo 3 - Oscilações e Ressonância",
+    "section": "",
+    "text": "Exploração dos sistemas oscilatórios e do fenômeno da ressonância.\n\n\nas cidades inteligentes influenciam o mercado imobiliário."
+  },
+  {
+    "objectID": "fisica/artigo3/index.html#referências",
+    "href": "fisica/artigo3/index.html#referências",
+    "title": "Artigo 3 - Oscilações e Ressonância",
+    "section": "",
+    "text": "as cidades inteligentes influenciam o mercado imobiliário."
+  },
+  {
+    "objectID": "matematica/artigo2/index.html",
+    "href": "matematica/artigo2/index.html",
+    "title": "Artigo 2 - Funções Quadráticas em Contexto",
+    "section": "",
+    "text": "Análise do gráfico, vértice e raízes de funções do 2.º grau com exemplos aplicados."
+  },
+  {
+    "objectID": "matematica/algebra-linear/artigo2/index.html",
+    "href": "matematica/algebra-linear/artigo2/index.html",
+    "title": "Operações com Matrizes",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
-    "href": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
-    "title": "Sistemas de Equações Lineares",
-    "section": "Exemplo: sistema com 2 equações e 2 incógnitas",
-    "text": "Exemplo: sistema com 2 equações e 2 incógnitas\n\\[\n\\begin{cases}\nx + 2y = 5 \\\\\n3x - y = 4\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx, y = sp.symbols('x y')\n\neq1 = sp.Eq(x + 2*y, 5)\neq2 = sp.Eq(3*x - y, 4)\n\nsolucao = sp.solve((eq1, eq2), (x, y))\nsolucao\n\n\n{x: 13/7, y: 11/7}\n\n\nVisualização gráfica:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-1, 5, 100)\ny1 = (5 - x_vals) / 2\ny2 = (3 * x_vals - 4)\n\nplt.plot(x_vals, y1, label='x + 2y = 5')\nplt.plot(x_vals, y2, label='3x - y = 4')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Solução Gráfica de um Sistema Linear')\nplt.grid(True)\nplt.legend()\nplt.show()"
+    "objectID": "matematica/algebra-linear/artigo2/index.html#exemplo",
+    "href": "matematica/algebra-linear/artigo2/index.html#exemplo",
+    "title": "Operações com Matrizes",
+    "section": "Exemplo",
+    "text": "Exemplo\n\n\nCódigo\nimport sympy as sp\n\nA = sp.Matrix([[1, 2], [3, 4]])\nB = sp.Matrix([[2, 0], [1, 2]])\n\nsoma = A + B\nproduto = A * B\ndet_A = A.det()\n\nsoma, produto, det_A\n\n\n(Matrix([\n [3, 2],\n [4, 6]]),\n Matrix([\n [ 4, 4],\n [10, 8]]),\n -2)\n\n\nGráfico: representação matricial de uma transformação linear\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nA = np.array([[2, 0], [0, 1]])\ngrid = np.array([[x, y] for x in np.linspace(-2, 2, 10) for y in np.linspace(-2, 2, 10)])\n\ntransformed = grid @ A.T\nplt.quiver(grid[:, 0], grid[:, 1], transformed[:, 0] - grid[:, 0], transformed[:, 1] - grid[:, 1],\n           angles='xy', scale_units='xy', scale=1, color='blue')\nplt.axhline(0, color='grey')\nplt.axvline(0, color='grey')\nplt.title(\"Transformação Linear com Matriz A\")\nplt.grid(True)\nplt.axis(\"equal\")\nplt.show()"
   },
   {
-    "objectID": "matematica/algebra-linear/index.html",
-    "href": "matematica/algebra-linear/index.html",
-    "title": "Algebra linear",
-    "section": "",
-    "text": "Álgebra linear e suas aplicações práticas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSistemas de Equações Lineares\n\n\nResolução de sistemas lineares utilizando o método de substituição, escalonamento e matrizes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOperações com Matrizes\n\n\nIntrodução às operações básicas com matrizes: soma, multiplicação e determinantes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGeometria no Espaço\n\n\nRepresentações vetoriais e operações geométricas no espaço tridimensional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "matematica/calculo/artigo1/index.html",
-    "href": "matematica/calculo/artigo1/index.html",
-    "title": "Continuidade de Funções por Ramos",
+    "objectID": "matematica/algebra-linear/artigo3/index.html",
+    "href": "matematica/algebra-linear/artigo3/index.html",
+    "title": "Geometria no Espaço",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "matematica/calculo/artigo1/index.html#exemplo",
-    "href": "matematica/calculo/artigo1/index.html#exemplo",
-    "title": "Continuidade de Funções por Ramos",
-    "section": "Exemplo:",
-    "text": "Exemplo:\n\\[\nf(x) =\n\\begin{cases}\nx^2 - 1, & x &lt; 1 \\\\\n2x - 1, & x \\geq 1\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\nf1 = x**2 - 1\nf2 = 2*x - 1\n\nlim_esq = sp.limit(f1, x, 1)\nlim_dir = sp.limit(f2, x, 1)\nvalor = f2.subs(x, 1)\n\nlim_esq, lim_dir, valor\n\n\n(0, 1, 1)\n\n\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 2, 400)\ny_vals = np.piecewise(x_vals, [x_vals &lt; 1, x_vals &gt;= 1], [lambda x: x**2 - 1, lambda x: 2*x - 1])\n\nplt.plot(x_vals, y_vals, label='f(x)', color='blue')\nplt.axvline(1, color='red', linestyle='--')\nplt.title(\"Função por Ramos e Continuidade em x = 1\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+    "objectID": "matematica/algebra-linear/artigo3/index.html#vetores-e-produto-vetorial",
+    "href": "matematica/algebra-linear/artigo3/index.html#vetores-e-produto-vetorial",
+    "title": "Geometria no Espaço",
+    "section": "Vetores e Produto Vetorial",
+    "text": "Vetores e Produto Vetorial\n\n\nCódigo\nimport numpy as np\n\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\nproduto_vetorial = np.cross(a, b)\nproduto_vetorial\n\n\narray([-3,  6, -3])\n\n\nGráfico 3D dos vetores:\n\n\nCódigo\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\n\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n\norigem = [0, 0, 0]\nax.quiver(*origem, *a, color='r', label='a')\nax.quiver(*origem, *b, color='g', label='b')\nax.quiver(*origem, *produto_vetorial, color='b', label='a × b')\n\nax.set_xlim([0, 7])\nax.set_ylim([0, 7])\nax.set_zlim([0, 7])\nax.set_title(\"Produto Vetorial no Espaço\")\nax.legend()\nplt.show()"
   },
   {
-    "objectID": "matematica/calculo/index.html",
-    "href": "matematica/calculo/index.html",
-    "title": "Calculo",
+    "objectID": "matematica/calculo/artigo2/index.html",
+    "href": "matematica/calculo/artigo2/index.html",
+    "title": "Definição de Derivada",
     "section": "",
-    "text": "Cálculo diferencial, integral e suas aplicações.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nContinuidade de Funções por Ramos\n\n\nEstudo da continuidade em funções definidas por partes, com análise gráfica e computacional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDefinição de Derivada\n\n\nDerivada como limite do quociente incremental. Cálculo e interpretação gráfica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTeorema de Cauchy\n\n\nVersão generalizada do Teorema de Lagrange e sua aplicação prática em funções contínuas e deriváveis.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
+    "href": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
+    "title": "Definição de Derivada",
+    "section": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)",
+    "text": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)\n\n\nCódigo\nimport sympy as sp\nx, h = sp.symbols('x h')\nf = x**2\na = 2\n\nquociente = (f.subs(x, a + h) - f.subs(x, a)) / h\nderivada = sp.limit(quociente, h, 0)\n\nquociente.simplify(), derivada\n\n\n(h + 4, 4)\n\n\nVisualização da reta tangente:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 4, 200)\nf_vals = x_vals**2\ntangente = 4*x_vals - 4  # derivada 4, passa por (2,4)\n\nplt.plot(x_vals, f_vals, label='f(x) = x²')\nplt.plot(x_vals, tangente, '--', label='Tangente em x=2')\nplt.scatter([2], [4], color='red')\nplt.title(\"Derivada como reta tangente\")\nplt.legend()\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "matematica/calculo/artigo3/index.html",
+    "href": "matematica/calculo/artigo3/index.html",
+    "title": "Teorema de Cauchy",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "matematica/calculo/artigo3/index.html#exemplo-com-fx-lnx-e-gx-x",
+    "href": "matematica/calculo/artigo3/index.html#exemplo-com-fx-lnx-e-gx-x",
+    "title": "Teorema de Cauchy",
+    "section": "Exemplo com \\(f(x) = \\ln(x)\\) e \\(g(x) = x\\)",
+    "text": "Exemplo com \\(f(x) = \\ln(x)\\) e \\(g(x) = x\\)\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\nf = sp.ln(x)\ng = x\na, b = 1, sp.E\n\nlado_direito = (f.subs(x, b) - f.subs(x, a)) / (g.subs(x, b) - g.subs(x, a))\nlado_direito.evalf()\n\n\n\\(\\displaystyle 0.581976706869326\\)\n\n\nVisualização:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(1, np.e, 200)\nf_vals = np.log(x_vals)\ng_vals = x_vals\n\nplt.plot(x_vals, f_vals, label=\"f(x) = ln(x)\")\nplt.plot(x_vals, g_vals, label=\"g(x) = x\")\nplt.title(\"Funções f(x) e g(x) - Teorema de Cauchy\")\nplt.legend()\nplt.grid(True)\nplt.show()"
   },
   {
     "objectID": "matematica/basico/artigo1/index.html",
