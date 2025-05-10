@@ -1,15 +1,27 @@
 [
   {
-    "listing": "/tecnologias/diversos/index.html",
-    "items": []
-  },
-  {
     "listing": "/tecnologias/manutencao/index.html",
     "items": []
   },
   {
-    "listing": "/tecnologias/climatizacao/index.html",
+    "listing": "/tecnologias/diversos/index.html",
     "items": []
+  },
+  {
+    "listing": "/matematica/estatistica/index.html",
+    "items": [
+      "/matematica/estatistica/artigo1/index.html",
+      "/matematica/estatistica/artigo2/index.html",
+      "/matematica/estatistica/artigo3/index.html"
+    ]
+  },
+  {
+    "listing": "/matematica/diversos/index.html",
+    "items": [
+      "/matematica/diversos/artigo1/index.html",
+      "/matematica/diversos/artigo2/index.html",
+      "/matematica/diversos/artigo3/index.html"
+    ]
   },
   {
     "listing": "/matematica/calculo/index.html",
@@ -20,28 +32,12 @@
     ]
   },
   {
-    "listing": "/matematica/algebra-linear/index.html",
+    "listing": "/matematica/basico/index.html",
     "items": [
-      "/matematica/algebra-linear/artigo1/index.html",
-      "/matematica/algebra-linear/artigo2/index.html",
-      "/matematica/algebra-linear/artigo3/index.html"
+      "/matematica/basico/artigo1/index.html",
+      "/matematica/basico/artigo2/index.html",
+      "/matematica/basico/artigo3/index.html"
     ]
-  },
-  {
-    "listing": "/cultura/historia/index.html",
-    "items": [
-      "/cultura/historia/artigo1/index.html",
-      "/cultura/historia/artigo2/index.html",
-      "/cultura/historia/artigo3/index.html"
-    ]
-  },
-  {
-    "listing": "/fisica-quimica/diversos/index.html",
-    "items": []
-  },
-  {
-    "listing": "/fisica-quimica/termodinamica/index.html",
-    "items": []
   },
   {
     "listing": "/fisica-quimica/quimica/index.html",
@@ -60,16 +56,8 @@
     ]
   },
   {
-    "listing": "/fisica-quimica/corrosao/index.html",
+    "listing": "/fisica-quimica/diversos/index.html",
     "items": []
-  },
-  {
-    "listing": "/cultura/filosofia/index.html",
-    "items": [
-      "/cultura/filosofia/artigo1/index.html",
-      "/cultura/filosofia/artigo2/index.html",
-      "/cultura/filosofia/artigo3/index.html"
-    ]
   },
   {
     "listing": "/cultura/literatura/index.html",
@@ -77,6 +65,22 @@
       "/cultura/literatura/artigo3/index.html",
       "/cultura/literatura/artigo1/index.html",
       "/cultura/literatura/artigo2/index.html"
+    ]
+  },
+  {
+    "listing": "/cultura/historia/index.html",
+    "items": [
+      "/cultura/historia/artigo1/index.html",
+      "/cultura/historia/artigo2/index.html",
+      "/cultura/historia/artigo3/index.html"
+    ]
+  },
+  {
+    "listing": "/cultura/filosofia/index.html",
+    "items": [
+      "/cultura/filosofia/artigo1/index.html",
+      "/cultura/filosofia/artigo2/index.html",
+      "/cultura/filosofia/artigo3/index.html"
     ]
   },
   {
@@ -92,28 +96,24 @@
     "items": []
   },
   {
-    "listing": "/matematica/basico/index.html",
+    "listing": "/fisica-quimica/corrosao/index.html",
+    "items": []
+  },
+  {
+    "listing": "/fisica-quimica/termodinamica/index.html",
+    "items": []
+  },
+  {
+    "listing": "/matematica/algebra-linear/index.html",
     "items": [
-      "/matematica/basico/artigo1/index.html",
-      "/matematica/basico/artigo2/index.html",
-      "/matematica/basico/artigo3/index.html"
+      "/matematica/algebra-linear/artigo1/index.html",
+      "/matematica/algebra-linear/artigo2/index.html",
+      "/matematica/algebra-linear/artigo3/index.html"
     ]
   },
   {
-    "listing": "/matematica/estatistica/index.html",
-    "items": [
-      "/matematica/estatistica/artigo1/index.html",
-      "/matematica/estatistica/artigo2/index.html",
-      "/matematica/estatistica/artigo3/index.html"
-    ]
-  },
-  {
-    "listing": "/matematica/diversos/index.html",
-    "items": [
-      "/matematica/diversos/artigo1/index.html",
-      "/matematica/diversos/artigo2/index.html",
-      "/matematica/diversos/artigo3/index.html"
-    ]
+    "listing": "/tecnologias/climatizacao/index.html",
+    "items": []
   },
   {
     "listing": "/tecnologias/eletrotecnia/index.html",
