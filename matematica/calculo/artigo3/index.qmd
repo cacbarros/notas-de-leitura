@@ -11,14 +11,19 @@ watermark:
   angle: 30
   color: "#FF0000"
   opacity: 0.1
-description: "Versão generalizada do Teorema de Lagrange e sua aplicação prática em funções contínuas e deriváveis."
+description: "Aplicações do teorema de Cauchy."
 date: 2025-05-08
-categories: ['Cálculo', 'Matemática']
+categories: ['Matemática', 'Secundário']
 format:
   html: default
   pdf: default
 toc: true
 code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
 bibliography: artigo3.bib
 csl: apa.csl
 nocite: "@*"
@@ -73,3 +78,5 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
+
+## Referências

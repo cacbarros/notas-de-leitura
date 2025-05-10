@@ -90,10 +90,7 @@ graph TD
 - Usar exemplos claros (ex: ciências, religião, matemática).
 - Explorar debates entre verificabilidade e falseabilidade.
 
-## Referências
 
-- Ayer, A. J. (1936). *Language, Truth and Logic*.
-- Popper, K. (1959). *The Logic of Scientific Discovery*.
-- Passmore, J. (1967). *A Hundred Years of Philosophy*.
+## Referências
 
 

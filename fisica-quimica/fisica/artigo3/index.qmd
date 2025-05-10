@@ -92,3 +92,4 @@ plt.show()
 - Uso de simuladores como Tinkercad ou Phet.
 - Projetos práticos com multímetros e protoboards.
 
+## Referências

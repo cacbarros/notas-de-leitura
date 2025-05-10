@@ -105,3 +105,4 @@ for r, pares in reacoes.items():
 - Importância do conceito de elétron e analogias visuais.
 - Prática com tabelas de potencial padrão e métodos de balanceamento.
 
+## Referências

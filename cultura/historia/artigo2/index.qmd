@@ -1,0 +1,95 @@
+---
+title: "A intervenção da Igreja na fundação do reino de Portugal"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise do papel político e religioso da Igreja Católica na legitimação do poder régio e na consolidação do Reino de Portugal durante os séculos XII e XIII."
+date: 2025-05-10
+categories: ['História', 'Portugal']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# A intervenção da Igreja na fundação do reino de Portugal
+
+> "Sem a bênção da Igreja, a fundação do reino de Portugal não teria obtido o reconhecimento político necessário para sua afirmação."
+
+## Introdução
+
+A fundação do reino de Portugal no século XII contou com o decisivo apoio da Igreja Católica. A legitimação do poder de D. Afonso Henriques foi tanto uma conquista militar como uma negociação diplomática com o papado e o clero.
+
+## Apoios Religiosos e Diplomáticos
+
+- **Aliança com a Igreja de Braga**: apoio eclesiástico regional a D. Afonso Henriques.
+- **Clero regular e secular**: influência religiosa no povo e apoio à causa da independência.
+- **Intervenção do Papa Alexandre III**: reconhecimento de Portugal como reino vassalo da Santa Sé em 1179 (Bula *Manifestis Probatum*).
+
+## Consequências da Intervenção da Igreja
+
+- Legitimidade internacional do reino.
+- Organização administrativa e eclesiástica do território.
+- Alianças com ordens militares religiosas (Templários, Hospitalários).
+- Estreita relação entre poder régio e Igreja durante a Reconquista.
+
+## Diagrama de Ideias (Mermaid)
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Conflito com Leão]
+  A --> B[Igreja de Braga]
+  B --> C[Decreto Papal 1179]
+  C --> D[Reino  Reconhecido]
+  D --> E[Reforço do Poder Régio]
+  E --> F[Influência da Igreja]
+  F --> G[Ordens Militares]
+
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.3\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Relacionar o papel da Igreja com a construção da identidade nacional.
+- Explorar fontes primárias como a bula *Manifestis Probatum*.
+- Comparar a situação portuguesa com outros reinos cristãos da Península Ibérica.
+
+## Referências

@@ -263,5 +263,41 @@
   "cultura/filosofia/artigo3/index.qmd": {
     "index.html": "0670a754",
     "index.tex": "811d3a89"
+  },
+  "cultura/literatura/artigo1/index.qmd": {
+    "index.html": "296b655d",
+    "index.tex": "35a1282a"
+  },
+  "cultura/literatura/artigo2/index.qmd": {
+    "index.html": "a9c54d8d",
+    "index.tex": "64597d28"
+  },
+  "cultura/literatura/artigo3/index.qmd": {
+    "index.html": "66d5a670",
+    "index.tex": "3c6318f3"
+  },
+  "cultura/economia/artigo1/index.qmd": {
+    "index.html": "cd7b12a5",
+    "index.tex": "abdf5dc6"
+  },
+  "cultura/economia/artigo2/index.qmd": {
+    "index.html": "5100114d",
+    "index.tex": "bf5b25ff"
+  },
+  "cultura/economia/artigo3/index.qmd": {
+    "index.html": "e23c421a",
+    "index.tex": "f113b85d"
+  },
+  "cultura/historia/artigo1/index.qmd": {
+    "index.html": "fa1ad5cf",
+    "index.tex": "2797e9d7"
+  },
+  "cultura/historia/artigo2/index.qmd": {
+    "index.html": "51ca2641",
+    "index.tex": "70eedd5f"
+  },
+  "cultura/historia/artigo3/index.qmd": {
+    "index.html": "8ed4d5a9",
+    "index.tex": "6d38ee99"
   }
 }

@@ -1,0 +1,98 @@
+---
+title: "Principais Doutrinas e Sistemas Económicos"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Resumo das principais doutrinas e sistemas económicos, incluindo o liberalismo clássico, keynesianismo, marxismo e economia mista."
+date: 2025-05-10
+categories: ['Economia']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Principais Doutrinas e Sistemas Económicos
+
+> "A economia é demasiado importante para ser deixada apenas aos economistas."  
+> — John Maynard Keynes
+
+## Introdução
+
+A economia tem sido interpretada ao longo da história segundo diferentes doutrinas, cada uma com visões específicas sobre o papel do Estado, do mercado e dos agentes económicos. Compreender essas doutrinas ajuda a entender as escolhas políticas e os sistemas económicos adotados.
+
+## Doutrinas Económicas Clássicas
+
+- **Liberalismo Clássico** (Adam Smith): defesa do mercado livre, da mão invisível e da mínima intervenção do Estado.
+- **Marxismo** (Karl Marx): crítica ao capitalismo, defesa da planificação económica e da propriedade coletiva dos meios de produção.
+- **Keynesianismo** (John M. Keynes): necessidade de intervenção estatal para corrigir falhas de mercado e manter o emprego.
+- **Neoliberalismo**: ressurgimento da confiança no mercado com foco em privatizações, desregulamentação e austeridade.
+
+## Sistemas Económicos
+
+- **Capitalismo**: baseado na propriedade privada, mercado livre e lucro como motor da economia.
+- **Socialismo**: planificação central, igualdade social e propriedade coletiva dos meios produtivos.
+- **Economia Mista**: combinação entre mercado livre e intervenção do Estado, presente na maioria dos países atuais.
+
+## Diagrama de Ideias (Mermaid)
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Doutrinas Económicas] --> B[Liberalismo Clássico]
+  A --> C[Marxismo]
+  A --> D[Keynesianismo]
+  A --> E[Neoliberalismo]
+  B --> F[Capitalismo]
+  C --> G[Socialismo]
+  D --> H[Economia Mista]
+  E --> F
+  H --> F
+  H --> G
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Comparar diferentes doutrinas com base em exemplos históricos.
+- Relacionar sistemas económicos com contextos políticos e sociais.
+- Estimular debates sobre os limites do mercado e do Estado.
+
+## Referências

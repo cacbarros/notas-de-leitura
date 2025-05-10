@@ -97,7 +97,5 @@ graph TD
 - Relacionar o modelo de Kuhn com casos históricos reais.
 - Discutir a natureza dinâmica e controversa da ciência.
 
-## Referências
 
-- Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
-- Bird, A. (2000). *Thomas Kuhn*. Princeton University Press.
+## Referências

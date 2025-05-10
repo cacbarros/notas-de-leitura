@@ -19,6 +19,11 @@ format:
   pdf: default
 toc: true
 code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
 bibliography: artigo1.bib
 csl: apa.csl
 nocite: "@*"
@@ -69,3 +74,8 @@ plt.grid(True)
 plt.legend()
 plt.show()
 ```
+
+
+
+## Referências
+

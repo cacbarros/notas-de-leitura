@@ -19,6 +19,11 @@ format:
   pdf: default
 toc: true
 code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
 bibliography: artigo3.bib
 csl: apa.csl
 nocite: "@*"
@@ -63,3 +68,5 @@ plt.ylabel("Frequência")
 plt.grid(True)
 plt.show()
 ```
+
+## Referências

@@ -1,5 +1,5 @@
 ---
-title: "Continuidade de Funções por Ramos"
+title: "Estudo de funções"
 lang: pt
 language:
   toc-title: "Índice"
@@ -11,14 +11,19 @@ watermark:
   angle: 30
   color: "#FF0000"
   opacity: 0.1
-description: "Estudo da continuidade em funções definidas por partes, com análise gráfica e computacional."
+description: "Continuidade de funções."
 date: 2025-05-08
-categories: ['Cálculo', 'Matemática']
+categories: ['Matemática', 'Secundário']
 format:
   html: default
   pdf: default
 toc: true
 code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
 bibliography: artigo1.bib
 csl: apa.csl
 nocite: "@*"
@@ -77,3 +82,5 @@ plt.grid(True)
 plt.legend()
 plt.show()
 ```
+
+## Referências

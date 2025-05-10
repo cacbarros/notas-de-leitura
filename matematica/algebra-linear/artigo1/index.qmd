@@ -1,5 +1,5 @@
 ---
-title: "Sistemas de Equações Lineares"
+title: "Álgebra Linear"
 lang: pt
 language:
   toc-title: "Índice"
@@ -11,14 +11,19 @@ watermark:
   angle: 30
   color: "#FF0000"
   opacity: 0.1
-description: "Resolução de sistemas lineares utilizando o método de substituição, escalonamento e matrizes."
+description: "Sistemas de Equações"
 date: 2025-05-08
-categories: ['Álgebra Linear', 'Matemática']
+categories: ['Matemática', 'Secundário']
 format:
   html: default
   pdf: default
 toc: true
 code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
 bibliography: artigo1.bib
 csl: apa.csl
 nocite: "@*"
@@ -78,3 +83,5 @@ plt.grid(True)
 plt.legend()
 plt.show()
 ```
+
+## Referências

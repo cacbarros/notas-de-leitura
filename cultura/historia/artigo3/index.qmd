@@ -1,0 +1,111 @@
+---
+title: "Principais causas e personalidades da Guerra Civil Espanhola"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise das origens políticas e sociais da Guerra Civil Espanhola, com destaque para os principais líderes e forças envolvidas no conflito (1936–1939)."
+date: 2025-05-10
+categories: ['História', 'Europa']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Principais causas e personalidades da Guerra Civil Espanhola
+
+> "A Guerra Civil Espanhola foi o ensaio geral da Segunda Guerra Mundial."  
+> — Ernest Hemingway
+
+## Introdução
+
+A Guerra Civil Espanhola (1936–1939) foi um conflito entre os **republicanos** e os **nacionalistas**, marcado por profundas divisões ideológicas e sociais. Foi também um campo de testes para regimes autoritários como o nazismo e o fascismo, sendo um prenúncio da Segunda Guerra Mundial.
+
+## Causas Principais
+
+- **Crises sociais e económicas** agravadas pela Grande Depressão.
+- **Conflitos entre classes sociais** e reforma agrária.
+- **Tensões religiosas** e anticlericalismo.
+- **Polarização ideológica**: esquerda republicana vs. direita conservadora.
+- **Tentativa de golpe militar** liderada por Francisco Franco (1936).
+
+## Personalidades e Blocos
+
+- **Nacionalistas**:
+  - Francisco Franco (líder do golpe e futuro ditador)
+  - Falange Espanhola (movimento fascista)
+  - Apoio da Alemanha Nazi e Itália Fascista
+
+- **Republicanos**:
+  - Manuel Azaña (presidente da república)
+  - Dolores Ibárruri, “La Pasionaria” (líder comunista)
+  - Brigadas Internacionais e apoio da URSS
+
+## Consequências
+
+- Vitória dos nacionalistas em 1939.
+- Estabelecimento da ditadura franquista até 1975.
+- Repressão política, censura e exílio de opositores.
+- Antecedente direto da polarização ideológica da Segunda Guerra Mundial.
+
+## Diagrama de Ideias
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Causas Estruturais] --> B[Crise Económica]
+  A --> C[Reforma Agrária e Social]
+  A --> D[Conflito Ideológico]
+  D --> E[Nacionalistas]
+  D --> F[Republicanos]
+  E --> G[Franco]
+  E --> H[Apoio Nazi-Fascista]
+  F --> I[Azaña e La Pasionaria]
+  F --> J[Brigadas Internacionais]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.8\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Analisar causas estruturais e imediatas do conflito.
+- Relacionar com os contextos da década de 1930 na Europa.
+- Explorar fontes primárias: discursos, jornais e fotografias da época.
+
+## Referências

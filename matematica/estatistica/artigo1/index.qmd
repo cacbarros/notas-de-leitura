@@ -1,5 +1,5 @@
 ---
-title: "Medidas de Localização e Dispersão"
+title: "Medidas de localização e de dispersão"
 lang: pt
 language:
   toc-title: "Índice"
@@ -11,14 +11,19 @@ watermark:
   angle: 30
   color: "#FF0000"
   opacity: 0.1
-description: "Cálculo e interpretação de média, mediana, moda e desvio padrão com dados numéricos."
+description: "Média, Moda e Variância"
 date: 2025-05-08
-categories: ['Estatística', 'Matemática']
+categories: ['Matemática', 'Secundário']
 format:
   html: default
   pdf: default
 toc: true
 code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
 bibliography: artigo1.bib
 csl: apa.csl
 nocite: "@*"
@@ -69,3 +74,5 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
+
+## Referências

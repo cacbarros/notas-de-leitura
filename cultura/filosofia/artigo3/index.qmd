@@ -98,8 +98,5 @@ graph TD
 - Debater a diferença entre prova e falseabilidade.
 - Utilizar simulações de testes de hipóteses.
 
-## Referências
 
-- Popper, K. (1959). *The Logic of Scientific Discovery*. Hutchinson.
-- Magee, B. (1973). *Popper*. Fontana Press.
-- Thornton, S. (2022). *Karl Popper*. Stanford Encyclopedia of Philosophy.
+## Referências

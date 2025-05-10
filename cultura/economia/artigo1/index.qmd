@@ -1,0 +1,103 @@
+--- 
+title: "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira"
+lang: pt
+language: 
+  toc-title: "Índice"
+filters: 
+  - watermark
+watermark: 
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise da crise financeira de 2008 com foco na queda de Wall Street, suas causas estruturais, consequências globais e lições económicas."
+date: 2025-05-10
+categories: ['Economia']
+format: 
+  html: 
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute: 
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# A Queda de Wall Street em 2008 no Âmbito da Crise Financeira
+
+> "Quando a maré baixa, descobrimos quem estava a nadar nu."  
+> — Warren Buffett
+
+## Introdução
+
+A crise financeira de 2008 teve origem no colapso do mercado hipotecário dos EUA e culminou com a falência de bancos e instituições financeiras, afetando a economia global. A queda de Wall Street simboliza um dos momentos mais críticos do sistema capitalista moderno.
+
+## Causas Estruturais
+
+- **Excesso de crédito e empréstimos subprime** a mutuários de alto risco.
+- **Pacotes de dívida (CDO)** e instrumentos financeiros mal avaliados.
+- **Política monetária permissiva** e falta de regulamentação eficaz.
+- **Confiança excessiva** dos mercados e agências de rating.
+
+## Cronologia dos Eventos
+
+- 2006–2007: aumento dos incumprimentos hipotecários.
+- Março de 2008: colapso do Bear Stearns.
+- Setembro de 2008: falência do Lehman Brothers.
+- Pânico financeiro global e intervenção dos bancos centrais.
+
+## Consequências
+
+- Quebra de bancos e falência de empresas.
+- Aumento do desemprego e da dívida pública.
+- Políticas de estímulo e reformas regulatórias (Dodd-Frank).
+- Desconfiança generalizada nos mercados financeiros.
+
+## Diagrama de Ideias
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Expansão do Crédito] --> B[Empréstimos Subprime]
+  B --> C[Pacotes de Dívida CDO]
+  C --> D[Avaliação de Risco Inadequada]
+  D --> E[Crise de Confiança]
+  E --> F[Colapso das Instituições]
+  F --> G[Intervenção Governamental]
+  G --> H[Reformas Regulatórias]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.3\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Discutir o papel das políticas públicas e da regulamentação financeira.
+- Estimular o pensamento crítico sobre os riscos sistémicos no capitalismo.
+- Utilizar documentários e simulações de bolhas financeiras.
+
+## Referências

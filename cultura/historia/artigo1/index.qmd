@@ -1,0 +1,101 @@
+---
+title: "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise histórica do atentado contra o rei D. José I, das investigações conduzidas pelo Marquês de Pombal e das consequências políticas e sociais do processo dos Távoras."
+date: 2025-05-10
+categories: ['História', 'Portugal']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José
+
+> "A execução dos Távoras marcou o fim da velha nobreza e o fortalecimento do poder régio sob a direção do Marquês de Pombal."
+
+## Introdução
+
+Na noite de 3 de setembro de 1758, o rei D. José I foi vítima de um atentado enquanto regressava a Lisboa. As investigações subsequentes levaram à prisão e execução de membros da família Távora, um dos mais poderosos clãs da nobreza portuguesa, numa ação que fortaleceu o poder absolutista sob a orientação do Marquês de Pombal.
+
+## O Atentado e o Contexto Político
+
+- Tentativa de regicídio atribuída a elementos da alta nobreza.
+- Rivalidade entre a monarquia e os grandes senhores nobres.
+- Papel central do Marquês de Pombal como ministro reformista.
+
+## O Processo Judicial
+
+- Prisões em massa de nobres e jesuítas.
+- Julgamento conduzido por um tribunal de exceção.
+- Confissões obtidas sob tortura e ausência de defesa efetiva.
+- Execução pública dos marqueses de Távora e outros membros da família (1759).
+
+## Consequências
+
+- Reforço da autoridade régia e do poder central.
+- Declínio político da velha nobreza e expulsão dos jesuítas.
+- Consolidação do projeto reformista pombalino.
+- Processo exemplar para afirmar o novo Estado iluminista.
+
+## Diagrama de Ideias 
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Atentado ao Rei D Jose] --> B[Investigacao por Pombal]
+  B --> C[Prisao dos Tavoras]
+  C --> D[Confissoes e Tortura]
+  D --> E[Julgamento e Condenacao]
+  E --> F[Execucoes Publicas]
+  F --> G[Reforco do Absolutismo]
+  G --> H[Reformas de Pombal]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.3\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Analisar criticamente as motivações políticas do processo.
+- Comparar com outros processos históricos de repressão política.
+- Relacionar com a construção do Estado moderno em Portugal.
+
+## Referências

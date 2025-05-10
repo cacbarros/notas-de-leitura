@@ -93,3 +93,4 @@ print(f"Massa de água produzida: {massa_H2O:.2f} g")
 - Utilizar analogias com receitas culinárias.
 - Explorar problemas práticos e interdisciplinares.
 
+## Referências

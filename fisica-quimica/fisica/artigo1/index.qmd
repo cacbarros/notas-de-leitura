@@ -81,3 +81,6 @@ plt.show()
 - Utilizar animações ou simulações.
 - Explorar gráficos posição x tempo e velocidade x tempo.
 
+
+## Referências
+

@@ -1,0 +1,96 @@
+---
+title: "Machado de Assis e a Prosa Impressionista"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise do estilo impressionista na prosa de Machado de Assis, com foco em suas escolhas narrativas e subjetividade."
+date: 2025-05-08
+categories: ['Cultura', 'Literatura']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo1.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Machado de Assis e a Prosa Impressionista
+
+> "A alma humana é um mistério que escapa às fórmulas."  
+> — Machado de Assis
+
+## Introdução
+
+A obra de Machado de Assis, especialmente a partir de *Memórias Póstumas de Brás Cubas*, revela um estilo narrativo que antecipa características do impressionismo literário, marcado por subjetividade, fragmentação e foco nos estados de alma.
+
+## Características Impressionistas na Prosa Machadiana
+
+- Subjetivismo e introspecção.
+- Narradores não confiáveis.
+- Estrutura fragmentada.
+- Ironia e ambiguidade moral.
+
+## Exemplos Literários
+
+- *Dom Casmurro*: dúvidas sobre Capitu nunca resolvidas — efeito subjetivo e psicológico.
+- *Memórias Póstumas de Brás Cubas*: narrador defunto autor, crítica social e metalinguagem.
+
+## Diagrama de Ideias
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Machado de Assis] --> B[Subjetividade]
+  A --> C[Narrador não confiável]
+  A --> D[Estrutura fragmentada]
+  A --> E[Ironia]
+  B --> F[Impressões psicológicas]
+  D --> G[Descontinuidade narrativa]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Comparar textos machadianos com autores impressionistas europeus.
+- Explorar as técnicas narrativas com análise de trechos.
+- Estimular leitura interpretativa e crítica da ambiguidade.
+
+
+
+
+## Referências

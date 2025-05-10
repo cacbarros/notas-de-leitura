@@ -194,4 +194,4 @@ print(f"Pressão parcial do O2: {P_O2:.2f} atm")
 - Uso de modelos com balões e frações.
 - Relação com o comportamento de gases ideais.
 
-
+## Referências

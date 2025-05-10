@@ -1,0 +1,98 @@
+---
+title: "Os Temas Principais de Os Lusíadas de Luís de Camões"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise temática da epopeia Os Lusíadas, de Luís de Camões, destacando seus eixos centrais: heroísmo, nacionalismo, mitologia e religião."
+date: 2025-05-08
+categories: ['Cultura', 'Literatura']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo2.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Os Temas Principais de *Os Lusíadas* de Luís de Camões
+
+> "Cantando espalharei por toda parte / Se a tanto me ajudar o engenho e arte."  
+> — Luís de Camões
+
+## Introdução
+
+*Os Lusíadas* é a epopeia máxima da literatura portuguesa. Escrita por Luís de Camões e publicada em 1572, a obra combina elementos épicos clássicos com a exaltação da história dos descobrimentos portugueses.
+
+## Temas Centrais
+
+- **Heroísmo e glória nacional**: figura de Vasco da Gama como símbolo do espírito aventureiro lusitano.
+- **Destino e missão divina de Portugal**: os feitos portugueses são vistos como parte de um plano providencial.
+- **Mitologia greco-romana**: deuses intervêm nos eventos históricos como metáforas das forças humanas.
+- **Religiosidade cristã**: coexistência com a mitologia, refletindo o contexto cultural da época.
+
+## Análise Estrutural
+
+A obra divide-se em 10 cantos e mistura narrativa épica, invocação lírica e episódios mitológicos e históricos, formando um mosaico da identidade portuguesa no século XVI  (@camoes1572lusiadas; @saraiva2010historia).
+
+## Diagrama de Ideias (Mermaid)
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Os Lusíadas] --> B[Heroísmo]
+  A --> C[Nacionalismo]
+  A --> D[Mitologia Clássica]
+  A --> E[Religiosidade Cristã]
+  B --> F[Vasco da Gama]
+  C --> G[Missão Divina de Portugal]
+  D --> H[Deuses Olímpicos]
+  E --> I[Providência]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Ler e comentar excertos centrais: abertura, episódio do Adamastor, Ilha dos Amores.
+- Relacionar os temas com o contexto do Renascimento e da expansão marítima.
+- Estimular produção de mapas temáticos e esquemas visuais.
+
+
+
+
+## Referências
+

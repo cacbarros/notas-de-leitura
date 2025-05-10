@@ -1,0 +1,98 @@
+---
+title: "Importância Atual da Ilíada de Homero"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Análise da relevância contemporânea da Ilíada de Homero no contexto da literatura, educação e cultura ocidental."
+date: 2025-05-10
+categories: ['Literatura']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# Importância Atual da *Ilíada* de Homero
+
+> "*Canta, ó deusa, a cólera de Aquiles, filho de Peleu...*"  
+> — Início da *Ilíada*
+
+## Introdução
+
+A *Ilíada* de Homero, composta por volta do século VIII a.C., continua a ocupar um lugar central na tradição literária ocidental. Mais do que um épico sobre guerra, é uma obra que reflete sobre honra, destino, humanidade e conflito.
+
+## Temas Universais
+
+- **Conflito e Reconciliação**: a guerra como palco de dilemas morais e emocionais.
+- **Destino e Livre Arbítrio**: tensão entre vontade dos deuses e escolhas humanas.
+- **Honra e Glória**: valores heroicos e suas consequências.
+- **Dor e Perda**: dimensão humana da tragédia e da compaixão.
+
+## Relevância na Atualidade
+
+- **Na Literatura**: inspira autores contemporâneos em romances, poesia e teatro.
+- **Na Educação**: base para reflexão ética e humanista nas escolas.
+- **Na Cultura Popular**: adaptações em filmes, jogos, séries e graphic novels.
+- **Na Filosofia**: permite debate sobre justiça, sofrimento e identidade humana.
+
+## Diagrama de Ideias 
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph LR
+  A[*Ilíada* de Homero]
+  A --> B[Temas Universais]
+  A --> C[Educação Humanista]
+  A --> D[Inspiração Literária]
+  A --> E[Cultura Popular]
+  B --> B1[Conflito e Reconciliação]
+  B --> B2[Destino e Livre Arbítrio]
+  B --> B3[Honra e Glória]
+  B --> B4[Dor e Perda]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Relacionar personagens da *Ilíada* com dilemas atuais.
+- Explorar a narrativa como ferramenta de empatia.
+- Utilizar recursos audiovisuais para ampliar o entendimento simbólico.
+
+## Referências

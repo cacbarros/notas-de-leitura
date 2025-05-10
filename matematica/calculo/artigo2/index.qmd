@@ -1,5 +1,5 @@
 ---
-title: "Definição de Derivada"
+title: "Derivadas"
 lang: pt
 language:
   toc-title: "Índice"
@@ -11,14 +11,19 @@ watermark:
   angle: 30
   color: "#FF0000"
   opacity: 0.1
-description: "Derivada como limite do quociente incremental. Cálculo e interpretação gráfica."
+description: "Introdução ao conceito de derivada, interpretação geométrica e aplicações iniciais."
 date: 2025-05-08
-categories: ['Cálculo', 'Matemática']
+categories: ['Matemática', 'Secundário']
 format:
   html: default
   pdf: default
 toc: true
 code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
 bibliography: artigo2.bib
 csl: apa.csl
 nocite: "@*"
@@ -76,3 +81,5 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
+
+## Referências

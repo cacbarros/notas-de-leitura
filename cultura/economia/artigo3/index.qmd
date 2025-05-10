@@ -1,0 +1,109 @@
+---
+title: "O que é e como funciona o Bitcoin?"
+lang: pt
+language:
+  toc-title: "Índice"
+filters:
+  - watermark
+watermark:
+  text: "RASCUNHO"
+  size: 1.5
+  angle: 30
+  color: "#FF0000"
+  opacity: 0.1
+description: "Exploração introdutória sobre o conceito de Bitcoin, seu funcionamento com blockchain e implicações económicas e tecnológicas."
+date: 2025-05-10
+categories: ['Economia', 'Tecnologia']
+format:
+  html:
+    default: true
+    mermaid: {}
+  pdf: default
+toc: true
+code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+bibliography: artigo3.bib
+csl: apa.csl
+nocite: "@*"
+reference-title: "Referências"
+---
+
+::: {.content-visible when-format="html"}
+<div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+  <a href="./index.pdf" target="_blank" class="btn btn-primary">📄 Baixar PDF</a>
+  <button onclick="window.print()" class="btn btn-outline-secondary">🖨️ Imprimir</button>
+</div>
+:::
+
+<div style="margin-top: 2rem;"></div>
+
+# O que é e como funciona o Bitcoin?
+
+> "O Bitcoin é uma inovação em contabilidade distribuída que promete transformar a forma como pensamos valor e confiança."  
+> — Adaptado de Satoshi Nakamoto
+
+## Introdução
+
+Bitcoin é uma moeda digital descentralizada que utiliza uma rede ponto-a-ponto para realizar transações sem a necessidade de intermediários como bancos centrais. Lançado em 2009, o sistema foi proposto por uma entidade sob o pseudónimo de **Satoshi Nakamoto**.
+
+## Fundamentos do Bitcoin
+
+- **Moeda digital descentralizada**: não controlada por governos ou instituições financeiras.
+- **Baseado em blockchain**: livro-razão público e imutável onde todas as transações são registadas.
+- **Segurança criptográfica**: uso de algoritmos de chave pública e privada para validar transações.
+- **Oferta limitada**: máximo de 21 milhões de bitcoins emitidos.
+
+## Como Funciona
+
+1. Transações são iniciadas por utilizadores através das suas carteiras digitais.
+2. Cada transação é propagada na rede P2P.
+3. "Mineradores" agrupam transações em blocos e resolvem puzzles matemáticos (prova de trabalho).
+4. O bloco é adicionado ao blockchain após validação.
+5. O minerador é recompensado com novos bitcoins (recompensa em bloco).
+
+## Aplicações e Desafios
+
+- **Aplicações**:
+  - Meio de pagamento alternativo.
+  - Reserva de valor (chamado de “ouro digital”).
+  - Inclusão financeira em regiões sem acesso bancário.
+
+- **Desafios**:
+  - Volatilidade de preço.
+  - Regulação governamental.
+  - Consumo energético elevado (mineração).
+
+## Diagrama de Ideias 
+
+::: {.content-visible when-format="html"}
+```{mermaid}
+graph TD
+  A[Carteira Digital] --> B[Criação de Transação]
+  B --> C[Propagação na Rede]
+  C --> D[Mineração - Prova de Trabalho]
+  D --> E[Validação do Bloco]
+  E --> F[Bloco adicionado ao Blockchain]
+  F --> G[Recompensa ao Minerador]
+  F --> H[Transação Confirmada]
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.3\linewidth]{diagrama.png}
+\end{center}
+```
+:::
+
+## Considerações Didáticas
+
+- Relacionar o Bitcoin com conceitos de economia monetária e segurança digital.
+- Simular a propagação e validação de blocos com modelos simples.
+- Explorar implicações éticas e ambientais da mineração.
+
+## Referências
