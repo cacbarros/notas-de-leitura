@@ -60,28 +60,28 @@
     "href": "matematica/diversos/artigo3/index.html",
     "title": "Números Complexos",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 3 - Números Complexos\nUm número complexo tem a forma \\(z = a + bi\\).\n\n\nCódigo\nimport matplotlib.pyplot as plt\n\n# Representar dois números complexos\nz1 = 2 + 3j\nz2 = 1 - 1j\n\nplt.axhline(0, color='grey')\nplt.axvline(0, color='grey')\nplt.scatter([z1.real, z2.real], [z1.imag, z2.imag], color=['red', 'blue'])\nplt.text(z1.real, z1.imag, '  z1', color='red')\nplt.text(z2.real, z2.imag, '  z2', color='blue')\nplt.xlabel(\"Parte Real\")\nplt.ylabel(\"Parte Imaginária\")\nplt.title(\"Plano dos Números Complexos\")\nplt.grid(True)\nplt.axis('equal')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/diversos/artigo2/index.html",
     "href": "matematica/diversos/artigo2/index.html",
     "title": "Funções Trigonométricas",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 2 - Funções Trigonométricas\nAs funções seno, cosseno e tangente modelam fenômenos periódicos.\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-2*np.pi, 2*np.pi, 400)\nseno = np.sin(x_vals)\ncosseno = np.cos(x_vals)\ntangente = np.tan(x_vals)\n\nplt.plot(x_vals, seno, label='sen(x)')\nplt.plot(x_vals, cosseno, label='cos(x)', linestyle='--')\nplt.ylim(-2, 2)\nplt.title(\"Funções Seno e Cosseno\")\nplt.legend()\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/estatistica/artigo3/index.html",
     "href": "matematica/estatistica/artigo3/index.html",
     "title": "Funções Geradoras de Momentos",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 3 - Funções Geradoras de Momentos\n\n\nCódigo\nimport sympy as sp\nt = sp.Symbol('t')\nvalores = [1, 2, 3]\nprobs = [0.2, 0.5, 0.3]\nmgf = sum(p * sp.exp(t * v) for v, p in zip(valores, probs))\nmgf_simplificada = sp.simplify(mgf)\nmgf_simplificada\n\n\n\\(\\displaystyle \\left(0.3 e^{2 t} + 0.5 e^{t} + 0.2\\right) e^{t}\\)\n\n\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\nt_vals = np.linspace(-1, 1, 200)\nmgf_vals = 0.2*np.exp(t_vals*1) + 0.5*np.exp(t_vals*2) + 0.3*np.exp(t_vals*3)\n\nplt.plot(t_vals, mgf_vals, label='MGF')\nplt.title(\"Função Geradora de Momentos\")\nplt.xlabel(\"t\")\nplt.ylabel(\"M_X(t)\")\nplt.grid(True)\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/estatistica/artigo2/index.html",
     "href": "matematica/estatistica/artigo2/index.html",
     "title": "Permutações e Combinações",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 2 - Permutações e Combinações\n\n\nCódigo\nimport math\npermutacoes = math.perm(5)\ncombinacoes = math.comb(5, 3)\npermutacoes, combinacoes\n\n\n(120, 10)\n\n\n\n\nCódigo\nimport matplotlib.pyplot as plt\nn = range(1, 11)\nperm = [math.perm(x) for x in n]\ncomb = [math.comb(x, 2) for x in n]\n\nplt.plot(n, perm, label='Permutações P(n)', marker='o')\nplt.plot(n, comb, label='Combinações C(n,2)', marker='s')\nplt.title(\"Permutações e Combinações\")\nplt.xlabel(\"n\")\nplt.ylabel(\"Contagem\")\nplt.grid(True)\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/basico/artigo3/index.html",
@@ -123,19 +123,19 @@
     "href": "matematica/calculo/index.html",
     "title": "Calculo",
     "section": "",
-    "text": "Cálculo diferencial, integral e suas aplicações.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nContinuidade de Funções por Ramos\n\n\nEstudo da continuidade em funções definidas por partes, com análise gráfica e computacional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDefinição de Derivada\n\n\nDerivada como limite do quociente incremental. Cálculo e interpretação gráfica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTeorema de Cauchy\n\n\nVersão generalizada do Teorema de Lagrange e sua aplicação prática em funções contínuas e deriváveis.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Cálculo diferencial, integral e suas aplicações.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstudo de funções\n\n\nContinuidade de funções.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDerivadas\n\n\nIntrodução ao conceito de derivada, interpretação geométrica e aplicações iniciais.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTeorema de Cauchy\n\n\nAplicações do teorema de Cauchy.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "matematica/calculo/artigo1/index.html",
     "href": "matematica/calculo/artigo1/index.html",
-    "title": "Continuidade de Funções por Ramos",
+    "title": "Estudo de funções",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/calculo/artigo1/index.html#exemplo",
     "href": "matematica/calculo/artigo1/index.html#exemplo",
-    "title": "Continuidade de Funções por Ramos",
+    "title": "Estudo de funções",
     "section": "Exemplo:",
     "text": "Exemplo:\n\\[\nf(x) =\n\\begin{cases}\nx^2 - 1, & x &lt; 1 \\\\\n2x - 1, & x \\geq 1\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx = sp.symbols('x')\nf1 = x**2 - 1\nf2 = 2*x - 1\n\nlim_esq = sp.limit(f1, x, 1)\nlim_dir = sp.limit(f2, x, 1)\nvalor = f2.subs(x, 1)\n\nlim_esq, lim_dir, valor\n\n\n(0, 1, 1)\n\n\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 2, 400)\ny_vals = np.piecewise(x_vals, [x_vals &lt; 1, x_vals &gt;= 1], [lambda x: x**2 - 1, lambda x: 2*x - 1])\n\nplt.plot(x_vals, y_vals, label='f(x)', color='blue')\nplt.axvline(1, color='red', linestyle='--')\nplt.title(\"Função por Ramos e Continuidade em x = 1\")\nplt.grid(True)\nplt.legend()\nplt.show()"
   },
@@ -144,19 +144,19 @@
     "href": "matematica/algebra-linear/index.html",
     "title": "Algebra linear",
     "section": "",
-    "text": "Álgebra linear e suas aplicações práticas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSistemas de Equações Lineares\n\n\nResolução de sistemas lineares utilizando o método de substituição, escalonamento e matrizes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOperações com Matrizes\n\n\nIntrodução às operações básicas com matrizes: soma, multiplicação e determinantes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGeometria no Espaço\n\n\nRepresentações vetoriais e operações geométricas no espaço tridimensional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Álgebra linear e suas aplicações práticas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÁlgebra Linear\n\n\nSistemas de Equações\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOperações com Matrizes\n\n\nIntrodução às operações básicas com matrizes: soma, multiplicação e determinantes.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGeometria no Espaço\n\n\nRepresentações vetoriais e operações geométricas no espaço tridimensional.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "matematica/algebra-linear/artigo1/index.html",
     "href": "matematica/algebra-linear/artigo1/index.html",
-    "title": "Sistemas de Equações Lineares",
+    "title": "Álgebra Linear",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
     "href": "matematica/algebra-linear/artigo1/index.html#exemplo-sistema-com-2-equações-e-2-incógnitas",
-    "title": "Sistemas de Equações Lineares",
+    "title": "Álgebra Linear",
     "section": "Exemplo: sistema com 2 equações e 2 incógnitas",
     "text": "Exemplo: sistema com 2 equações e 2 incógnitas\n\\[\n\\begin{cases}\nx + 2y = 5 \\\\\n3x - y = 4\n\\end{cases}\n\\]\n\n\nCódigo\nimport sympy as sp\nx, y = sp.symbols('x y')\n\neq1 = sp.Eq(x + 2*y, 5)\neq2 = sp.Eq(3*x - y, 4)\n\nsolucao = sp.solve((eq1, eq2), (x, y))\nsolucao\n\n\n{x: 13/7, y: 11/7}\n\n\nVisualização gráfica:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(-1, 5, 100)\ny1 = (5 - x_vals) / 2\ny2 = (3 * x_vals - 4)\n\nplt.plot(x_vals, y1, label='x + 2y = 5')\nplt.plot(x_vals, y2, label='3x - y = 4')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.title('Solução Gráfica de um Sistema Linear')\nplt.grid(True)\nplt.legend()\nplt.show()"
   },
@@ -217,319 +217,452 @@
     "text": "Análise do desempenho de ciclos térmicos ideais e reais, com foco em rendimento e perdas."
   },
   {
-    "objectID": "cultura/diversos/index.html",
-    "href": "cultura/diversos/index.html",
+    "objectID": "cultura/historia/index.html",
+    "href": "cultura/historia/index.html",
+    "title": "Historia",
+    "section": "",
+    "text": "Eventos e processos históricos relevantes.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO Processo dos Távoras na sequência do atentado contra a vida do Rei D. José\n\n\nAnálise histórica do atentado contra o rei D. José I, das investigações conduzidas pelo Marquês de Pombal e das consequências políticas e sociais do processo dos Távoras.\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA intervenção da Igreja na fundação do reino de Portugal\n\n\nAnálise do papel político e religioso da Igreja Católica na legitimação do poder régio e na consolidação do Reino de Portugal durante os séculos XII e XIII.\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipais causas e personalidades da Guerra Civil Espanhola\n\n\nAnálise das origens políticas e sociais da Guerra Civil Espanhola, com destaque para os principais líderes e forças envolvidas no conflito (1936–1939).\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/historia/artigo1/index.html",
+    "href": "cultura/historia/artigo1/index.html",
+    "title": "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/historia/artigo1/index.html#introdução",
+    "href": "cultura/historia/artigo1/index.html#introdução",
+    "title": "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José",
+    "section": "Introdução",
+    "text": "Introdução\nNa noite de 3 de setembro de 1758, o rei D. José I foi vítima de um atentado enquanto regressava a Lisboa. As investigações subsequentes levaram à prisão e execução de membros da família Távora, um dos mais poderosos clãs da nobreza portuguesa, numa ação que fortaleceu o poder absolutista sob a orientação do Marquês de Pombal."
+  },
+  {
+    "objectID": "cultura/historia/artigo1/index.html#o-atentado-e-o-contexto-político",
+    "href": "cultura/historia/artigo1/index.html#o-atentado-e-o-contexto-político",
+    "title": "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José",
+    "section": "O Atentado e o Contexto Político",
+    "text": "O Atentado e o Contexto Político\n\nTentativa de regicídio atribuída a elementos da alta nobreza.\nRivalidade entre a monarquia e os grandes senhores nobres.\nPapel central do Marquês de Pombal como ministro reformista."
+  },
+  {
+    "objectID": "cultura/historia/artigo1/index.html#o-processo-judicial",
+    "href": "cultura/historia/artigo1/index.html#o-processo-judicial",
+    "title": "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José",
+    "section": "O Processo Judicial",
+    "text": "O Processo Judicial\n\nPrisões em massa de nobres e jesuítas.\nJulgamento conduzido por um tribunal de exceção.\nConfissões obtidas sob tortura e ausência de defesa efetiva.\nExecução pública dos marqueses de Távora e outros membros da família (1759)."
+  },
+  {
+    "objectID": "cultura/historia/artigo1/index.html#consequências",
+    "href": "cultura/historia/artigo1/index.html#consequências",
+    "title": "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José",
+    "section": "Consequências",
+    "text": "Consequências\n\nReforço da autoridade régia e do poder central.\nDeclínio político da velha nobreza e expulsão dos jesuítas.\nConsolidação do projeto reformista pombalino.\nProcesso exemplar para afirmar o novo Estado iluminista."
+  },
+  {
+    "objectID": "cultura/historia/artigo1/index.html#diagrama-de-ideias",
+    "href": "cultura/historia/artigo1/index.html#diagrama-de-ideias",
+    "title": "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José",
+    "section": "Diagrama de Ideias",
+    "text": "Diagrama de Ideias\n\n\nCódigo\ngraph TD\n  A[Atentado ao Rei D Jose] --&gt; B[Investigacao por Pombal]\n  B --&gt; C[Prisao dos Tavoras]\n  C --&gt; D[Confissoes e Tortura]\n  D --&gt; E[Julgamento e Condenacao]\n  E --&gt; F[Execucoes Publicas]\n  F --&gt; G[Reforco do Absolutismo]\n  G --&gt; H[Reformas de Pombal]\n\n\n\n\n\ngraph TD\n  A[Atentado ao Rei D Jose] --&gt; B[Investigacao por Pombal]\n  B --&gt; C[Prisao dos Tavoras]\n  C --&gt; D[Confissoes e Tortura]\n  D --&gt; E[Julgamento e Condenacao]\n  E --&gt; F[Execucoes Publicas]\n  F --&gt; G[Reforco do Absolutismo]\n  G --&gt; H[Reformas de Pombal]"
+  },
+  {
+    "objectID": "cultura/historia/artigo1/index.html#considerações-didáticas",
+    "href": "cultura/historia/artigo1/index.html#considerações-didáticas",
+    "title": "O Processo dos Távoras na sequência do atentado contra a vida do Rei D. José",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nAnalisar criticamente as motivações políticas do processo.\nComparar com outros processos históricos de repressão política.\nRelacionar com a construção do Estado moderno em Portugal."
+  },
+  {
+    "objectID": "cultura/economia/artigo3/index.html",
+    "href": "cultura/economia/artigo3/index.html",
+    "title": "O que é e como funciona o Bitcoin?",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/economia/artigo3/index.html#introdução",
+    "href": "cultura/economia/artigo3/index.html#introdução",
+    "title": "O que é e como funciona o Bitcoin?",
+    "section": "Introdução",
+    "text": "Introdução\nBitcoin é uma moeda digital descentralizada que utiliza uma rede ponto-a-ponto para realizar transações sem a necessidade de intermediários como bancos centrais. Lançado em 2009, o sistema foi proposto por uma entidade sob o pseudónimo de Satoshi Nakamoto."
+  },
+  {
+    "objectID": "cultura/economia/artigo3/index.html#fundamentos-do-bitcoin",
+    "href": "cultura/economia/artigo3/index.html#fundamentos-do-bitcoin",
+    "title": "O que é e como funciona o Bitcoin?",
+    "section": "Fundamentos do Bitcoin",
+    "text": "Fundamentos do Bitcoin\n\nMoeda digital descentralizada: não controlada por governos ou instituições financeiras.\nBaseado em blockchain: livro-razão público e imutável onde todas as transações são registadas.\nSegurança criptográfica: uso de algoritmos de chave pública e privada para validar transações.\nOferta limitada: máximo de 21 milhões de bitcoins emitidos."
+  },
+  {
+    "objectID": "cultura/economia/artigo3/index.html#como-funciona",
+    "href": "cultura/economia/artigo3/index.html#como-funciona",
+    "title": "O que é e como funciona o Bitcoin?",
+    "section": "Como Funciona",
+    "text": "Como Funciona\n\nTransações são iniciadas por utilizadores através das suas carteiras digitais.\nCada transação é propagada na rede P2P.\n“Mineradores” agrupam transações em blocos e resolvem puzzles matemáticos (prova de trabalho).\nO bloco é adicionado ao blockchain após validação.\nO minerador é recompensado com novos bitcoins (recompensa em bloco)."
+  },
+  {
+    "objectID": "cultura/economia/artigo3/index.html#aplicações-e-desafios",
+    "href": "cultura/economia/artigo3/index.html#aplicações-e-desafios",
+    "title": "O que é e como funciona o Bitcoin?",
+    "section": "Aplicações e Desafios",
+    "text": "Aplicações e Desafios\n\nAplicações:\n\nMeio de pagamento alternativo.\nReserva de valor (chamado de “ouro digital”).\nInclusão financeira em regiões sem acesso bancário.\n\nDesafios:\n\nVolatilidade de preço.\nRegulação governamental.\nConsumo energético elevado (mineração)."
+  },
+  {
+    "objectID": "cultura/economia/artigo3/index.html#diagrama-de-ideias",
+    "href": "cultura/economia/artigo3/index.html#diagrama-de-ideias",
+    "title": "O que é e como funciona o Bitcoin?",
+    "section": "Diagrama de Ideias",
+    "text": "Diagrama de Ideias\n\n\nCódigo\ngraph TD\n  A[Carteira Digital] --&gt; B[Criação de Transação]\n  B --&gt; C[Propagação na Rede]\n  C --&gt; D[Mineração - Prova de Trabalho]\n  D --&gt; E[Validação do Bloco]\n  E --&gt; F[Bloco adicionado ao Blockchain]\n  F --&gt; G[Recompensa ao Minerador]\n  F --&gt; H[Transação Confirmada]\n\n\n\n\n\ngraph TD\n  A[Carteira Digital] --&gt; B[Criação de Transação]\n  B --&gt; C[Propagação na Rede]\n  C --&gt; D[Mineração - Prova de Trabalho]\n  D --&gt; E[Validação do Bloco]\n  E --&gt; F[Bloco adicionado ao Blockchain]\n  F --&gt; G[Recompensa ao Minerador]\n  F --&gt; H[Transação Confirmada]"
+  },
+  {
+    "objectID": "cultura/economia/artigo3/index.html#considerações-didáticas",
+    "href": "cultura/economia/artigo3/index.html#considerações-didáticas",
+    "title": "O que é e como funciona o Bitcoin?",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nRelacionar o Bitcoin com conceitos de economia monetária e segurança digital.\nSimular a propagação e validação de blocos com modelos simples.\nExplorar implicações éticas e ambientais da mineração."
+  },
+  {
+    "objectID": "cultura/economia/artigo2/index.html",
+    "href": "cultura/economia/artigo2/index.html",
+    "title": "Principais Doutrinas e Sistemas Económicos",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/economia/artigo2/index.html#introdução",
+    "href": "cultura/economia/artigo2/index.html#introdução",
+    "title": "Principais Doutrinas e Sistemas Económicos",
+    "section": "Introdução",
+    "text": "Introdução\nA economia tem sido interpretada ao longo da história segundo diferentes doutrinas, cada uma com visões específicas sobre o papel do Estado, do mercado e dos agentes económicos. Compreender essas doutrinas ajuda a entender as escolhas políticas e os sistemas económicos adotados."
+  },
+  {
+    "objectID": "cultura/economia/artigo2/index.html#doutrinas-económicas-clássicas",
+    "href": "cultura/economia/artigo2/index.html#doutrinas-económicas-clássicas",
+    "title": "Principais Doutrinas e Sistemas Económicos",
+    "section": "Doutrinas Económicas Clássicas",
+    "text": "Doutrinas Económicas Clássicas\n\nLiberalismo Clássico (Adam Smith): defesa do mercado livre, da mão invisível e da mínima intervenção do Estado.\nMarxismo (Karl Marx): crítica ao capitalismo, defesa da planificação económica e da propriedade coletiva dos meios de produção.\nKeynesianismo (John M. Keynes): necessidade de intervenção estatal para corrigir falhas de mercado e manter o emprego.\nNeoliberalismo: ressurgimento da confiança no mercado com foco em privatizações, desregulamentação e austeridade."
+  },
+  {
+    "objectID": "cultura/economia/artigo2/index.html#sistemas-económicos",
+    "href": "cultura/economia/artigo2/index.html#sistemas-económicos",
+    "title": "Principais Doutrinas e Sistemas Económicos",
+    "section": "Sistemas Económicos",
+    "text": "Sistemas Económicos\n\nCapitalismo: baseado na propriedade privada, mercado livre e lucro como motor da economia.\nSocialismo: planificação central, igualdade social e propriedade coletiva dos meios produtivos.\nEconomia Mista: combinação entre mercado livre e intervenção do Estado, presente na maioria dos países atuais."
+  },
+  {
+    "objectID": "cultura/economia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/economia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "title": "Principais Doutrinas e Sistemas Económicos",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Doutrinas Económicas] --&gt; B[Liberalismo Clássico]\n  A --&gt; C[Marxismo]\n  A --&gt; D[Keynesianismo]\n  A --&gt; E[Neoliberalismo]\n  B --&gt; F[Capitalismo]\n  C --&gt; G[Socialismo]\n  D --&gt; H[Economia Mista]\n  E --&gt; F\n  H --&gt; F\n  H --&gt; G\n\n\n\n\n\ngraph TD\n  A[Doutrinas Económicas] --&gt; B[Liberalismo Clássico]\n  A --&gt; C[Marxismo]\n  A --&gt; D[Keynesianismo]\n  A --&gt; E[Neoliberalismo]\n  B --&gt; F[Capitalismo]\n  C --&gt; G[Socialismo]\n  D --&gt; H[Economia Mista]\n  E --&gt; F\n  H --&gt; F\n  H --&gt; G"
+  },
+  {
+    "objectID": "cultura/economia/artigo2/index.html#considerações-didáticas",
+    "href": "cultura/economia/artigo2/index.html#considerações-didáticas",
+    "title": "Principais Doutrinas e Sistemas Económicos",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nComparar diferentes doutrinas com base em exemplos históricos.\nRelacionar sistemas económicos com contextos políticos e sociais.\nEstimular debates sobre os limites do mercado e do Estado."
+  },
+  {
+    "objectID": "cultura/literatura/artigo3/index.html",
+    "href": "cultura/literatura/artigo3/index.html",
+    "title": "Importância Atual da Ilíada de Homero",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/literatura/artigo3/index.html#introdução",
+    "href": "cultura/literatura/artigo3/index.html#introdução",
+    "title": "Importância Atual da Ilíada de Homero",
+    "section": "Introdução",
+    "text": "Introdução\nA Ilíada de Homero, composta por volta do século VIII a.C., continua a ocupar um lugar central na tradição literária ocidental. Mais do que um épico sobre guerra, é uma obra que reflete sobre honra, destino, humanidade e conflito."
+  },
+  {
+    "objectID": "cultura/literatura/artigo3/index.html#temas-universais",
+    "href": "cultura/literatura/artigo3/index.html#temas-universais",
+    "title": "Importância Atual da Ilíada de Homero",
+    "section": "Temas Universais",
+    "text": "Temas Universais\n\nConflito e Reconciliação: a guerra como palco de dilemas morais e emocionais.\nDestino e Livre Arbítrio: tensão entre vontade dos deuses e escolhas humanas.\nHonra e Glória: valores heroicos e suas consequências.\nDor e Perda: dimensão humana da tragédia e da compaixão."
+  },
+  {
+    "objectID": "cultura/literatura/artigo3/index.html#relevância-na-atualidade",
+    "href": "cultura/literatura/artigo3/index.html#relevância-na-atualidade",
+    "title": "Importância Atual da Ilíada de Homero",
+    "section": "Relevância na Atualidade",
+    "text": "Relevância na Atualidade\n\nNa Literatura: inspira autores contemporâneos em romances, poesia e teatro.\nNa Educação: base para reflexão ética e humanista nas escolas.\nNa Cultura Popular: adaptações em filmes, jogos, séries e graphic novels.\nNa Filosofia: permite debate sobre justiça, sofrimento e identidade humana."
+  },
+  {
+    "objectID": "cultura/literatura/artigo3/index.html#diagrama-de-ideias",
+    "href": "cultura/literatura/artigo3/index.html#diagrama-de-ideias",
+    "title": "Importância Atual da Ilíada de Homero",
+    "section": "Diagrama de Ideias",
+    "text": "Diagrama de Ideias\n\n\nCódigo\ngraph LR\n  A[*Ilíada* de Homero]\n  A --&gt; B[Temas Universais]\n  A --&gt; C[Educação Humanista]\n  A --&gt; D[Inspiração Literária]\n  A --&gt; E[Cultura Popular]\n  B --&gt; B1[Conflito e Reconciliação]\n  B --&gt; B2[Destino e Livre Arbítrio]\n  B --&gt; B3[Honra e Glória]\n  B --&gt; B4[Dor e Perda]\n\n\n\n\n\ngraph LR\n  A[*Ilíada* de Homero]\n  A --&gt; B[Temas Universais]\n  A --&gt; C[Educação Humanista]\n  A --&gt; D[Inspiração Literária]\n  A --&gt; E[Cultura Popular]\n  B --&gt; B1[Conflito e Reconciliação]\n  B --&gt; B2[Destino e Livre Arbítrio]\n  B --&gt; B3[Honra e Glória]\n  B --&gt; B4[Dor e Perda]"
+  },
+  {
+    "objectID": "cultura/literatura/artigo3/index.html#considerações-didáticas",
+    "href": "cultura/literatura/artigo3/index.html#considerações-didáticas",
+    "title": "Importância Atual da Ilíada de Homero",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nRelacionar personagens da Ilíada com dilemas atuais.\nExplorar a narrativa como ferramenta de empatia.\nUtilizar recursos audiovisuais para ampliar o entendimento simbólico."
+  },
+  {
+    "objectID": "cultura/literatura/artigo2/index.html",
+    "href": "cultura/literatura/artigo2/index.html",
+    "title": "Os Temas Principais de Os Lusíadas de Luís de Camões",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/literatura/artigo2/index.html#introdução",
+    "href": "cultura/literatura/artigo2/index.html#introdução",
+    "title": "Os Temas Principais de Os Lusíadas de Luís de Camões",
+    "section": "Introdução",
+    "text": "Introdução\nOs Lusíadas é a epopeia máxima da literatura portuguesa. Escrita por Luís de Camões e publicada em 1572, a obra combina elementos épicos clássicos com a exaltação da história dos descobrimentos portugueses."
+  },
+  {
+    "objectID": "cultura/literatura/artigo2/index.html#temas-centrais",
+    "href": "cultura/literatura/artigo2/index.html#temas-centrais",
+    "title": "Os Temas Principais de Os Lusíadas de Luís de Camões",
+    "section": "Temas Centrais",
+    "text": "Temas Centrais\n\nHeroísmo e glória nacional: figura de Vasco da Gama como símbolo do espírito aventureiro lusitano.\nDestino e missão divina de Portugal: os feitos portugueses são vistos como parte de um plano providencial.\nMitologia greco-romana: deuses intervêm nos eventos históricos como metáforas das forças humanas.\nReligiosidade cristã: coexistência com a mitologia, refletindo o contexto cultural da época."
+  },
+  {
+    "objectID": "cultura/literatura/artigo2/index.html#análise-estrutural",
+    "href": "cultura/literatura/artigo2/index.html#análise-estrutural",
+    "title": "Os Temas Principais de Os Lusíadas de Luís de Camões",
+    "section": "Análise Estrutural",
+    "text": "Análise Estrutural\nA obra divide-se em 10 cantos e mistura narrativa épica, invocação lírica e episódios mitológicos e históricos, formando um mosaico da identidade portuguesa no século XVI (Camões (1572); Saraiva & Lopes (2010))."
+  },
+  {
+    "objectID": "cultura/literatura/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/literatura/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "title": "Os Temas Principais de Os Lusíadas de Luís de Camões",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Os Lusíadas] --&gt; B[Heroísmo]\n  A --&gt; C[Nacionalismo]\n  A --&gt; D[Mitologia Clássica]\n  A --&gt; E[Religiosidade Cristã]\n  B --&gt; F[Vasco da Gama]\n  C --&gt; G[Missão Divina de Portugal]\n  D --&gt; H[Deuses Olímpicos]\n  E --&gt; I[Providência]\n\n\n\n\n\ngraph TD\n  A[Os Lusíadas] --&gt; B[Heroísmo]\n  A --&gt; C[Nacionalismo]\n  A --&gt; D[Mitologia Clássica]\n  A --&gt; E[Religiosidade Cristã]\n  B --&gt; F[Vasco da Gama]\n  C --&gt; G[Missão Divina de Portugal]\n  D --&gt; H[Deuses Olímpicos]\n  E --&gt; I[Providência]"
+  },
+  {
+    "objectID": "cultura/literatura/artigo2/index.html#considerações-didáticas",
+    "href": "cultura/literatura/artigo2/index.html#considerações-didáticas",
+    "title": "Os Temas Principais de Os Lusíadas de Luís de Camões",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nLer e comentar excertos centrais: abertura, episódio do Adamastor, Ilha dos Amores.\nRelacionar os temas com o contexto do Renascimento e da expansão marítima.\nEstimular produção de mapas temáticos e esquemas visuais."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html",
+    "href": "cultura/filosofia/artigo3/index.html",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#introdução",
+    "href": "cultura/filosofia/artigo3/index.html#introdução",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Introdução",
+    "text": "Introdução\nKarl Popper propôs uma alternativa à visão indutivista da ciência. Para ele, o progresso científico ocorre por meio do método das conjecturas e refutações, em que hipóteses são constantemente testadas e refutadas."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#princípios-da-falseabilidade",
+    "href": "cultura/filosofia/artigo3/index.html#princípios-da-falseabilidade",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Princípios da Falseabilidade",
+    "text": "Princípios da Falseabilidade\n\nUma teoria é científica se puder ser falseada (refutada por observação).\nA ciência não prova, mas elimina erros.\nO conhecimento avança eliminando hipóteses erradas."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#etapas-do-método-científico-popperiano",
+    "href": "cultura/filosofia/artigo3/index.html#etapas-do-método-científico-popperiano",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Etapas do Método Científico Popperiano",
+    "text": "Etapas do Método Científico Popperiano\n\nProblema: surge de uma observação ou falha em teoria existente.\nConjectura: proposta de uma solução teórica.\nRefutação: tentativa de demonstrar que a conjectura é falsa.\nNovo Problema: o ciclo reinicia com base no conhecimento corrigido."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#comparações-com-outras-visões",
+    "href": "cultura/filosofia/artigo3/index.html#comparações-com-outras-visões",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Comparações com Outras Visões",
+    "text": "Comparações com Outras Visões\n\nDifere do positivismo lógico (verificabilidade).\nAproxima-se de uma visão crítica e racionalista da ciência.\nInfluenciou a filosofia crítica, a metodologia científica e a epistemologia evolutiva."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/filosofia/artigo3/index.html#diagrama-de-ideias-mermaid",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Problema] --&gt; B[Conjectura]\n  B --&gt; C[Testes e Tentativas de Refutação]\n  C --&gt; D{Refutada?}\n  D --&gt;|Sim| E[Nova Conjectura]\n  D --&gt;|Não| F[Corroboração Temporária]\n  E --&gt; A\n  F --&gt; A\n\n\n\n\n\ngraph TD\n  A[Problema] --&gt; B[Conjectura]\n  B --&gt; C[Testes e Tentativas de Refutação]\n  C --&gt; D{Refutada?}\n  D --&gt;|Sim| E[Nova Conjectura]\n  D --&gt;|Não| F[Corroboração Temporária]\n  E --&gt; A\n  F --&gt; A"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo3/index.html#considerações-didáticas",
+    "href": "cultura/filosofia/artigo3/index.html#considerações-didáticas",
+    "title": "A Evolução da Ciência segundo Popper",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nExplorar exemplos reais de teorias refutadas.\nDebater a diferença entre prova e falseabilidade.\nUtilizar simulações de testes de hipóteses."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html",
+    "href": "cultura/filosofia/artigo2/index.html",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html#introdução",
+    "href": "cultura/filosofia/artigo2/index.html#introdução",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Introdução",
+    "text": "Introdução\nThomas Kuhn, em A Estrutura das Revoluções Científicas (1962), desafiou a visão linear e acumulativa da ciência ao introduzir o conceito de paradigma como estrutura dominante em determinada fase da ciência."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html#estrutura-das-mudanças-científicas",
+    "href": "cultura/filosofia/artigo2/index.html#estrutura-das-mudanças-científicas",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Estrutura das Mudanças Científicas",
+    "text": "Estrutura das Mudanças Científicas\n\nCiência Normal: atividade baseada em paradigmas aceitos.\nCrise: surgimento de anomalias que desafiam o paradigma.\nRevolução Científica: substituição de um paradigma por outro.\nNova Ciência Normal: estabilização do novo paradigma."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html#características-dos-paradigmas",
+    "href": "cultura/filosofia/artigo2/index.html#características-dos-paradigmas",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Características dos Paradigmas",
+    "text": "Características dos Paradigmas\n\nDeterminam o que deve ser observado.\nEstabelecem métodos e perguntas legítimas.\nOrientam a interpretação dos dados."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html#críticas-e-impactos",
+    "href": "cultura/filosofia/artigo2/index.html#críticas-e-impactos",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Críticas e Impactos",
+    "text": "Críticas e Impactos\n\nKuhn influenciou a epistemologia contemporânea.\nFoi criticado por relativismo e comparabilidade limitada entre paradigmas.\nInspirou debates sobre ciência como construção social."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/filosofia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Paradigma Atual] --&gt; B[Ciência Normal]\n  B --&gt; C[Anomalias]\n  C --&gt; D[Crescimento das anomalias]\n  D --&gt; E[Crise]\n  E --&gt; F[Revolução Científica]\n  F --&gt; G[Novo Paradigma]\n  G --&gt; H[Nova Ciência Normal]\n\n\n\n\n\ngraph TD\n  A[Paradigma Atual] --&gt; B[Ciência Normal]\n  B --&gt; C[Anomalias]\n  C --&gt; D[Crescimento das anomalias]\n  D --&gt; E[Crise]\n  E --&gt; F[Revolução Científica]\n  F --&gt; G[Novo Paradigma]\n  G --&gt; H[Nova Ciência Normal]"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo2/index.html#considerações-didáticas",
+    "href": "cultura/filosofia/artigo2/index.html#considerações-didáticas",
+    "title": "Paradigmas segundo Kuhn",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nRelacionar o modelo de Kuhn com casos históricos reais.\nDiscutir a natureza dinâmica e controversa da ciência."
+  },
+  {
+    "objectID": "fisica-quimica/diversos/index.html",
+    "href": "fisica-quimica/diversos/index.html",
     "title": "Diversos",
     "section": "",
-    "text": "Outros temas de interesse cultural geral.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Outros temas no campo da física e química.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "cultura/literatura/index.html",
-    "href": "cultura/literatura/index.html",
-    "title": "Literatura",
-    "section": "",
-    "text": "Estudos literários e análises de obras.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cultura/filosofia/index.html",
-    "href": "cultura/filosofia/index.html",
-    "title": "Filosofia",
-    "section": "",
-    "text": "Correntes filosóficas e pensamento crítico.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVerificabilidade das Hipóteses\n\n\nDiscussão sobre a tese da verificabilidade lógica das hipóteses científicas, conforme o positivismo lógico.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nParadigmas segundo Kuhn\n\n\nExploração da teoria dos paradigmas científicos conforme proposta por Thomas Kuhn em ‘A Estrutura das Revoluções Científicas’.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA Evolução da Ciência segundo Popper\n\n\nAnálise da proposta de Karl Popper sobre a evolução da ciência com base na falseabilidade e no método conjectura e refutação.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cultura/filosofia/artigo1/index.html",
-    "href": "cultura/filosofia/artigo1/index.html",
-    "title": "Verificabilidade das Hipóteses",
+    "objectID": "fisica-quimica/fisica/artigo3/index.html",
+    "href": "fisica-quimica/fisica/artigo3/index.html",
+    "title": "Circuitos Elétricos",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "cultura/filosofia/artigo1/index.html#introdução",
-    "href": "cultura/filosofia/artigo1/index.html#introdução",
-    "title": "Verificabilidade das Hipóteses",
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo3/index.html#introdução",
+    "title": "Circuitos Elétricos",
     "section": "Introdução",
-    "text": "Introdução\nA tese da verificabilidade das hipóteses foi central ao movimento do positivismo lógico, especialmente no Círculo de Viena. Segundo ela, uma proposição só é significativa se puder ser verificada empiricamente ou for analiticamente verdadeira."
+    "text": "Introdução\nCircuitos elétricos são interconexões de componentes que permitem o fluxo controlado de corrente elétrica."
   },
   {
-    "objectID": "cultura/filosofia/artigo1/index.html#tipos-de-proposições",
-    "href": "cultura/filosofia/artigo1/index.html#tipos-de-proposições",
-    "title": "Verificabilidade das Hipóteses",
-    "section": "Tipos de Proposições",
-    "text": "Tipos de Proposições\n\nAnalíticas: verdadeiras por definição (ex: “todos os solteiros são não casados”).\nSintéticas verificáveis: exigem observação empírica (ex: “a água ferve a 100°C”).\nMetafísicas ou não verificáveis: consideradas sem significado científico pelo positivismo (ex: “Deus é eterno”)."
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
+    "href": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
+    "title": "Circuitos Elétricos",
+    "section": "Conceitos Básicos",
+    "text": "Conceitos Básicos\n\nCorrente (I): fluxo de carga elétrica.\nTensão (V): diferença de potencial elétrico.\nResistência (R): oposição ao fluxo de corrente."
   },
   {
-    "objectID": "cultura/filosofia/artigo1/index.html#objeções",
-    "href": "cultura/filosofia/artigo1/index.html#objeções",
-    "title": "Verificabilidade das Hipóteses",
-    "section": "Objeções",
-    "text": "Objeções\n\nKarl Popper criticou a verificabilidade, propondo a falseabilidade como critério.\nNem todas as teorias científicas são diretamente verificáveis, mas podem ser testadas indiretamente."
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
+    "href": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
+    "title": "Circuitos Elétricos",
+    "section": "Leis Fundamentais",
+    "text": "Leis Fundamentais\n\nLei de Ohm: \\(V = R \\cdot I\\)\nLeis de Kirchhoff: conservações de corrente e tensão."
   },
   {
-    "objectID": "cultura/filosofia/artigo1/index.html#diagrama-de-ideias-mermaid",
-    "href": "cultura/filosofia/artigo1/index.html#diagrama-de-ideias-mermaid",
-    "title": "Verificabilidade das Hipóteses",
-    "section": "Diagrama de Ideias (Mermaid)",
-    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Tese da Verificabilidade] --&gt; B{Tipos de Proposições}\n  B --&gt; C[Analíticas]\n  B --&gt; D[Sintéticas Verificáveis]\n  B --&gt; E[Metafísicas]\n  A --&gt; F[Críticas]\n  F --&gt; G[Popper: Falseabilidade]\n  F --&gt; H[Testabilidade indireta]\n\n\n\n\n\ngraph TD\n  A[Tese da Verificabilidade] --&gt; B{Tipos de Proposições}\n  B --&gt; C[Analíticas]\n  B --&gt; D[Sintéticas Verificáveis]\n  B --&gt; E[Metafísicas]\n  A --&gt; F[Críticas]\n  F --&gt; G[Popper: Falseabilidade]\n  F --&gt; H[Testabilidade indireta]"
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
+    "href": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
+    "title": "Circuitos Elétricos",
+    "section": "Exemplo com Python: Lei de Ohm",
+    "text": "Exemplo com Python: Lei de Ohm\n\n\nCódigo\nR = 100  # ohms\nV = 5  # volts\nI = V / R\n\nprint(f\"Corrente: {I:.2f} A\")\n\n\nCorrente: 0.05 A"
   },
   {
-    "objectID": "cultura/filosofia/artigo1/index.html#considerações-didáticas",
-    "href": "cultura/filosofia/artigo1/index.html#considerações-didáticas",
-    "title": "Verificabilidade das Hipóteses",
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
+    "href": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
+    "title": "Circuitos Elétricos",
+    "section": "Gráfico: Corrente vs Tensão",
+    "text": "Gráfico: Corrente vs Tensão\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nR = 100\nV = np.linspace(0, 10, 100)\nI = V / R\n\nplt.plot(V, I)\nplt.title('Corrente vs Tensão para R = 100Ω')\nplt.xlabel('Tensão (V)')\nplt.ylabel('Corrente (A)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
+    "title": "Circuitos Elétricos",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nUsar exemplos claros (ex: ciências, religião, matemática).\nExplorar debates entre verificabilidade e falseabilidade."
+    "text": "Considerações Didáticas\n\nUso de simuladores como Tinkercad ou Phet.\nProjetos práticos com multímetros e protoboards."
   },
   {
-    "objectID": "cultura/filosofia/artigo1/index.html#referências",
-    "href": "cultura/filosofia/artigo1/index.html#referências",
-    "title": "Verificabilidade das Hipóteses",
-    "section": "Referências",
-    "text": "Referências\n\nAyer, A. J. (1936). Language, Truth and Logic.\nPopper, K. (1959). The Logic of Scientific Discovery.\nPassmore, J. (1967). A Hundred Years of Philosophy."
-  },
-  {
-    "objectID": "fisica-quimica/corrosao/index.html",
-    "href": "fisica-quimica/corrosao/index.html",
-    "title": "Corrosao",
-    "section": "",
-    "text": "Estudo dos processos de corrosão e proteção de materiais.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "fisica-quimica/fisica/index.html",
-    "href": "fisica-quimica/fisica/index.html",
-    "title": "Fisica",
-    "section": "",
-    "text": "Conceitos e aplicações fundamentais da física.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVelocidade e Aceleração\n\n\nConceitos fundamentais de cinemática: velocidade média, instantânea e aceleração.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEnergia Solar\n\n\nFundamentos físicos da conversão da energia solar em elétrica e térmica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCircuitos Elétricos\n\n\nAnálise de circuitos elétricos simples com resistores e fontes de tensão.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html",
-    "href": "fisica-quimica/fisica/artigo1/index.html",
-    "title": "Velocidade e Aceleração",
+    "objectID": "fisica-quimica/fisica/artigo2/index.html",
+    "href": "fisica-quimica/fisica/artigo2/index.html",
+    "title": "Energia Solar",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#introdução",
-    "href": "fisica-quimica/fisica/artigo1/index.html#introdução",
-    "title": "Velocidade e Aceleração",
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo2/index.html#introdução",
+    "title": "Energia Solar",
     "section": "Introdução",
-    "text": "Introdução\nA cinemática estuda o movimento dos corpos sem considerar suas causas. Os conceitos de velocidade e aceleração são fundamentais para essa descrição."
+    "text": "Introdução\nA energia solar é uma fonte limpa e renovável, convertida em energia térmica ou elétrica por meio de tecnologias como painéis fotovoltaicos."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#conceitos",
-    "href": "fisica-quimica/fisica/artigo1/index.html#conceitos",
-    "title": "Velocidade e Aceleração",
-    "section": "Conceitos",
-    "text": "Conceitos\n\nVelocidade média: razão entre o deslocamento e o intervalo de tempo.\nVelocidade instantânea: limite da velocidade média quando Δt → 0.\nAceleração média: variação da velocidade no tempo."
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
+    "href": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
+    "title": "Energia Solar",
+    "section": "Tipos de Energia Solar",
+    "text": "Tipos de Energia Solar\n\nFotovoltaica: conversão direta da luz solar em eletricidade.\nTérmica: aproveitamento do calor do sol."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
-    "href": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
-    "title": "Velocidade e Aceleração",
-    "section": "Fórmulas",
-    "text": "Fórmulas\n\\[ v = \\frac{{\\Delta s}}{{\\Delta t}} \\] \\[ a = \\frac{{\\Delta v}}{{\\Delta t}} \\]"
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
+    "href": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
+    "title": "Energia Solar",
+    "section": "Eficiência e Irradiação",
+    "text": "Eficiência e Irradiação\n\nEficiência depende do material semicondutor e condições climáticas.\nA irradiação solar é medida em W/m²."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
-    "href": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
-    "title": "Velocidade e Aceleração",
-    "section": "Exemplo com Python: Gráfico de Velocidade",
-    "text": "Exemplo com Python: Gráfico de Velocidade\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nt = np.linspace(0, 10, 100)\nv = 2 * t + 1  # movimento uniformemente acelerado (a = 2 m/s²)\n\nplt.plot(t, v)\nplt.title('Velocidade vs. Tempo')\nplt.xlabel('Tempo (s)')\nplt.ylabel('Velocidade (m/s)')\nplt.grid(True)\nplt.show()"
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
+    "href": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
+    "title": "Energia Solar",
+    "section": "Exemplo com Python: Potência Gerada",
+    "text": "Exemplo com Python: Potência Gerada\n\n\nCódigo\narea = 1.6  # m²\nirradiancia = 1000  # W/m²\neficiencia = 0.18\n\npotencia = area * irradiancia * eficiencia\nprint(f\"Potência gerada: {potencia:.1f} W\")\n\n\nPotência gerada: 288.0 W"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
-    "href": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
-    "title": "Velocidade e Aceleração",
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
+    "href": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
+    "title": "Energia Solar",
+    "section": "Gráfico: Potência ao longo do dia",
+    "text": "Gráfico: Potência ao longo do dia\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nhoras = np.linspace(6, 18, 100)\npot = 0.18 * 1.6 * 1000 * np.sin((np.pi / 12) * (horas - 6))\npot = np.clip(pot, 0, None)\n\nplt.plot(horas, pot)\nplt.title('Potência Solar ao Longo do Dia')\nplt.xlabel('Hora do dia')\nplt.ylabel('Potência (W)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
+    "title": "Energia Solar",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nUtilizar animações ou simulações.\nExplorar gráficos posição x tempo e velocidade x tempo."
+    "text": "Considerações Didáticas\n\nComparar com outras fontes de energia.\nVisitas técnicas e simulações são úteis."
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html",
-    "href": "fisica-quimica/quimica/artigo3/index.html",
-    "title": "Estequiometria",
+    "objectID": "fisica-quimica/termodinamica/index.html",
+    "href": "fisica-quimica/termodinamica/index.html",
+    "title": "Termodinamica",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir"
+    "text": "Fenómenos energéticos e processos termodinâmicos.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#introdução",
-    "href": "fisica-quimica/quimica/artigo3/index.html#introdução",
-    "title": "Estequiometria",
-    "section": "Introdução",
-    "text": "Introdução\nA estequiometria estuda as proporções quantitativas entre os reagentes e os produtos de uma reação química, com base na Lei de Conservação da Massa de Lavoisier."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
-    "href": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
-    "title": "Estequiometria",
-    "section": "Leis Pioneiras",
-    "text": "Leis Pioneiras\n\nLei de Lavoisier: A massa total dos reagentes é igual à dos produtos.\nLei de Proust: Um composto é sempre formado pelos mesmos elementos na mesma proporção em massa."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
-    "href": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
-    "title": "Estequiometria",
-    "section": "Equações Químicas e Balanceamento",
-    "text": "Equações Químicas e Balanceamento\n\nO balanceamento garante a conservação de átomos.\nExemplo:\n\n\\[ \\mathrm{2H_2 + O_2 \\rightarrow 2H_2O} \\]"
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
-    "href": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
-    "title": "Estequiometria",
-    "section": "Relações de Mol e Massa",
-    "text": "Relações de Mol e Massa\n\nMassa molar: massa de 1 mol de substância.\nConversões: massa ↔︎ mol ↔︎ número de partículas (via constante de Avogadro)."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
-    "href": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
-    "title": "Estequiometria",
-    "section": "Cálculos Estequiométricos",
-    "text": "Cálculos Estequiométricos\n\nIdentificação de reagente limitante.\nCálculo de rendimento teórico e percentual."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
-    "href": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
-    "title": "Estequiometria",
-    "section": "Exemplo com Python: Cálculo de Massa de Produto",
-    "text": "Exemplo com Python: Cálculo de Massa de Produto\n\n\nCódigo\nmassa_H2 = 4.04  # g\nmassa_molar_H2 = 2.02\nmassa_molar_H2O = 18.02\n\nmol_H2 = massa_H2 / massa_molar_H2\nmol_H2O = mol_H2  # relação 1:1\nmassa_H2O = mol_H2O * massa_molar_H2O\n\nprint(f\"Massa de água produzida: {massa_H2O:.2f} g\")\n\n\nMassa de água produzida: 36.04 g"
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#aplicações",
-    "href": "fisica-quimica/quimica/artigo3/index.html#aplicações",
-    "title": "Estequiometria",
-    "section": "Aplicações",
-    "text": "Aplicações\n\nIndústria química: formulações precisas.\nAnálises laboratoriais e controle ambiental."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
-    "href": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
-    "title": "Estequiometria",
-    "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nUtilizar analogias com receitas culinárias.\nExplorar problemas práticos e interdisciplinares."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html",
-    "href": "fisica-quimica/quimica/artigo2/index.html",
-    "title": "Reações Redox",
+    "objectID": "fisica-quimica/quimica/index.html",
+    "href": "fisica-quimica/quimica/index.html",
+    "title": "Química",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir"
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#introdução",
-    "href": "fisica-quimica/quimica/artigo2/index.html#introdução",
-    "title": "Reações Redox",
-    "section": "Introdução",
-    "text": "Introdução\nReações de oxidação-redução, ou redox, envolvem a transferência de elétrons entre espécies químicas. São fundamentais na eletroquímica, metabolismo celular e processos industriais."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
-    "href": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
-    "title": "Reações Redox",
-    "section": "Conceitos Fundamentais",
-    "text": "Conceitos Fundamentais\n\nOxidação: perda de elétrons.\nRedução: ganho de elétrons.\nO agente oxidante é a substância que reduz (recebe elétrons).\nO agente redutor é a substância que oxida (cede elétrons)."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
-    "href": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
-    "title": "Reações Redox",
-    "section": "Números de Oxidação",
-    "text": "Números de Oxidação\n\nRepresentam o estado aparente de carga de um átomo em uma molécula ou íon.\nÚteis para identificar quais elementos são oxidados e reduzidos."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
-    "href": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
-    "title": "Reações Redox",
-    "section": "Identificação de Reações Redox",
-    "text": "Identificação de Reações Redox\nExemplo:\n\\[ \\mathrm{Zn + Cu^{2+}\n\\rightarrow Zn^{2+} + Cu} \\]\n\nZn sofre oxidação (0 → +2).\nCu²⁺ sofre redução (+2 → 0)."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
-    "href": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
-    "title": "Reações Redox",
-    "section": "Balanceamento de Reações Redox",
-    "text": "Balanceamento de Reações Redox\nMétodo das semi-reações (meio aquoso ácido):\n\nSeparar as semi-reações.\nBalancear elementos, exceto H e O.\nBalancear O com \\(\\mathrm{H_2O}\\).\nBalancear H com \\(\\mathrm{H^+}\\).\nBalancear cargas com elétrons.\nSomar e simplificar."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
-    "href": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
-    "title": "Reações Redox",
-    "section": "Exemplo com Python: Simulação de Redox",
-    "text": "Exemplo com Python: Simulação de Redox\n\n\nCódigo\nreacoes = {\n    \"Zn + Cu2+\": {\"oxidado\": \"Zn -&gt; Zn2+\", \"reduzido\": \"Cu2+ -&gt; Cu\"},\n    \"Fe + Cl2\": {\"oxidado\": \"Fe -&gt; Fe2+\", \"reduzido\": \"Cl2 -&gt; 2Cl-\"},\n}\n\nfor r, pares in reacoes.items():\n    print(f\"Reação: {r}\")\n    for tipo, eq in pares.items():\n        print(f\"  {tipo.title()}: {eq}\")\n\n\nReação: Zn + Cu2+\n  Oxidado: Zn -&gt; Zn2+\n  Reduzido: Cu2+ -&gt; Cu\nReação: Fe + Cl2\n  Oxidado: Fe -&gt; Fe2+\n  Reduzido: Cl2 -&gt; 2Cl-"
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#aplicações",
-    "href": "fisica-quimica/quimica/artigo2/index.html#aplicações",
-    "title": "Reações Redox",
-    "section": "Aplicações",
-    "text": "Aplicações\n\nPilhas e baterias.\nReações metabólicas (ex: respiração celular).\nTratamento de águas e processos industriais."
-  },
-  {
-    "objectID": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
-    "href": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
-    "title": "Reações Redox",
-    "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nImportância do conceito de elétron e analogias visuais.\nPrática com tabelas de potencial padrão e métodos de balanceamento."
-  },
-  {
-    "objectID": "climatizacao/artigo3/index.html",
-    "href": "climatizacao/artigo3/index.html",
-    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
-    "section": "",
-    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
-  },
-  {
-    "objectID": "climatizacao/artigo1/index.html",
-    "href": "climatizacao/artigo1/index.html",
-    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
-    "section": "",
-    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
-  },
-  {
-    "objectID": "quimica/artigo3/index.html",
-    "href": "quimica/artigo3/index.html",
-    "title": "Artigo 3 - Estequiometria em Processos Industriais",
-    "section": "",
-    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
-  },
-  {
-    "objectID": "quimica/artigo1/index.html",
-    "href": "quimica/artigo1/index.html",
-    "title": "Artigo 1 - Reações Ácido-Base",
-    "section": "",
-    "text": "Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais."
-  },
-  {
-    "objectID": "quimica/artigo1/teste.html",
-    "href": "quimica/artigo1/teste.html",
-    "title": "Incorporação de Diagrama Mermaid como Imagem",
-    "section": "",
-    "text": "🌿 Diagrama de Argumentação\nEste documento mostra como incluir um diagrama Mermaid convertido em imagem.\n\n\n\ndiagrama"
-  },
-  {
-    "objectID": "quimica/artigo1/diagrama.html",
-    "href": "quimica/artigo1/diagrama.html",
-    "title": "Diagrama Mermaid de Exemplo",
-    "section": "",
-    "text": "Diagrama Mermaid de Exemplo\ngraph TD\n  A[Tese Principal]\n  B[Argumento 1]\n  C[Argumento 2]\n  D[Conclusão]\n\n  A --&gt; B\n  A --&gt; C\n  B --&gt; D\n  C --&gt; D"
-  },
-  {
-    "objectID": "quimica/artigo2/index.html",
-    "href": "quimica/artigo2/index.html",
-    "title": "Artigo 2 - Cinética Química com Python",
-    "section": "",
-    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
-  },
-  {
-    "objectID": "sobre.html",
-    "href": "sobre.html",
-    "title": "Sobre",
-    "section": "",
-    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
-  },
-  {
-    "objectID": "climatizacao/artigo2/index.html",
-    "href": "climatizacao/artigo2/index.html",
-    "title": "Artigo 2 - Ventilação Natural e Forçada",
-    "section": "",
-    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
+    "text": "Conceitos elementares e práticas de química.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotas de Leitura em Química\n\n\nNotas integradas sobre estrutura do átomo, estequiometria e a lei de Dalton.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nReações Redox\n\n\nTransferência de elétrons e aplicações das reações de oxidação-redução.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEstequiometria\n\n\nRelações quantitativas entre reagentes e produtos em reações químicas.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "fisica-quimica/quimica/artigo1/index.html",
@@ -658,249 +791,501 @@
     "text": "Considerações Didáticas\n\nUso de modelos com balões e frações.\nRelação com o comportamento de gases ideais."
   },
   {
-    "objectID": "fisica-quimica/quimica/index.html",
-    "href": "fisica-quimica/quimica/index.html",
-    "title": "Química",
+    "objectID": "climatizacao/artigo2/index.html",
+    "href": "climatizacao/artigo2/index.html",
+    "title": "Artigo 2 - Ventilação Natural e Forçada",
     "section": "",
-    "text": "Conceitos elementares e práticas de química.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotas de Leitura em Química\n\n\nNotas integradas sobre estrutura do átomo, estequiometria e a lei de Dalton.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nReações Redox\n\n\nTransferência de elétrons e aplicações das reações de oxidação-redução.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEstequiometria\n\n\nRelações quantitativas entre reagentes e produtos em reações químicas.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Comparação entre estratégias passivas e ativas de ventilação, com foco em conforto térmico e renovação de ar."
   },
   {
-    "objectID": "fisica-quimica/termodinamica/index.html",
-    "href": "fisica-quimica/termodinamica/index.html",
-    "title": "Termodinamica",
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre",
     "section": "",
-    "text": "Fenómenos energéticos e processos termodinâmicos.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Sobre o site\nEste site foi criado para partilhar análises e ideias sobre o setor imobiliário."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html",
-    "href": "fisica-quimica/fisica/artigo2/index.html",
-    "title": "Energia Solar",
+    "objectID": "quimica/artigo2/index.html",
+    "href": "quimica/artigo2/index.html",
+    "title": "Artigo 2 - Cinética Química com Python",
+    "section": "",
+    "text": "Exploração da teoria das colisões, energia de ativação e gráficos de velocidade de reação."
+  },
+  {
+    "objectID": "quimica/artigo1/diagrama.html",
+    "href": "quimica/artigo1/diagrama.html",
+    "title": "Diagrama Mermaid de Exemplo",
+    "section": "",
+    "text": "Diagrama Mermaid de Exemplo\ngraph TD\n  A[Tese Principal]\n  B[Argumento 1]\n  C[Argumento 2]\n  D[Conclusão]\n\n  A --&gt; B\n  A --&gt; C\n  B --&gt; D\n  C --&gt; D"
+  },
+  {
+    "objectID": "quimica/artigo1/teste.html",
+    "href": "quimica/artigo1/teste.html",
+    "title": "Incorporação de Diagrama Mermaid como Imagem",
+    "section": "",
+    "text": "🌿 Diagrama de Argumentação\nEste documento mostra como incluir um diagrama Mermaid convertido em imagem.\n\n\n\ndiagrama"
+  },
+  {
+    "objectID": "quimica/artigo1/index.html",
+    "href": "quimica/artigo1/index.html",
+    "title": "Artigo 1 - Reações Ácido-Base",
+    "section": "",
+    "text": "Introdução aos conceitos de ácido, base, neutralização e pH com exemplos experimentais."
+  },
+  {
+    "objectID": "quimica/artigo3/index.html",
+    "href": "quimica/artigo3/index.html",
+    "title": "Artigo 3 - Estequiometria em Processos Industriais",
+    "section": "",
+    "text": "Cálculo de reagentes e produtos em sistemas reais com foco em produção e rendimento."
+  },
+  {
+    "objectID": "climatizacao/artigo1/index.html",
+    "href": "climatizacao/artigo1/index.html",
+    "title": "Artigo 1 - Dimensionamento de Carga Térmica",
+    "section": "",
+    "text": "Métodos de cálculo de carga térmica sensível e latente com base em parâmetros ambientais e de ocupação."
+  },
+  {
+    "objectID": "climatizacao/artigo3/index.html",
+    "href": "climatizacao/artigo3/index.html",
+    "title": "Artigo 3 - Chillers e Torres de Resfriamento",
+    "section": "",
+    "text": "Princípios operacionais e aspectos energéticos de equipamentos de climatização de grande porte."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html",
+    "href": "fisica-quimica/quimica/artigo2/index.html",
+    "title": "Reações Redox",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#introdução",
-    "href": "fisica-quimica/fisica/artigo2/index.html#introdução",
-    "title": "Energia Solar",
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#introdução",
+    "href": "fisica-quimica/quimica/artigo2/index.html#introdução",
+    "title": "Reações Redox",
     "section": "Introdução",
-    "text": "Introdução\nA energia solar é uma fonte limpa e renovável, convertida em energia térmica ou elétrica por meio de tecnologias como painéis fotovoltaicos."
+    "text": "Introdução\nReações de oxidação-redução, ou redox, envolvem a transferência de elétrons entre espécies químicas. São fundamentais na eletroquímica, metabolismo celular e processos industriais."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
-    "href": "fisica-quimica/fisica/artigo2/index.html#tipos-de-energia-solar",
-    "title": "Energia Solar",
-    "section": "Tipos de Energia Solar",
-    "text": "Tipos de Energia Solar\n\nFotovoltaica: conversão direta da luz solar em eletricidade.\nTérmica: aproveitamento do calor do sol."
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
+    "href": "fisica-quimica/quimica/artigo2/index.html#conceitos-fundamentais",
+    "title": "Reações Redox",
+    "section": "Conceitos Fundamentais",
+    "text": "Conceitos Fundamentais\n\nOxidação: perda de elétrons.\nRedução: ganho de elétrons.\nO agente oxidante é a substância que reduz (recebe elétrons).\nO agente redutor é a substância que oxida (cede elétrons)."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
-    "href": "fisica-quimica/fisica/artigo2/index.html#eficiência-e-irradiação",
-    "title": "Energia Solar",
-    "section": "Eficiência e Irradiação",
-    "text": "Eficiência e Irradiação\n\nEficiência depende do material semicondutor e condições climáticas.\nA irradiação solar é medida em W/m²."
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
+    "href": "fisica-quimica/quimica/artigo2/index.html#números-de-oxidação",
+    "title": "Reações Redox",
+    "section": "Números de Oxidação",
+    "text": "Números de Oxidação\n\nRepresentam o estado aparente de carga de um átomo em uma molécula ou íon.\nÚteis para identificar quais elementos são oxidados e reduzidos."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
-    "href": "fisica-quimica/fisica/artigo2/index.html#exemplo-com-python-potência-gerada",
-    "title": "Energia Solar",
-    "section": "Exemplo com Python: Potência Gerada",
-    "text": "Exemplo com Python: Potência Gerada\n\n\nCódigo\narea = 1.6  # m²\nirradiancia = 1000  # W/m²\neficiencia = 0.18\n\npotencia = area * irradiancia * eficiencia\nprint(f\"Potência gerada: {potencia:.1f} W\")\n\n\nPotência gerada: 288.0 W"
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#identificação-de-reações-redox",
+    "title": "Reações Redox",
+    "section": "Identificação de Reações Redox",
+    "text": "Identificação de Reações Redox\nExemplo:\n\\[ \\mathrm{Zn + Cu^{2+}\n\\rightarrow Zn^{2+} + Cu} \\]\n\nZn sofre oxidação (0 → +2).\nCu²⁺ sofre redução (+2 → 0)."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
-    "href": "fisica-quimica/fisica/artigo2/index.html#gráfico-potência-ao-longo-do-dia",
-    "title": "Energia Solar",
-    "section": "Gráfico: Potência ao longo do dia",
-    "text": "Gráfico: Potência ao longo do dia\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nhoras = np.linspace(6, 18, 100)\npot = 0.18 * 1.6 * 1000 * np.sin((np.pi / 12) * (horas - 6))\npot = np.clip(pot, 0, None)\n\nplt.plot(horas, pot)\nplt.title('Potência Solar ao Longo do Dia')\nplt.xlabel('Hora do dia')\nplt.ylabel('Potência (W)')\nplt.grid(True)\nplt.show()"
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#balanceamento-de-reações-redox",
+    "title": "Reações Redox",
+    "section": "Balanceamento de Reações Redox",
+    "text": "Balanceamento de Reações Redox\nMétodo das semi-reações (meio aquoso ácido):\n\nSeparar as semi-reações.\nBalancear elementos, exceto H e O.\nBalancear O com \\(\\mathrm{H_2O}\\).\nBalancear H com \\(\\mathrm{H^+}\\).\nBalancear cargas com elétrons.\nSomar e simplificar."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
-    "href": "fisica-quimica/fisica/artigo2/index.html#considerações-didáticas",
-    "title": "Energia Solar",
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
+    "href": "fisica-quimica/quimica/artigo2/index.html#exemplo-com-python-simulação-de-redox",
+    "title": "Reações Redox",
+    "section": "Exemplo com Python: Simulação de Redox",
+    "text": "Exemplo com Python: Simulação de Redox\n\n\nCódigo\nreacoes = {\n    \"Zn + Cu2+\": {\"oxidado\": \"Zn -&gt; Zn2+\", \"reduzido\": \"Cu2+ -&gt; Cu\"},\n    \"Fe + Cl2\": {\"oxidado\": \"Fe -&gt; Fe2+\", \"reduzido\": \"Cl2 -&gt; 2Cl-\"},\n}\n\nfor r, pares in reacoes.items():\n    print(f\"Reação: {r}\")\n    for tipo, eq in pares.items():\n        print(f\"  {tipo.title()}: {eq}\")\n\n\nReação: Zn + Cu2+\n  Oxidado: Zn -&gt; Zn2+\n  Reduzido: Cu2+ -&gt; Cu\nReação: Fe + Cl2\n  Oxidado: Fe -&gt; Fe2+\n  Reduzido: Cl2 -&gt; 2Cl-"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#aplicações",
+    "href": "fisica-quimica/quimica/artigo2/index.html#aplicações",
+    "title": "Reações Redox",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nPilhas e baterias.\nReações metabólicas (ex: respiração celular).\nTratamento de águas e processos industriais."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
+    "href": "fisica-quimica/quimica/artigo2/index.html#considerações-didáticas",
+    "title": "Reações Redox",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nComparar com outras fontes de energia.\nVisitas técnicas e simulações são úteis."
+    "text": "Considerações Didáticas\n\nImportância do conceito de elétron e analogias visuais.\nPrática com tabelas de potencial padrão e métodos de balanceamento."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html",
-    "href": "fisica-quimica/fisica/artigo3/index.html",
-    "title": "Circuitos Elétricos",
+    "objectID": "fisica-quimica/quimica/artigo3/index.html",
+    "href": "fisica-quimica/quimica/artigo3/index.html",
+    "title": "Estequiometria",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#introdução",
-    "href": "fisica-quimica/fisica/artigo3/index.html#introdução",
-    "title": "Circuitos Elétricos",
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#introdução",
+    "href": "fisica-quimica/quimica/artigo3/index.html#introdução",
+    "title": "Estequiometria",
     "section": "Introdução",
-    "text": "Introdução\nCircuitos elétricos são interconexões de componentes que permitem o fluxo controlado de corrente elétrica."
+    "text": "Introdução\nA estequiometria estuda as proporções quantitativas entre os reagentes e os produtos de uma reação química, com base na Lei de Conservação da Massa de Lavoisier."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
-    "href": "fisica-quimica/fisica/artigo3/index.html#conceitos-básicos",
-    "title": "Circuitos Elétricos",
-    "section": "Conceitos Básicos",
-    "text": "Conceitos Básicos\n\nCorrente (I): fluxo de carga elétrica.\nTensão (V): diferença de potencial elétrico.\nResistência (R): oposição ao fluxo de corrente."
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
+    "href": "fisica-quimica/quimica/artigo3/index.html#leis-pioneiras",
+    "title": "Estequiometria",
+    "section": "Leis Pioneiras",
+    "text": "Leis Pioneiras\n\nLei de Lavoisier: A massa total dos reagentes é igual à dos produtos.\nLei de Proust: Um composto é sempre formado pelos mesmos elementos na mesma proporção em massa."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
-    "href": "fisica-quimica/fisica/artigo3/index.html#leis-fundamentais",
-    "title": "Circuitos Elétricos",
-    "section": "Leis Fundamentais",
-    "text": "Leis Fundamentais\n\nLei de Ohm: \\(V = R \\cdot I\\)\nLeis de Kirchhoff: conservações de corrente e tensão."
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
+    "href": "fisica-quimica/quimica/artigo3/index.html#equações-químicas-e-balanceamento",
+    "title": "Estequiometria",
+    "section": "Equações Químicas e Balanceamento",
+    "text": "Equações Químicas e Balanceamento\n\nO balanceamento garante a conservação de átomos.\nExemplo:\n\n\\[ \\mathrm{2H_2 + O_2 \\rightarrow 2H_2O} \\]"
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
-    "href": "fisica-quimica/fisica/artigo3/index.html#exemplo-com-python-lei-de-ohm",
-    "title": "Circuitos Elétricos",
-    "section": "Exemplo com Python: Lei de Ohm",
-    "text": "Exemplo com Python: Lei de Ohm\n\n\nCódigo\nR = 100  # ohms\nV = 5  # volts\nI = V / R\n\nprint(f\"Corrente: {I:.2f} A\")\n\n\nCorrente: 0.05 A"
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
+    "href": "fisica-quimica/quimica/artigo3/index.html#relações-de-mol-e-massa",
+    "title": "Estequiometria",
+    "section": "Relações de Mol e Massa",
+    "text": "Relações de Mol e Massa\n\nMassa molar: massa de 1 mol de substância.\nConversões: massa ↔︎ mol ↔︎ número de partículas (via constante de Avogadro)."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
-    "href": "fisica-quimica/fisica/artigo3/index.html#gráfico-corrente-vs-tensão",
-    "title": "Circuitos Elétricos",
-    "section": "Gráfico: Corrente vs Tensão",
-    "text": "Gráfico: Corrente vs Tensão\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nR = 100\nV = np.linspace(0, 10, 100)\nI = V / R\n\nplt.plot(V, I)\nplt.title('Corrente vs Tensão para R = 100Ω')\nplt.xlabel('Tensão (V)')\nplt.ylabel('Corrente (A)')\nplt.grid(True)\nplt.show()"
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
+    "href": "fisica-quimica/quimica/artigo3/index.html#cálculos-estequiométricos",
+    "title": "Estequiometria",
+    "section": "Cálculos Estequiométricos",
+    "text": "Cálculos Estequiométricos\n\nIdentificação de reagente limitante.\nCálculo de rendimento teórico e percentual."
   },
   {
-    "objectID": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
-    "href": "fisica-quimica/fisica/artigo3/index.html#considerações-didáticas",
-    "title": "Circuitos Elétricos",
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
+    "href": "fisica-quimica/quimica/artigo3/index.html#exemplo-com-python-cálculo-de-massa-de-produto",
+    "title": "Estequiometria",
+    "section": "Exemplo com Python: Cálculo de Massa de Produto",
+    "text": "Exemplo com Python: Cálculo de Massa de Produto\n\n\nCódigo\nmassa_H2 = 4.04  # g\nmassa_molar_H2 = 2.02\nmassa_molar_H2O = 18.02\n\nmol_H2 = massa_H2 / massa_molar_H2\nmol_H2O = mol_H2  # relação 1:1\nmassa_H2O = mol_H2O * massa_molar_H2O\n\nprint(f\"Massa de água produzida: {massa_H2O:.2f} g\")\n\n\nMassa de água produzida: 36.04 g"
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#aplicações",
+    "href": "fisica-quimica/quimica/artigo3/index.html#aplicações",
+    "title": "Estequiometria",
+    "section": "Aplicações",
+    "text": "Aplicações\n\nIndústria química: formulações precisas.\nAnálises laboratoriais e controle ambiental."
+  },
+  {
+    "objectID": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
+    "href": "fisica-quimica/quimica/artigo3/index.html#considerações-didáticas",
+    "title": "Estequiometria",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nUso de simuladores como Tinkercad ou Phet.\nProjetos práticos com multímetros e protoboards."
+    "text": "Considerações Didáticas\n\nUtilizar analogias com receitas culinárias.\nExplorar problemas práticos e interdisciplinares."
   },
   {
-    "objectID": "fisica-quimica/diversos/index.html",
-    "href": "fisica-quimica/diversos/index.html",
-    "title": "Diversos",
-    "section": "",
-    "text": "Outros temas no campo da física e química.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cultura/filosofia/artigo2/index.html",
-    "href": "cultura/filosofia/artigo2/index.html",
-    "title": "Paradigmas segundo Kuhn",
+    "objectID": "fisica-quimica/fisica/artigo1/index.html",
+    "href": "fisica-quimica/fisica/artigo1/index.html",
+    "title": "Velocidade e Aceleração",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "cultura/filosofia/artigo2/index.html#introdução",
-    "href": "cultura/filosofia/artigo2/index.html#introdução",
-    "title": "Paradigmas segundo Kuhn",
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#introdução",
+    "href": "fisica-quimica/fisica/artigo1/index.html#introdução",
+    "title": "Velocidade e Aceleração",
     "section": "Introdução",
-    "text": "Introdução\nThomas Kuhn, em A Estrutura das Revoluções Científicas (1962), desafiou a visão linear e acumulativa da ciência ao introduzir o conceito de paradigma como estrutura dominante em determinada fase da ciência."
+    "text": "Introdução\nA cinemática estuda o movimento dos corpos sem considerar suas causas. Os conceitos de velocidade e aceleração são fundamentais para essa descrição."
   },
   {
-    "objectID": "cultura/filosofia/artigo2/index.html#estrutura-das-mudanças-científicas",
-    "href": "cultura/filosofia/artigo2/index.html#estrutura-das-mudanças-científicas",
-    "title": "Paradigmas segundo Kuhn",
-    "section": "Estrutura das Mudanças Científicas",
-    "text": "Estrutura das Mudanças Científicas\n\nCiência Normal: atividade baseada em paradigmas aceitos.\nCrise: surgimento de anomalias que desafiam o paradigma.\nRevolução Científica: substituição de um paradigma por outro.\nNova Ciência Normal: estabilização do novo paradigma."
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#conceitos",
+    "href": "fisica-quimica/fisica/artigo1/index.html#conceitos",
+    "title": "Velocidade e Aceleração",
+    "section": "Conceitos",
+    "text": "Conceitos\n\nVelocidade média: razão entre o deslocamento e o intervalo de tempo.\nVelocidade instantânea: limite da velocidade média quando Δt → 0.\nAceleração média: variação da velocidade no tempo."
   },
   {
-    "objectID": "cultura/filosofia/artigo2/index.html#características-dos-paradigmas",
-    "href": "cultura/filosofia/artigo2/index.html#características-dos-paradigmas",
-    "title": "Paradigmas segundo Kuhn",
-    "section": "Características dos Paradigmas",
-    "text": "Características dos Paradigmas\n\nDeterminam o que deve ser observado.\nEstabelecem métodos e perguntas legítimas.\nOrientam a interpretação dos dados."
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
+    "href": "fisica-quimica/fisica/artigo1/index.html#fórmulas",
+    "title": "Velocidade e Aceleração",
+    "section": "Fórmulas",
+    "text": "Fórmulas\n\\[ v = \\frac{{\\Delta s}}{{\\Delta t}} \\] \\[ a = \\frac{{\\Delta v}}{{\\Delta t}} \\]"
   },
   {
-    "objectID": "cultura/filosofia/artigo2/index.html#críticas-e-impactos",
-    "href": "cultura/filosofia/artigo2/index.html#críticas-e-impactos",
-    "title": "Paradigmas segundo Kuhn",
-    "section": "Críticas e Impactos",
-    "text": "Críticas e Impactos\n\nKuhn influenciou a epistemologia contemporânea.\nFoi criticado por relativismo e comparabilidade limitada entre paradigmas.\nInspirou debates sobre ciência como construção social."
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
+    "href": "fisica-quimica/fisica/artigo1/index.html#exemplo-com-python-gráfico-de-velocidade",
+    "title": "Velocidade e Aceleração",
+    "section": "Exemplo com Python: Gráfico de Velocidade",
+    "text": "Exemplo com Python: Gráfico de Velocidade\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nt = np.linspace(0, 10, 100)\nv = 2 * t + 1  # movimento uniformemente acelerado (a = 2 m/s²)\n\nplt.plot(t, v)\nplt.title('Velocidade vs. Tempo')\nplt.xlabel('Tempo (s)')\nplt.ylabel('Velocidade (m/s)')\nplt.grid(True)\nplt.show()"
   },
   {
-    "objectID": "cultura/filosofia/artigo2/index.html#diagrama-de-ideias-mermaid",
-    "href": "cultura/filosofia/artigo2/index.html#diagrama-de-ideias-mermaid",
-    "title": "Paradigmas segundo Kuhn",
+    "objectID": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
+    "href": "fisica-quimica/fisica/artigo1/index.html#considerações-didáticas",
+    "title": "Velocidade e Aceleração",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nUtilizar animações ou simulações.\nExplorar gráficos posição x tempo e velocidade x tempo."
+  },
+  {
+    "objectID": "fisica-quimica/fisica/index.html",
+    "href": "fisica-quimica/fisica/index.html",
+    "title": "Fisica",
+    "section": "",
+    "text": "Conceitos e aplicações fundamentais da física.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVelocidade e Aceleração\n\n\nConceitos fundamentais de cinemática: velocidade média, instantânea e aceleração.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEnergia Solar\n\n\nFundamentos físicos da conversão da energia solar em elétrica e térmica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCircuitos Elétricos\n\n\nAnálise de circuitos elétricos simples com resistores e fontes de tensão.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fisica-quimica/corrosao/index.html",
+    "href": "fisica-quimica/corrosao/index.html",
+    "title": "Corrosao",
+    "section": "",
+    "text": "Estudo dos processos de corrosão e proteção de materiais.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo1/index.html",
+    "href": "cultura/filosofia/artigo1/index.html",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/filosofia/artigo1/index.html#introdução",
+    "href": "cultura/filosofia/artigo1/index.html#introdução",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "Introdução",
+    "text": "Introdução\nA tese da verificabilidade das hipóteses foi central ao movimento do positivismo lógico, especialmente no Círculo de Viena. Segundo ela, uma proposição só é significativa se puder ser verificada empiricamente ou for analiticamente verdadeira."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo1/index.html#tipos-de-proposições",
+    "href": "cultura/filosofia/artigo1/index.html#tipos-de-proposições",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "Tipos de Proposições",
+    "text": "Tipos de Proposições\n\nAnalíticas: verdadeiras por definição (ex: “todos os solteiros são não casados”).\nSintéticas verificáveis: exigem observação empírica (ex: “a água ferve a 100°C”).\nMetafísicas ou não verificáveis: consideradas sem significado científico pelo positivismo (ex: “Deus é eterno”)."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo1/index.html#objeções",
+    "href": "cultura/filosofia/artigo1/index.html#objeções",
+    "title": "Verificabilidade das Hipóteses",
+    "section": "Objeções",
+    "text": "Objeções\n\nKarl Popper criticou a verificabilidade, propondo a falseabilidade como critério.\nNem todas as teorias científicas são diretamente verificáveis, mas podem ser testadas indiretamente."
+  },
+  {
+    "objectID": "cultura/filosofia/artigo1/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/filosofia/artigo1/index.html#diagrama-de-ideias-mermaid",
+    "title": "Verificabilidade das Hipóteses",
     "section": "Diagrama de Ideias (Mermaid)",
-    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Paradigma Atual] --&gt; B[Ciência Normal]\n  B --&gt; C[Anomalias]\n  C --&gt; D[Crescimento das anomalias]\n  D --&gt; E[Crise]\n  E --&gt; F[Revolução Científica]\n  F --&gt; G[Novo Paradigma]\n  G --&gt; H[Nova Ciência Normal]\n\n\n\n\n\ngraph TD\n  A[Paradigma Atual] --&gt; B[Ciência Normal]\n  B --&gt; C[Anomalias]\n  C --&gt; D[Crescimento das anomalias]\n  D --&gt; E[Crise]\n  E --&gt; F[Revolução Científica]\n  F --&gt; G[Novo Paradigma]\n  G --&gt; H[Nova Ciência Normal]"
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Tese da Verificabilidade] --&gt; B{Tipos de Proposições}\n  B --&gt; C[Analíticas]\n  B --&gt; D[Sintéticas Verificáveis]\n  B --&gt; E[Metafísicas]\n  A --&gt; F[Críticas]\n  F --&gt; G[Popper: Falseabilidade]\n  F --&gt; H[Testabilidade indireta]\n\n\n\n\n\ngraph TD\n  A[Tese da Verificabilidade] --&gt; B{Tipos de Proposições}\n  B --&gt; C[Analíticas]\n  B --&gt; D[Sintéticas Verificáveis]\n  B --&gt; E[Metafísicas]\n  A --&gt; F[Críticas]\n  F --&gt; G[Popper: Falseabilidade]\n  F --&gt; H[Testabilidade indireta]"
   },
   {
-    "objectID": "cultura/filosofia/artigo2/index.html#considerações-didáticas",
-    "href": "cultura/filosofia/artigo2/index.html#considerações-didáticas",
-    "title": "Paradigmas segundo Kuhn",
+    "objectID": "cultura/filosofia/artigo1/index.html#considerações-didáticas",
+    "href": "cultura/filosofia/artigo1/index.html#considerações-didáticas",
+    "title": "Verificabilidade das Hipóteses",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nRelacionar o modelo de Kuhn com casos históricos reais.\nDiscutir a natureza dinâmica e controversa da ciência."
+    "text": "Considerações Didáticas\n\nUsar exemplos claros (ex: ciências, religião, matemática).\nExplorar debates entre verificabilidade e falseabilidade."
   },
   {
-    "objectID": "cultura/filosofia/artigo2/index.html#referências",
-    "href": "cultura/filosofia/artigo2/index.html#referências",
-    "title": "Paradigmas segundo Kuhn",
-    "section": "Referências",
-    "text": "Referências\n\nKuhn, T. S. (1962). The Structure of Scientific Revolutions. University of Chicago Press.\nBird, A. (2000). Thomas Kuhn. Princeton University Press."
+    "objectID": "cultura/filosofia/index.html",
+    "href": "cultura/filosofia/index.html",
+    "title": "Filosofia",
+    "section": "",
+    "text": "Correntes filosóficas e pensamento crítico.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVerificabilidade das Hipóteses\n\n\nDiscussão sobre a tese da verificabilidade lógica das hipóteses científicas, conforme o positivismo lógico.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nParadigmas segundo Kuhn\n\n\nExploração da teoria dos paradigmas científicos conforme proposta por Thomas Kuhn em ‘A Estrutura das Revoluções Científicas’.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nA Evolução da Ciência segundo Popper\n\n\nAnálise da proposta de Karl Popper sobre a evolução da ciência com base na falseabilidade e no método conjectura e refutação.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "cultura/filosofia/artigo3/index.html",
-    "href": "cultura/filosofia/artigo3/index.html",
-    "title": "A Evolução da Ciência segundo Popper",
+    "objectID": "cultura/literatura/artigo1/index.html",
+    "href": "cultura/literatura/artigo1/index.html",
+    "title": "Machado de Assis e a Prosa Impressionista",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
-    "objectID": "cultura/filosofia/artigo3/index.html#introdução",
-    "href": "cultura/filosofia/artigo3/index.html#introdução",
-    "title": "A Evolução da Ciência segundo Popper",
+    "objectID": "cultura/literatura/artigo1/index.html#introdução",
+    "href": "cultura/literatura/artigo1/index.html#introdução",
+    "title": "Machado de Assis e a Prosa Impressionista",
     "section": "Introdução",
-    "text": "Introdução\nKarl Popper propôs uma alternativa à visão indutivista da ciência. Para ele, o progresso científico ocorre por meio do método das conjecturas e refutações, em que hipóteses são constantemente testadas e refutadas."
+    "text": "Introdução\nA obra de Machado de Assis, especialmente a partir de Memórias Póstumas de Brás Cubas, revela um estilo narrativo que antecipa características do impressionismo literário, marcado por subjetividade, fragmentação e foco nos estados de alma."
   },
   {
-    "objectID": "cultura/filosofia/artigo3/index.html#princípios-da-falseabilidade",
-    "href": "cultura/filosofia/artigo3/index.html#princípios-da-falseabilidade",
-    "title": "A Evolução da Ciência segundo Popper",
-    "section": "Princípios da Falseabilidade",
-    "text": "Princípios da Falseabilidade\n\nUma teoria é científica se puder ser falseada (refutada por observação).\nA ciência não prova, mas elimina erros.\nO conhecimento avança eliminando hipóteses erradas."
+    "objectID": "cultura/literatura/artigo1/index.html#características-impressionistas-na-prosa-machadiana",
+    "href": "cultura/literatura/artigo1/index.html#características-impressionistas-na-prosa-machadiana",
+    "title": "Machado de Assis e a Prosa Impressionista",
+    "section": "Características Impressionistas na Prosa Machadiana",
+    "text": "Características Impressionistas na Prosa Machadiana\n\nSubjetivismo e introspecção.\nNarradores não confiáveis.\nEstrutura fragmentada.\nIronia e ambiguidade moral."
   },
   {
-    "objectID": "cultura/filosofia/artigo3/index.html#etapas-do-método-científico-popperiano",
-    "href": "cultura/filosofia/artigo3/index.html#etapas-do-método-científico-popperiano",
-    "title": "A Evolução da Ciência segundo Popper",
-    "section": "Etapas do Método Científico Popperiano",
-    "text": "Etapas do Método Científico Popperiano\n\nProblema: surge de uma observação ou falha em teoria existente.\nConjectura: proposta de uma solução teórica.\nRefutação: tentativa de demonstrar que a conjectura é falsa.\nNovo Problema: o ciclo reinicia com base no conhecimento corrigido."
+    "objectID": "cultura/literatura/artigo1/index.html#exemplos-literários",
+    "href": "cultura/literatura/artigo1/index.html#exemplos-literários",
+    "title": "Machado de Assis e a Prosa Impressionista",
+    "section": "Exemplos Literários",
+    "text": "Exemplos Literários\n\nDom Casmurro: dúvidas sobre Capitu nunca resolvidas — efeito subjetivo e psicológico.\nMemórias Póstumas de Brás Cubas: narrador defunto autor, crítica social e metalinguagem."
   },
   {
-    "objectID": "cultura/filosofia/artigo3/index.html#comparações-com-outras-visões",
-    "href": "cultura/filosofia/artigo3/index.html#comparações-com-outras-visões",
-    "title": "A Evolução da Ciência segundo Popper",
-    "section": "Comparações com Outras Visões",
-    "text": "Comparações com Outras Visões\n\nDifere do positivismo lógico (verificabilidade).\nAproxima-se de uma visão crítica e racionalista da ciência.\nInfluenciou a filosofia crítica, a metodologia científica e a epistemologia evolutiva."
+    "objectID": "cultura/literatura/artigo1/index.html#diagrama-de-ideias",
+    "href": "cultura/literatura/artigo1/index.html#diagrama-de-ideias",
+    "title": "Machado de Assis e a Prosa Impressionista",
+    "section": "Diagrama de Ideias",
+    "text": "Diagrama de Ideias\n\n\nCódigo\ngraph TD\n  A[Machado de Assis] --&gt; B[Subjetividade]\n  A --&gt; C[Narrador não confiável]\n  A --&gt; D[Estrutura fragmentada]\n  A --&gt; E[Ironia]\n  B --&gt; F[Impressões psicológicas]\n  D --&gt; G[Descontinuidade narrativa]\n\n\n\n\n\ngraph TD\n  A[Machado de Assis] --&gt; B[Subjetividade]\n  A --&gt; C[Narrador não confiável]\n  A --&gt; D[Estrutura fragmentada]\n  A --&gt; E[Ironia]\n  B --&gt; F[Impressões psicológicas]\n  D --&gt; G[Descontinuidade narrativa]"
   },
   {
-    "objectID": "cultura/filosofia/artigo3/index.html#diagrama-de-ideias-mermaid",
-    "href": "cultura/filosofia/artigo3/index.html#diagrama-de-ideias-mermaid",
-    "title": "A Evolução da Ciência segundo Popper",
-    "section": "Diagrama de Ideias (Mermaid)",
-    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Problema] --&gt; B[Conjectura]\n  B --&gt; C[Testes e Tentativas de Refutação]\n  C --&gt; D{Refutada?}\n  D --&gt;|Sim| E[Nova Conjectura]\n  D --&gt;|Não| F[Corroboração Temporária]\n  E --&gt; A\n  F --&gt; A\n\n\n\n\n\ngraph TD\n  A[Problema] --&gt; B[Conjectura]\n  B --&gt; C[Testes e Tentativas de Refutação]\n  C --&gt; D{Refutada?}\n  D --&gt;|Sim| E[Nova Conjectura]\n  D --&gt;|Não| F[Corroboração Temporária]\n  E --&gt; A\n  F --&gt; A"
-  },
-  {
-    "objectID": "cultura/filosofia/artigo3/index.html#considerações-didáticas",
-    "href": "cultura/filosofia/artigo3/index.html#considerações-didáticas",
-    "title": "A Evolução da Ciência segundo Popper",
+    "objectID": "cultura/literatura/artigo1/index.html#considerações-didáticas",
+    "href": "cultura/literatura/artigo1/index.html#considerações-didáticas",
+    "title": "Machado de Assis e a Prosa Impressionista",
     "section": "Considerações Didáticas",
-    "text": "Considerações Didáticas\n\nExplorar exemplos reais de teorias refutadas.\nDebater a diferença entre prova e falseabilidade.\nUtilizar simulações de testes de hipóteses."
+    "text": "Considerações Didáticas\n\nComparar textos machadianos com autores impressionistas europeus.\nExplorar as técnicas narrativas com análise de trechos.\nEstimular leitura interpretativa e crítica da ambiguidade."
   },
   {
-    "objectID": "cultura/filosofia/artigo3/index.html#referências",
-    "href": "cultura/filosofia/artigo3/index.html#referências",
-    "title": "A Evolução da Ciência segundo Popper",
-    "section": "Referências",
-    "text": "Referências\n\nPopper, K. (1959). The Logic of Scientific Discovery. Hutchinson.\nMagee, B. (1973). Popper. Fontana Press.\nThornton, S. (2022). Karl Popper. Stanford Encyclopedia of Philosophy."
+    "objectID": "cultura/literatura/index.html",
+    "href": "cultura/literatura/index.html",
+    "title": "Literatura",
+    "section": "",
+    "text": "Estudos literários e análises de obras.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportância Atual da Ilíada de Homero\n\n\nAnálise da relevância contemporânea da Ilíada de Homero no contexto da literatura, educação e cultura ocidental.\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMachado de Assis e a Prosa Impressionista\n\n\nAnálise do estilo impressionista na prosa de Machado de Assis, com foco em suas escolhas narrativas e subjetividade.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nOs Temas Principais de Os Lusíadas de Luís de Camões\n\n\nAnálise temática da epopeia Os Lusíadas, de Luís de Camões, destacando seus eixos centrais: heroísmo, nacionalismo, mitologia e religião.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/economia/artigo1/index.html",
+    "href": "cultura/economia/artigo1/index.html",
+    "title": "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/economia/artigo1/index.html#introdução",
+    "href": "cultura/economia/artigo1/index.html#introdução",
+    "title": "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira",
+    "section": "Introdução",
+    "text": "Introdução\nA crise financeira de 2008 teve origem no colapso do mercado hipotecário dos EUA e culminou com a falência de bancos e instituições financeiras, afetando a economia global. A queda de Wall Street simboliza um dos momentos mais críticos do sistema capitalista moderno."
+  },
+  {
+    "objectID": "cultura/economia/artigo1/index.html#causas-estruturais",
+    "href": "cultura/economia/artigo1/index.html#causas-estruturais",
+    "title": "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira",
+    "section": "Causas Estruturais",
+    "text": "Causas Estruturais\n\nExcesso de crédito e empréstimos subprime a mutuários de alto risco.\nPacotes de dívida (CDO) e instrumentos financeiros mal avaliados.\nPolítica monetária permissiva e falta de regulamentação eficaz.\nConfiança excessiva dos mercados e agências de rating."
+  },
+  {
+    "objectID": "cultura/economia/artigo1/index.html#cronologia-dos-eventos",
+    "href": "cultura/economia/artigo1/index.html#cronologia-dos-eventos",
+    "title": "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira",
+    "section": "Cronologia dos Eventos",
+    "text": "Cronologia dos Eventos\n\n2006–2007: aumento dos incumprimentos hipotecários.\nMarço de 2008: colapso do Bear Stearns.\nSetembro de 2008: falência do Lehman Brothers.\nPânico financeiro global e intervenção dos bancos centrais."
+  },
+  {
+    "objectID": "cultura/economia/artigo1/index.html#consequências",
+    "href": "cultura/economia/artigo1/index.html#consequências",
+    "title": "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira",
+    "section": "Consequências",
+    "text": "Consequências\n\nQuebra de bancos e falência de empresas.\nAumento do desemprego e da dívida pública.\nPolíticas de estímulo e reformas regulatórias (Dodd-Frank).\nDesconfiança generalizada nos mercados financeiros."
+  },
+  {
+    "objectID": "cultura/economia/artigo1/index.html#diagrama-de-ideias",
+    "href": "cultura/economia/artigo1/index.html#diagrama-de-ideias",
+    "title": "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira",
+    "section": "Diagrama de Ideias",
+    "text": "Diagrama de Ideias\n\n\nCódigo\ngraph TD\n  A[Expansão do Crédito] --&gt; B[Empréstimos Subprime]\n  B --&gt; C[Pacotes de Dívida CDO]\n  C --&gt; D[Avaliação de Risco Inadequada]\n  D --&gt; E[Crise de Confiança]\n  E --&gt; F[Colapso das Instituições]\n  F --&gt; G[Intervenção Governamental]\n  G --&gt; H[Reformas Regulatórias]\n\n\n\n\n\ngraph TD\n  A[Expansão do Crédito] --&gt; B[Empréstimos Subprime]\n  B --&gt; C[Pacotes de Dívida CDO]\n  C --&gt; D[Avaliação de Risco Inadequada]\n  D --&gt; E[Crise de Confiança]\n  E --&gt; F[Colapso das Instituições]\n  F --&gt; G[Intervenção Governamental]\n  G --&gt; H[Reformas Regulatórias]"
+  },
+  {
+    "objectID": "cultura/economia/artigo1/index.html#considerações-didáticas",
+    "href": "cultura/economia/artigo1/index.html#considerações-didáticas",
+    "title": "A Queda de Wall Street em 2008 no Âmbito da Crise Financeira",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nDiscutir o papel das políticas públicas e da regulamentação financeira.\nEstimular o pensamento crítico sobre os riscos sistémicos no capitalismo.\nUtilizar documentários e simulações de bolhas financeiras."
   },
   {
     "objectID": "cultura/economia/index.html",
     "href": "cultura/economia/index.html",
     "title": "Economia",
     "section": "",
-    "text": "Fundamentos e teorias económicas aplicadas.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Fundamentos e teorias económicas aplicadas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Queda de Wall Street em 2008 no Âmbito da Crise Financeira\n\n\nAnálise da crise financeira de 2008 com foco na queda de Wall Street, suas causas estruturais, consequências globais e lições económicas.\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrincipais Doutrinas e Sistemas Económicos\n\n\nResumo das principais doutrinas e sistemas económicos, incluindo o liberalismo clássico, keynesianismo, marxismo e economia mista.\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nO que é e como funciona o Bitcoin?\n\n\nExploração introdutória sobre o conceito de Bitcoin, seu funcionamento com blockchain e implicações económicas e tecnológicas.\n\n\n\n\n\nMay 10, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "cultura/historia/index.html",
-    "href": "cultura/historia/index.html",
-    "title": "Historia",
+    "objectID": "cultura/diversos/index.html",
+    "href": "cultura/diversos/index.html",
+    "title": "Diversos",
     "section": "",
-    "text": "Eventos e processos históricos relevantes.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Outros temas de interesse cultural geral.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cultura/historia/artigo2/index.html",
+    "href": "cultura/historia/artigo2/index.html",
+    "title": "A intervenção da Igreja na fundação do reino de Portugal",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/historia/artigo2/index.html#introdução",
+    "href": "cultura/historia/artigo2/index.html#introdução",
+    "title": "A intervenção da Igreja na fundação do reino de Portugal",
+    "section": "Introdução",
+    "text": "Introdução\nA fundação do reino de Portugal no século XII contou com o decisivo apoio da Igreja Católica. A legitimação do poder de D. Afonso Henriques foi tanto uma conquista militar como uma negociação diplomática com o papado e o clero."
+  },
+  {
+    "objectID": "cultura/historia/artigo2/index.html#apoios-religiosos-e-diplomáticos",
+    "href": "cultura/historia/artigo2/index.html#apoios-religiosos-e-diplomáticos",
+    "title": "A intervenção da Igreja na fundação do reino de Portugal",
+    "section": "Apoios Religiosos e Diplomáticos",
+    "text": "Apoios Religiosos e Diplomáticos\n\nAliança com a Igreja de Braga: apoio eclesiástico regional a D. Afonso Henriques.\nClero regular e secular: influência religiosa no povo e apoio à causa da independência.\nIntervenção do Papa Alexandre III: reconhecimento de Portugal como reino vassalo da Santa Sé em 1179 (Bula Manifestis Probatum)."
+  },
+  {
+    "objectID": "cultura/historia/artigo2/index.html#consequências-da-intervenção-da-igreja",
+    "href": "cultura/historia/artigo2/index.html#consequências-da-intervenção-da-igreja",
+    "title": "A intervenção da Igreja na fundação do reino de Portugal",
+    "section": "Consequências da Intervenção da Igreja",
+    "text": "Consequências da Intervenção da Igreja\n\nLegitimidade internacional do reino.\nOrganização administrativa e eclesiástica do território.\nAlianças com ordens militares religiosas (Templários, Hospitalários).\nEstreita relação entre poder régio e Igreja durante a Reconquista."
+  },
+  {
+    "objectID": "cultura/historia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "href": "cultura/historia/artigo2/index.html#diagrama-de-ideias-mermaid",
+    "title": "A intervenção da Igreja na fundação do reino de Portugal",
+    "section": "Diagrama de Ideias (Mermaid)",
+    "text": "Diagrama de Ideias (Mermaid)\n\n\nCódigo\ngraph TD\n  A[Conflito com Leão]\n  A --&gt; B[Igreja de Braga]\n  B --&gt; C[Decreto Papal 1179]\n  C --&gt; D[Reino  Reconhecido]\n  D --&gt; E[Reforço do Poder Régio]\n  E --&gt; F[Influência da Igreja]\n  F --&gt; G[Ordens Militares]\n\n\n\n\n\ngraph TD\n  A[Conflito com Leão]\n  A --&gt; B[Igreja de Braga]\n  B --&gt; C[Decreto Papal 1179]\n  C --&gt; D[Reino  Reconhecido]\n  D --&gt; E[Reforço do Poder Régio]\n  E --&gt; F[Influência da Igreja]\n  F --&gt; G[Ordens Militares]"
+  },
+  {
+    "objectID": "cultura/historia/artigo2/index.html#considerações-didáticas",
+    "href": "cultura/historia/artigo2/index.html#considerações-didáticas",
+    "title": "A intervenção da Igreja na fundação do reino de Portugal",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nRelacionar o papel da Igreja com a construção da identidade nacional.\nExplorar fontes primárias como a bula Manifestis Probatum.\nComparar a situação portuguesa com outros reinos cristãos da Península Ibérica."
+  },
+  {
+    "objectID": "cultura/historia/artigo3/index.html",
+    "href": "cultura/historia/artigo3/index.html",
+    "title": "Principais causas e personalidades da Guerra Civil Espanhola",
+    "section": "",
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
+  },
+  {
+    "objectID": "cultura/historia/artigo3/index.html#introdução",
+    "href": "cultura/historia/artigo3/index.html#introdução",
+    "title": "Principais causas e personalidades da Guerra Civil Espanhola",
+    "section": "Introdução",
+    "text": "Introdução\nA Guerra Civil Espanhola (1936–1939) foi um conflito entre os republicanos e os nacionalistas, marcado por profundas divisões ideológicas e sociais. Foi também um campo de testes para regimes autoritários como o nazismo e o fascismo, sendo um prenúncio da Segunda Guerra Mundial."
+  },
+  {
+    "objectID": "cultura/historia/artigo3/index.html#causas-principais",
+    "href": "cultura/historia/artigo3/index.html#causas-principais",
+    "title": "Principais causas e personalidades da Guerra Civil Espanhola",
+    "section": "Causas Principais",
+    "text": "Causas Principais\n\nCrises sociais e económicas agravadas pela Grande Depressão.\nConflitos entre classes sociais e reforma agrária.\nTensões religiosas e anticlericalismo.\nPolarização ideológica: esquerda republicana vs. direita conservadora.\nTentativa de golpe militar liderada por Francisco Franco (1936)."
+  },
+  {
+    "objectID": "cultura/historia/artigo3/index.html#personalidades-e-blocos",
+    "href": "cultura/historia/artigo3/index.html#personalidades-e-blocos",
+    "title": "Principais causas e personalidades da Guerra Civil Espanhola",
+    "section": "Personalidades e Blocos",
+    "text": "Personalidades e Blocos\n\nNacionalistas:\n\nFrancisco Franco (líder do golpe e futuro ditador)\nFalange Espanhola (movimento fascista)\nApoio da Alemanha Nazi e Itália Fascista\n\nRepublicanos:\n\nManuel Azaña (presidente da república)\nDolores Ibárruri, “La Pasionaria” (líder comunista)\nBrigadas Internacionais e apoio da URSS"
+  },
+  {
+    "objectID": "cultura/historia/artigo3/index.html#consequências",
+    "href": "cultura/historia/artigo3/index.html#consequências",
+    "title": "Principais causas e personalidades da Guerra Civil Espanhola",
+    "section": "Consequências",
+    "text": "Consequências\n\nVitória dos nacionalistas em 1939.\nEstabelecimento da ditadura franquista até 1975.\nRepressão política, censura e exílio de opositores.\nAntecedente direto da polarização ideológica da Segunda Guerra Mundial."
+  },
+  {
+    "objectID": "cultura/historia/artigo3/index.html#diagrama-de-ideias",
+    "href": "cultura/historia/artigo3/index.html#diagrama-de-ideias",
+    "title": "Principais causas e personalidades da Guerra Civil Espanhola",
+    "section": "Diagrama de Ideias",
+    "text": "Diagrama de Ideias\n\n\nCódigo\ngraph TD\n  A[Causas Estruturais] --&gt; B[Crise Económica]\n  A --&gt; C[Reforma Agrária e Social]\n  A --&gt; D[Conflito Ideológico]\n  D --&gt; E[Nacionalistas]\n  D --&gt; F[Republicanos]\n  E --&gt; G[Franco]\n  E --&gt; H[Apoio Nazi-Fascista]\n  F --&gt; I[Azaña e La Pasionaria]\n  F --&gt; J[Brigadas Internacionais]\n\n\n\n\n\ngraph TD\n  A[Causas Estruturais] --&gt; B[Crise Económica]\n  A --&gt; C[Reforma Agrária e Social]\n  A --&gt; D[Conflito Ideológico]\n  D --&gt; E[Nacionalistas]\n  D --&gt; F[Republicanos]\n  E --&gt; G[Franco]\n  E --&gt; H[Apoio Nazi-Fascista]\n  F --&gt; I[Azaña e La Pasionaria]\n  F --&gt; J[Brigadas Internacionais]"
+  },
+  {
+    "objectID": "cultura/historia/artigo3/index.html#considerações-didáticas",
+    "href": "cultura/historia/artigo3/index.html#considerações-didáticas",
+    "title": "Principais causas e personalidades da Guerra Civil Espanhola",
+    "section": "Considerações Didáticas",
+    "text": "Considerações Didáticas\n\nAnalisar causas estruturais e imediatas do conflito.\nRelacionar com os contextos da década de 1930 na Europa.\nExplorar fontes primárias: discursos, jornais e fotografias da época."
   },
   {
     "objectID": "termodinamica/artigo1/index.html",
@@ -996,14 +1381,14 @@
   {
     "objectID": "matematica/calculo/artigo2/index.html",
     "href": "matematica/calculo/artigo2/index.html",
-    "title": "Definição de Derivada",
+    "title": "Derivadas",
     "section": "",
     "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
     "href": "matematica/calculo/artigo2/index.html#exemplo-com-fx-x2-em-x-2",
-    "title": "Definição de Derivada",
+    "title": "Derivadas",
     "section": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)",
     "text": "Exemplo com \\(f(x) = x^2\\) em \\(x = 2\\)\n\n\nCódigo\nimport sympy as sp\nx, h = sp.symbols('x h')\nf = x**2\na = 2\n\nquociente = (f.subs(x, a + h) - f.subs(x, a)) / h\nderivada = sp.limit(quociente, h, 0)\n\nquociente.simplify(), derivada\n\n\n(h + 4, 4)\n\n\nVisualização da reta tangente:\n\n\nCódigo\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx_vals = np.linspace(0, 4, 200)\nf_vals = x_vals**2\ntangente = 4*x_vals - 4  # derivada 4, passa por (2,4)\n\nplt.plot(x_vals, f_vals, label='f(x) = x²')\nplt.plot(x_vals, tangente, '--', label='Tangente em x=2')\nplt.scatter([2], [4], color='red')\nplt.title(\"Derivada como reta tangente\")\nplt.legend()\nplt.grid(True)\nplt.show()"
   },
@@ -1045,16 +1430,16 @@
   {
     "objectID": "matematica/estatistica/artigo1/index.html",
     "href": "matematica/estatistica/artigo1/index.html",
-    "title": "Medidas de Localização e Dispersão",
+    "title": "Medidas de localização e de dispersão",
     "section": "",
-    "text": "📄 Baixar PDF 🖨️ Imprimir\n\n\n\n\n\nArtigo 1 - Medidas de Localização e Dispersão\n\n\nCódigo\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndados = [12, 15, 14, 10, 18, 20, 12, 14, 16, 17]\nserie = pd.Series(dados)\nmedia = serie.mean()\nmediana = serie.median()\nmoda = serie.mode().tolist()\ndesvio = serie.std()\nmedia, mediana, moda, desvio\n\n\n(np.float64(14.8), np.float64(14.5), [12, 14], np.float64(3.0477678535099892))\n\n\n\n\nCódigo\nimport sympy as sp\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\nimport math\n\nplt.hist(dados, bins=5, color='lightblue', edgecolor='black')\nplt.axvline(media, color='red', linestyle='--', label='Média')\nplt.axvline(mediana, color='green', linestyle=':', label='Mediana')\nplt.title(\"Distribuição dos Dados\")\nplt.xlabel(\"Valor\")\nplt.ylabel(\"Frequência\")\nplt.legend()\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferências\n\nAutor, A. (2025). Exemplo de Referência. Editora Exemplo."
+    "text": "📄 Baixar PDF 🖨️ Imprimir"
   },
   {
     "objectID": "matematica/estatistica/index.html",
     "href": "matematica/estatistica/index.html",
     "title": "Estatistica",
     "section": "",
-    "text": "Análise de dados, estatística e probabilidades.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMedidas de Localização e Dispersão\n\n\nCálculo e interpretação de média, mediana, moda e desvio padrão com dados numéricos.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPermutações e Combinações\n\n\nEstudo das fórmulas e aplicações de permutações e combinações com exemplos numéricos.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFunções Geradoras de Momentos\n\n\nIntrodução às funções geradoras de momentos (MGF) e sua utilidade na estatística teórica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Análise de dados, estatística e probabilidades.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMedidas de localização e de dispersão\n\n\nMédia, Moda e Variância\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPermutações e Combinações\n\n\nEstudo das fórmulas e aplicações de permutações e combinações com exemplos numéricos.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFunções Geradoras de Momentos\n\n\nIntrodução às funções geradoras de momentos (MGF) e sua utilidade na estatística teórica.\n\n\n\n\n\nMay 8, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "matematica/diversos/artigo1/index.html",

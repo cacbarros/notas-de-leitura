@@ -28,11 +28,39 @@
     ]
   },
   {
-    "listing": "/cultura/diversos/index.html",
+    "listing": "/cultura/historia/index.html",
+    "items": [
+      "/cultura/historia/artigo1/index.html",
+      "/cultura/historia/artigo2/index.html",
+      "/cultura/historia/artigo3/index.html"
+    ]
+  },
+  {
+    "listing": "/fisica-quimica/diversos/index.html",
     "items": []
   },
   {
-    "listing": "/cultura/literatura/index.html",
+    "listing": "/fisica-quimica/termodinamica/index.html",
+    "items": []
+  },
+  {
+    "listing": "/fisica-quimica/quimica/index.html",
+    "items": [
+      "/fisica-quimica/quimica/artigo1/index.html",
+      "/fisica-quimica/quimica/artigo2/index.html",
+      "/fisica-quimica/quimica/artigo3/index.html"
+    ]
+  },
+  {
+    "listing": "/fisica-quimica/fisica/index.html",
+    "items": [
+      "/fisica-quimica/fisica/artigo1/index.html",
+      "/fisica-quimica/fisica/artigo2/index.html",
+      "/fisica-quimica/fisica/artigo3/index.html"
+    ]
+  },
+  {
+    "listing": "/fisica-quimica/corrosao/index.html",
     "items": []
   },
   {
@@ -44,39 +72,23 @@
     ]
   },
   {
-    "listing": "/fisica-quimica/corrosao/index.html",
-    "items": []
-  },
-  {
-    "listing": "/fisica-quimica/fisica/index.html",
+    "listing": "/cultura/literatura/index.html",
     "items": [
-      "/fisica-quimica/fisica/artigo1/index.html",
-      "/fisica-quimica/fisica/artigo2/index.html",
-      "/fisica-quimica/fisica/artigo3/index.html"
+      "/cultura/literatura/artigo3/index.html",
+      "/cultura/literatura/artigo1/index.html",
+      "/cultura/literatura/artigo2/index.html"
     ]
-  },
-  {
-    "listing": "/fisica-quimica/quimica/index.html",
-    "items": [
-      "/fisica-quimica/quimica/artigo1/index.html",
-      "/fisica-quimica/quimica/artigo2/index.html",
-      "/fisica-quimica/quimica/artigo3/index.html"
-    ]
-  },
-  {
-    "listing": "/fisica-quimica/termodinamica/index.html",
-    "items": []
-  },
-  {
-    "listing": "/fisica-quimica/diversos/index.html",
-    "items": []
   },
   {
     "listing": "/cultura/economia/index.html",
-    "items": []
+    "items": [
+      "/cultura/economia/artigo1/index.html",
+      "/cultura/economia/artigo2/index.html",
+      "/cultura/economia/artigo3/index.html"
+    ]
   },
   {
-    "listing": "/cultura/historia/index.html",
+    "listing": "/cultura/diversos/index.html",
     "items": []
   },
   {
